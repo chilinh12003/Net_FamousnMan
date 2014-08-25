@@ -15,7 +15,7 @@ namespace MyTool.ReportSync
         /// <summary>
         /// Key của chuỗi kết nối trong config
         /// </summary>
-        public string ConnectionKey = "SQLConnecton_SportMillion";
+        public string ConnectionKey = "SQLConnecton_FamousMan";
 
         public string EmailAccount = string.Empty;
         public string Password = string.Empty;

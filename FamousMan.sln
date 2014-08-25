@@ -31,37 +31,6 @@ EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "MyService", "MyService\MyService.csproj", "{A00B7283-806C-4DB5-972F-201ED283F46E}"
 EndProject
 Global
-	GlobalSection(SourceCodeControl) = preSolution
-		SccNumberOfProjects = 10
-		SccLocalPath0 = .
-		SccProjectUniqueName1 = MyVOVTraffic\\MyFamousMan.csproj
-		SccLocalPath1 = .
-		SccProjectFilePathRelativizedFromConnection1 = MyVOVTraffic\\
-		SccProjectUniqueName2 = MyAdmin\\MyAdmin.csproj
-		SccLocalPath2 = .
-		SccProjectFilePathRelativizedFromConnection2 = MyAdmin\\
-		SccProjectUniqueName3 = MySetting\\MySetting.csproj
-		SccLocalPath3 = .
-		SccProjectFilePathRelativizedFromConnection3 = MySetting\\
-		SccProjectUniqueName4 = MyWeb\\MyWeb.csproj
-		SccLocalPath4 = .
-		SccProjectFilePathRelativizedFromConnection4 = MyWeb\\
-		SccProjectUniqueName5 = MyLoad\\MyLoad.csproj
-		SccLocalPath5 = .
-		SccProjectFilePathRelativizedFromConnection5 = MyLoad\\
-		SccProjectUniqueName6 = MyWap\\MyWap.csproj
-		SccLocalPath6 = .
-		SccProjectFilePathRelativizedFromConnection6 = MyWap\\
-		SccProjectUniqueName7 = MyLoad_Wap\\MyLoad_Wap.csproj
-		SccLocalPath7 = .
-		SccProjectFilePathRelativizedFromConnection7 = MyLoad_Wap\\
-		SccProjectUniqueName8 = MyService\\MyService.csproj
-		SccLocalPath8 = .
-		SccProjectFilePathRelativizedFromConnection8 = MyService\\
-		SccProjectUniqueName9 = MyTool\\MyTool.csproj
-		SccLocalPath9 = .
-		SccProjectFilePathRelativizedFromConnection9 = MyTool\\
-	EndGlobalSection
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
 		Debug|Mixed Platforms = Debug|Mixed Platforms
@@ -91,6 +60,16 @@ Global
 		{1D3C458C-280F-46C2-A1FC-EA9B74F1FB8C}.Release|Mixed Platforms.ActiveCfg = Release|Any CPU
 		{1D3C458C-280F-46C2-A1FC-EA9B74F1FB8C}.Release|Mixed Platforms.Build.0 = Release|Any CPU
 		{1D3C458C-280F-46C2-A1FC-EA9B74F1FB8C}.Release|x86.ActiveCfg = Release|Any CPU
+		{A5FDD2BC-8923-40C5-B43D-88F59389E268}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{A5FDD2BC-8923-40C5-B43D-88F59389E268}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{A5FDD2BC-8923-40C5-B43D-88F59389E268}.Debug|Mixed Platforms.ActiveCfg = Debug|Any CPU
+		{A5FDD2BC-8923-40C5-B43D-88F59389E268}.Debug|Mixed Platforms.Build.0 = Debug|Any CPU
+		{A5FDD2BC-8923-40C5-B43D-88F59389E268}.Debug|x86.ActiveCfg = Debug|Any CPU
+		{A5FDD2BC-8923-40C5-B43D-88F59389E268}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{A5FDD2BC-8923-40C5-B43D-88F59389E268}.Release|Any CPU.Build.0 = Release|Any CPU
+		{A5FDD2BC-8923-40C5-B43D-88F59389E268}.Release|Mixed Platforms.ActiveCfg = Release|Any CPU
+		{A5FDD2BC-8923-40C5-B43D-88F59389E268}.Release|Mixed Platforms.Build.0 = Release|Any CPU
+		{A5FDD2BC-8923-40C5-B43D-88F59389E268}.Release|x86.ActiveCfg = Release|Any CPU
 		{806C8AE7-4E83-4BFB-A76B-A77EB11EB262}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
 		{806C8AE7-4E83-4BFB-A76B-A77EB11EB262}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{806C8AE7-4E83-4BFB-A76B-A77EB11EB262}.Debug|Mixed Platforms.ActiveCfg = Debug|Any CPU
