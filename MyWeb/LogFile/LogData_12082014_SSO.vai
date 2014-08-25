@@ -1,0 +1,49 @@
+﻿12/08/2014 - 15:52:17 || k5ds2z3aao3e0x45un5hk221 || ticket:ST-2562172-vm3ftlgzUZOOAmOIUEff-auth
+12/08/2014 - 15:52:18 || k5ds2z3aao3e0x45un5hk221 || resp:<cas:serviceResponse xmlns:cas='http://www.yale.edu/tp/cas'>
+	<cas:authenticationSuccess>
+		<cas:user>84919438389</cas:user>
+
+
+	</cas:authenticationSuccess>
+</cas:serviceResponse>
+
+12/08/2014 - 16:21:30 || s0jutvugncbtsgzjd1brg1qx || ticket:ST-2563270-Rbjab5DyBEY25HBIqyBB-auth
+12/08/2014 - 16:21:30 || s0jutvugncbtsgzjd1brg1qx || resp:<cas:serviceResponse xmlns:cas='http://www.yale.edu/tp/cas'>
+	<cas:authenticationSuccess>
+		<cas:user>84919438389</cas:user>
+
+
+	</cas:authenticationSuccess>
+</cas:serviceResponse>
+
+12/08/2014 - 16:48:37 || 0mxhnz234ctd2k55depsmk2k || ticket:ST-2564244-LQe5EEtinROjIjJXaZFS-auth
+12/08/2014 - 16:48:50 || gj1aw0454cva0c450f5gmure || ticket:ST-2564253-U03ubt7hRbFKMaaRw19c-auth
+12/08/2014 - 16:50:23 || pamxpibm0psmctbmewypcffv || ticket:ST-2564314-G2Pj0tr1Xg4RHVzruJfl-auth
+12/08/2014 - 16:50:49 || etz0ww55n3ifan2qedawvn45 || ticket:ST-2564328-RLOctdoUbnUcZEy1mfXz-auth
+12/08/2014 - 16:54:15 || 25misw55tdarhgecfnmj3e55 || ticket:ST-2564463-KEQALWiffaEUa2hnCEk0-auth
+12/08/2014 - 16:55:08 || yk2chbmuhevklebaqqiyopbf || ticket:ST-2564502-jWvUJfxWP9ehYdbdOhnx-auth
+12/08/2014 - 16:56:54 || e054xofua2iu0mmgbsgt1j55 || ticket:ST-2564550-caQTeSl5oItm2fml2fUf-auth
+12/08/2014 - 16:58:01 || nrjdo5453v1ehd55x0h3qt55 || ticket:ST-2564587-biIpkUQyOwDGUcufOn0R-auth
+12/08/2014 - 16:58:27 || 4fagvl4501fkaxnye1fl1e55 || ticket:ST-2564598-ve4rew3cvIiaZYcVfrDm-auth
+12/08/2014 - 17:00:08 || 3s4b2w55kpmmxr55rl1o5u55 || ticket:ST-2564630-y3UtagcbRszxlg4Bh1O4-auth
+12/08/2014 - 17:00:30 || z31fik55oxbiji455uolwm45 || ticket:ST-2564638-HkCcvqm7PGvwjSRcoaoD-auth
+12/08/2014 - 17:03:44 || nqjjl455qvngspqu0hwis445 || ticket:ST-2564746-UfbyI0g6AJaygIUGchph-auth
+12/08/2014 - 17:05:27 || e2tokcerrk4any451owu1xex || ticket:ST-2564782-ioPsbTJomycAyvPuRydW-auth
+12/08/2014 - 17:13:06 || mlunov45hf3wtwftqp5mn345 || ticket:ST-2565015-PXz3O7dI9pb0g7fEI3OO-auth
+12/08/2014 - 17:14:45 || lcrzxs55d2klqe55gnakws55 || ticket:ST-2565053-xTAKxajPop1ND4UI3fLW-auth
+12/08/2014 - 17:27:36 || y5kur4fm0j3gpq455n5l55uw || ticket:ST-2565333-nrgeCR3tYivyKP4JkSIm-auth
+12/08/2014 - 17:27:39 || iqfg4o45pup1ss55b2fft4fz || ticket:ST-2565338-o1Blfj0eb47eEPV7kFT0-auth
+12/08/2014 - 17:28:00 || wuy3o0555pdac4npziv1arq4 || ticket:ST-2565355-MggNhMvKlCq3rpKxdaPt-auth
+12/08/2014 - 17:28:37 || eye0i355uelvux45le4vqj55 || ticket:ST-2565377-1ebns6XycpCgsIAj5c0q-auth
+12/08/2014 - 17:29:38 || p5vqy4bjiltyfn455gg4nk2i || ticket:ST-2565403-wHNmaOOzv79z1k6g3dcV-auth
+12/08/2014 - 17:32:56 || unrovafeaw5lcc45jrmi2245 || ticket:ST-2565478-NloGelErIVmAUK0OqF50-auth
+12/08/2014 - 17:33:43 || vlhlng55jndywirqfxxqlly1 || ticket:ST-2565495-3QU27PZqUP3T9Tt1P6yM-auth
+12/08/2014 - 19:03:41 || tpintbq4hqecd4v3gffvdr45 || ticket:ST-2567450-uiWoJbFWdjMa0fEOm2ff-auth
+12/08/2014 - 19:03:43 || tpintbq4hqecd4v3gffvdr45 || Response_SSO:<cas:serviceResponse xmlns:cas='http://www.yale.edu/tp/cas'>
+	<cas:authenticationSuccess>
+		<cas:user>84919438389</cas:user>
+
+
+	</cas:authenticationSuccess>
+</cas:serviceResponse>
+||Count2

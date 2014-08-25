@@ -1,0 +1,98 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<publishData>
+  <publishProfile publishUrl="D:\Publish\FamousMan\Web" deleteExistingFiles="True" ftpAnonymousLogin="False" ftpPassiveMode="True" msdeploySite="" msdeploySiteID="" msdeployRemoteSitePhysicalPath="" msdeployAllowUntrustedCertificate="False" msdeploySkipExtraFilesOnServer="True" msdeployMarkAsApp="False" profileName="Profile1" publishMethod="FileSystem" replaceMatchingFiles="False" userName="" savePWD="False" userPWD="" SelectedForPublish="True">
+    <file relUrl="Page/Guide.ashx" publishTime="08/10/2014 21:42:08" />
+    <file relUrl="Default.aspx" publishTime="06/06/2013 10:03:59" />
+    <file relUrl="Page/Rule.ashx" publishTime="08/10/2014 21:42:27" />
+    <file relUrl="Templates/lien-he.html" publishTime="08/10/2014 21:09:28" />
+    <file relUrl="Page/faq.ashx" publishTime="08/10/2014 21:48:48" />
+    <file relUrl="bin/DotNetCasClient.dll" publishTime="06/23/2014 14:47:09" />
+    <file relUrl="images/images_hoidap.png" publishTime="08/10/2014 21:09:09" />
+    <file relUrl="bin/MyConnect.dll" publishTime="07/10/2014 10:22:35" />
+    <file relUrl="images/bg_content.png" publishTime="08/10/2014 21:09:09" />
+    <file relUrl="bin/MyLoad.dll" publishTime="08/18/2014 12:24:49" />
+    <file relUrl="Templates/the-le-giai-thuong.html" publishTime="08/10/2014 21:09:28" />
+    <file relUrl="Web.config" publishTime="08/18/2014 14:10:12" />
+    <file relUrl="bin/MyConnect.pdb" publishTime="07/10/2014 10:22:35" />
+    <file relUrl="images/nhan dien nguoi noi tiengoption 2.jpg" publishTime="08/10/2014 21:09:10" />
+    <file relUrl="Templates/Static/Home.htm" publishTime="08/10/2014 21:34:33" />
+    <file relUrl="Templates/Static/Header.htm" publishTime="08/18/2014 14:09:24" />
+    <file relUrl="images/bg_home.jpg" publishTime="08/10/2014 21:09:09" />
+    <file relUrl="Scripts/Google.js" publishTime="08/18/2014 14:10:03" />
+    <file relUrl="images/logo_vinaphone.png" publishTime="08/10/2014 21:09:09" />
+    <file relUrl="Style/jquery.jscrollpane.css" publishTime="08/10/2014 21:09:19" />
+    <file relUrl="Templates/Static/faq.htm" publishTime="08/10/2014 21:37:11" />
+    <file relUrl="Templates/Static/Service.htm" publishTime="08/12/2014 16:49:25" />
+    <file relUrl="bin/Newtonsoft.Json.xml" publishTime="06/08/2012 23:01:36" />
+    <file relUrl="bin/AntiXSSLibrary.xml" publishTime="01/11/2012 08:46:14" />
+    <file relUrl="Scripts/jquery.jscrollpane.min.js" publishTime="08/10/2014 21:09:01" />
+    <file relUrl="Page/Home.ashx" publishTime="08/10/2014 21:28:40" />
+    <file relUrl="images/nhan dien nguoi noi tieng.jpg" publishTime="08/10/2014 21:09:09" />
+    <file relUrl="Scripts/jquery.mousewheel.js" publishTime="08/10/2014 21:09:01" />
+    <file relUrl="Templates/huong-dan-cach-choi.html" publishTime="08/10/2014 21:09:28" />
+    <file relUrl="bin/Newtonsoft.Json.pdb" publishTime="06/08/2012 23:01:36" />
+    <file relUrl="bin/MyBase.xml" publishTime="07/10/2014 10:22:36" />
+    <file relUrl="bin/MySetting.dll" publishTime="08/15/2014 16:59:02" />
+    <file relUrl="Page/Dereg.ashx" publishTime="08/13/2014 17:51:37" />
+    <file relUrl="Templates/Static/Footer.htm" publishTime="08/10/2014 22:01:02" />
+    <file relUrl="Templates/Static/Note.htm" publishTime="08/13/2014 18:23:10" />
+    <file relUrl="images/dang_ky_ngay.png" publishTime="08/12/2014 16:12:16" />
+    <file relUrl="bin/MyBase.pdb" publishTime="07/10/2014 10:22:36" />
+    <file relUrl="Templates/Static/Rule.htm" publishTime="08/10/2014 21:40:44" />
+    <file relUrl="Templates/Static/Contact.htm" publishTime="08/10/2014 21:41:49" />
+    <file relUrl="images/Huy.png" publishTime="08/13/2014 17:54:56" />
+    <file relUrl="Scripts/Begin.js" publishTime="08/18/2014 14:10:03" />
+    <file relUrl="Notify.ashx" publishTime="08/13/2014 18:00:50" />
+    <file relUrl="Templates/Service/Reg_Invalid.htm" publishTime="08/12/2014 17:11:54" />
+    <file relUrl="Style/style.css" publishTime="08/13/2014 18:19:34" />
+    <file relUrl="VNPLogin.aspx" publishTime="08/12/2014 16:23:15" />
+    <file relUrl="bin/FiftyOne.Foundation.xml" publishTime="02/11/2011 08:51:37" />
+    <file relUrl="images/bg_huongdancachchoi.png" publishTime="08/10/2014 21:09:09" />
+    <file relUrl="Scripts/jquery.min.js" publishTime="08/10/2014 21:09:01" />
+    <file relUrl="Templates/Service/Reg_Exist.htm" publishTime="08/13/2014 17:54:59" />
+    <file relUrl="images/nhan dien nguoi noi tiengoption4.jpg" publishTime="08/10/2014 21:09:10" />
+    <file relUrl="bin/MyFamousMan.pdb" publishTime="08/18/2014 12:24:47" />
+    <file relUrl="images/bg_footer.jpg" publishTime="08/10/2014 21:09:09" />
+    <file relUrl="Page/Service.ashx" publishTime="08/10/2014 21:42:48" />
+    <file relUrl="images/cattiensa.png" publishTime="08/10/2014 21:09:09" />
+    <file relUrl="bin/MyWeb.dll" publishTime="08/18/2014 14:10:11" />
+    <file relUrl="bin/MySql.Data.dll" publishTime="08/13/2010 11:59:01" />
+    <file relUrl="images/nhan dien nguoi noi tiengoption4 .jpg" publishTime="08/10/2014 21:09:10" />
+    <file relUrl="bin/UrlRewritingNet.UrlRewriter.dll" publishTime="03/20/2012 09:48:35" />
+    <file relUrl="images/bg_nav.jpg" publishTime="08/10/2014 21:09:09" />
+    <file relUrl="bin/MyWeb.pdb" publishTime="08/18/2014 14:10:10" />
+    <file relUrl="bin/MyLoad.pdb" publishTime="08/18/2014 12:24:49" />
+    <file relUrl="Page/Contact.ashx" publishTime="08/10/2014 21:42:19" />
+    <file relUrl="Templates/Static/Guide.htm" publishTime="08/10/2014 21:39:07" />
+    <file relUrl="Templates/Static/Winner.htm" publishTime="08/10/2014 21:41:27" />
+    <file relUrl="bin/DotNetCasClient.pdb" publishTime="06/23/2014 14:47:09" />
+    <file relUrl="images/icon_huongdanchoi.png" publishTime="08/10/2014 21:09:09" />
+    <file relUrl="bin/Newtonsoft.Json.dll" publishTime="06/08/2012 23:01:36" />
+    <file relUrl="bin/MyFamousMan.dll" publishTime="08/18/2014 12:24:47" />
+    <file relUrl="images/nhandiennguoinoitieng.png" publishTime="08/10/2014 21:09:10" />
+    <file relUrl="Templates/Service/Reg_Note.htm" publishTime="08/12/2014 17:20:04" />
+    <file relUrl="Templates/khach-hang-trung-thuong.html" publishTime="08/10/2014 21:09:28" />
+    <file relUrl="bin/AntiXSSLibrary.dll" publishTime="01/11/2012 08:54:56" />
+    <file relUrl="bin/MyBase.dll" publishTime="07/10/2014 10:22:36" />
+    <file relUrl="images/index1.jpg" publishTime="08/10/2014 21:09:09" />
+    <file relUrl="bin/DotNetCasClient.xml" publishTime="06/23/2014 14:47:09" />
+    <file relUrl="Page/Winner.ashx" publishTime="08/10/2014 21:42:34" />
+    <file relUrl="images/icon_home.png" publishTime="08/10/2014 21:09:09" />
+    <file relUrl="Page/Reg.ashx" publishTime="08/12/2014 16:25:28" />
+    <file relUrl="Templates/hoi-dap.html" publishTime="08/10/2014 21:09:28" />
+    <file relUrl="Templates/index.html" publishTime="08/10/2014 21:09:28" />
+    <file relUrl="Global.asax" publishTime="07/10/2014 11:42:56" />
+    <file relUrl="Templates/Static/Header_Sub.htm" publishTime="08/10/2014 21:22:23" />
+    <file relUrl="bin/MyUtility.dll" publishTime="08/10/2014 22:14:06" />
+    <file relUrl="Page/Accept.ashx" publishTime="08/12/2014 16:41:30" />
+    <file relUrl="bin/MyConnect.xml" publishTime="07/10/2014 10:22:35" />
+    <file relUrl="bin/FiftyOne.Foundation.dll" publishTime="02/11/2011 08:51:37" />
+    <file relUrl="Templates/thong-tin-dich-vu.html" publishTime="08/10/2014 21:09:28" />
+    <file relUrl="bin/MySetting.pdb" publishTime="08/15/2014 16:59:02" />
+    <file relUrl="bin/FiftyOne.Foundation.pdb" publishTime="02/11/2011 08:51:37" />
+    <file relUrl="bin/MyUtility.pdb" publishTime="08/10/2014 22:14:06" />
+    <file relUrl="Templates/Service/Reg_NotExist.htm" publishTime="08/12/2014 17:18:45" />
+    <file relUrl="images/nhan dien nguoi noi tiengoption 3.jpg" publishTime="08/10/2014 21:09:10" />
+    <file relUrl="bin/MyUtility.xml" publishTime="08/10/2014 22:14:06" />
+  </publishProfile>
+</publishData>

@@ -1,0 +1,250 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<title>Khách hàng trúng thưởng</title>
+<link rel="icon" href="images/favicon.ico" type="image/x-icon" />
+<link rel="shortcut icon" href="images/favicon.ico" type="image/x-icon" />
+<link href="css/style.css" rel="stylesheet" type="text/css" />
+<link type="text/css" href="css/jquery.jscrollpane.css" rel="stylesheet" media="all" />
+<script type="text/javascript" src="js/jquery.min.js"></script>
+<script type="text/javascript" src="js/jquery.mousewheel.js"></script>
+<script type="text/javascript" src="js/jquery.jscrollpane.min.js"></script>
+<script type="text/javascript">
+		$(function()
+		{
+			var bars = '.jspHorizontalBar, .jspVerticalBar';
+		
+			$('.scroll-pane').bind('jsp-initialised', function (event, isScrollable) {
+				
+				//hide the scroll bar on first load hide or show
+				$(this).find(bars).show();
+			
+			}).jScrollPane().hover(
+			
+				//hide show scrollbar
+				function () {
+					$(this).find(bars).stop().fadeTo('fast', 1);// 0.9
+				},
+				function () {
+					$(this).find(bars).stop().fadeTo('fast', 1);// 0
+				}
+
+			);				
+
+		});
+</script>
+</head>
+<body>
+<table width="100%" border="0" cellspacing="0" cellpadding="0">
+  <tr>
+    <td align="center">
+    	<div id="container">
+        	<!--header-->
+        	<div id="header">
+    		  <div id="header_in">
+                	<div class="banner">
+                    	<div class="banner_in">
+                    	<div class="logo">
+                        	<a href="index.html"><img src="images/logo_vinaphone.png" alt="" title="" /></a>
+                        </div>
+                        	<div class="top_bar">
+                            	<ul style="margin-left:8px;">
+                                	<li><a href="#">Đăng ký dịch vụ</a></li>
+                                    <li>|</li>
+                                    <li><a href="#">Tra cước</a></li>
+                                    <li>|</li>
+                                    <li><a href="#">Chọn số</a></li>
+                                    <li>|</li>
+                                    <li><a href="#">Chăm sóc khách hàng</a></li>
+                                    <li>|</li>
+                                    <li><a href="#">Trang cá nhân</a></li>
+                                    <li>|</li>
+                                    <li><a href="#">Đăng nhập</a></li>
+                                    <li>|</li>
+                                    <li><a href="#">Đăng ký</a></li>
+                                </ul>
+                            </div>
+            			</div>
+                    </div>	
+           		  <div class="h_nav">
+                   	  <div class="navigation">
+                          <div class="nav">
+                              <ul style="margin-left:40px;">
+                               		  <li><a href="index.html" class="select"><img src="images/icon_home.png" alt="" title="" class="icon" /></a></li>
+                                      <li><a href="thong-tin-dich-vu.html">Thông tin dịch vụ</a></li>
+                                      <li><a href="huong-dan-cach-choi.html">Hướng dẫn cách chơi</a></li>
+                                      <li><a href="khach-hang-trung-thuong.html">Khách hàng trúng thưởng</a></li>
+                                      <li><a href="the-le-giai-thuong.html">Thể lệ giải thưởng</a></li>
+                                      <li><a href="hoi-dap.html">Hỏi đáp</a></li>
+                                      <li><a href="lien-he.html">Liên hệ</a></li>
+                              </ul>
+                          </div>
+                   	  </div>
+                  </div>
+              </div>
+            </div>
+            <!--home-->
+            <div id="home">
+            	<div id="home_in">
+                	<div class="huongdan_choi">
+                    	<div class="box_huongdan_choi">
+                        	
+                            <div class="noidung_huongdan_choi">
+                            	<div class="noidung_huongdan_choi_in scroll-pane">
+                                	<h1 class="left">KHÁCH HÀNG TRÚNG THƯỞNG</h1>
+                                	<div class="box_khachhang">
+                                    	<div class="info_khachhang">
+                                        	<ul>
+                                            	<li class="stt">STT</li>
+                                                <li class="hoten">Họ tên</li>
+                                            	<li class="dienthoai">Sđt</li>
+                                                <li class="diachi">Địa chỉ</li>
+                                                <li class="giaithuong">Giải thưởng</li>
+                                            </ul>
+                                        </div>
+									    
+                                       <div class="khachhang">
+                                            	<li class="stt"><span class="c">1</span></li>
+                                                <li class="hoten">Vũ Bá Luân</li>
+                                            	<li class="dienthoai">849712xxx</li>
+                                                <li class="diachi">Gia viễn - Ninh Bình</li>
+                                                <li class="giaithuong">01/07/2014</li>
+                                        </div>
+										<div class="khachhang">
+                                            	<li class="stt"><span class="c">2</span></li>
+                                                <li class="hoten">Lê thanh Nhàn</li>
+                                            	<li class="dienthoai">841243517xxx</li>
+                                                <li class="diachi">Thiệu hóa - Thanh Hóa</li>
+                                                <li class="giaithuong">01/07/2014</li>
+                                        </div>
+										<div class="khachhang">
+                                            	<li class="stt"><span class="c">3</span></li>
+                                                <li class="hoten">Bùi hồng Thắng</li>
+                                            	<li class="dienthoai">841233631xxx</li>
+                                                <li class="diachi">Gia Viễn - Ninh Bình</li>
+                                                <li class="giaithuong">01/07/2014</li>
+                                        </div>
+										<div class="khachhang">
+                                            	<li class="stt"><span class="c">4</span></li>
+                                                <li class="hoten">Nguyễn ngọc Trang</li>
+                                            	<li class="dienthoai">84902178xxx</li>
+                                                <li class="diachi">Cầu Giấy - Hà Nội</li>
+                                                <li class="giaithuong">01/07/2014</li>
+                                        </div>
+										<div class="khachhang">
+                                            	<li class="stt"><span class="c">5</span></li>
+                                                <li class="hoten">Vũ Bá Hải</li>
+                                            	<li class="dienthoai">84904192xxx</li>
+                                                <li class="diachi">Cầu Giấy - Hà Nội</li>
+                                                <li class="giaithuong">01/07/2014</li>
+                                        </div>
+										<div class="khachhang">
+                                            	<li class="stt"><span class="c">6</span></li>
+                                                <li class="hoten">Lê thị Nga</li>
+                                            	<li class="dienthoai">84945305xxx</li>
+                                                <li class="diachi">Cầu Giấy - Hà Nội</li>
+                                                <li class="giaithuong">01/07/2014</li>
+                                        </div>
+										<div class="khachhang">
+                                            	<li class="stt"><span class="c">7</span></li>
+                                                <li class="hoten">Dương Công Mười</li>
+                                            	<li class="dienthoai">84942212xxx</li>
+                                                <li class="diachi">Bắc Ninh</li>
+                                                <li class="giaithuong">01/07/2014</li>
+                                        </div>
+										<div class="khachhang">
+                                            	<li class="stt"><span class="c">8</span></li>
+                                                <li class="hoten">Lê Văn Thịnh</li>
+                                            	<li class="dienthoai">84912966xxx</li>
+                                                <li class="diachi">Hồ Tùng Mậu, Hà Nội</li>
+                                                <li class="giaithuong">01/07/2014</li>
+                                        </div>
+										<div class="khachhang">
+                                            	<li class="stt"><span class="c">9</span></li>
+                                                <li class="hoten">Vũ Bảo Lâm</li>
+                                            	<li class="dienthoai">84913030xxx</li>
+                                                <li class="diachi">Thanh Xuân, Hà Nội</li>
+                                                <li class="giaithuong">01/07/2014</li>
+                                        </div>
+										<div class="khachhang">
+                                            	<li class="stt"><span class="c">10</span></li>
+                                                <li class="hoten">Vũ Cát Tiên</li>
+                                            	<li class="dienthoai">84948971xxx</li>
+                                                <li class="diachi">Ninh Bình</li>
+                                                <li class="giaithuong">01/07/2014</li>
+                                        </div>
+									    <div class="khachhang">
+                                            	<li class="stt"><span class="c">11</span></li>
+                                                <li class="hoten">Trịnh thị kim Oanh</li>
+                                            	<li class="dienthoai">84942977xxx</li>
+                                                <li class="diachi">Cầu Diễn - Hà Nội</li>
+                                                <li class="giaithuong">01/07/2014</li>
+                                        </div>
+										<div class="khachhang">
+                                            	<li class="stt"><span class="c">12</span></li>
+                                                <li class="hoten">Lưu bá Vượng</li>
+                                            	<li class="dienthoai">84942697xxx</li>
+                                                <li class="diachi">Hoàn Kiếm, Hà Nội</li>
+                                                <li class="giaithuong">01/07/2014</li>
+                                        </div>
+										<div class="khachhang">
+                                            	<li class="stt"><span class="c">13</span></li>
+                                                <li class="hoten">Vũ Tuấn Anh</li>
+                                            	<li class="dienthoai">84917808xxx</li>
+                                                <li class="diachi">Phú Khánh - Ninh Bình</li>
+                                                <li class="giaithuong">01/07/2014</li>
+                                        </div>
+										
+                                	</div>
+                                </div>
+                                
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <!--footer-->
+            <div id="footer">
+            	<div id="footer_in">
+                	<div class="add_footer">
+                    	<div class="logo_footer">
+                        	<a href="index.html"><img src="images/logo_vinaphone.png" alt="" title="" /></a>
+                        </div>
+                        <div class="add_cty">
+                        	<div class="nav_footer">
+                                <ul>
+                                    <li><a href="index.html">Trang chủ</a></li>
+                                    <li>|</li>
+                                    <li><a href="#">Giới thiệu</a></li>
+                                    <li>|</li>
+                                    <li><a href="#">Tin tức</a></li>
+                                    <li>|</li>
+                                    <li><a href="#">Dịch vụ</a></li>
+                                    <li>|</li>
+                                    <li><a href="#">Thiết bị Gói cước</a></li>
+                                    <li>|</li>
+                                    <li><a href="#">Hỗ trợ</a></li>
+                                    <li>|</li>
+                                    <li><a href="#">Liên hệ</a></li>
+                                    <li>|</li>
+                                    <li><a href="#">English</a></li>
+                                    
+                                </ul>
+                        	</div>
+                            <div class="copyright">
+                            	<li>Phát triển bởi VinaPhone 2005-2014. Bản quyền đã đăng ký.</li>
+                                <li>Giấy phép số: 337/GP-BC do Bộ Thông tin - Truyền thông cấp ngày 10/11/2006.</li>
+                            </div>
+                        </div>
+                       
+                    </div>
+                </div>
+            </div>
+        </div>
+    </td>
+  </tr>
+</table>
+
+</body>
+</html>

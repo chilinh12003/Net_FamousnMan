@@ -1,0 +1,22 @@
+﻿03/08/2014 - 21:05:45 || vrtywmatxxiuhc55qbphh0vp || d:\projects\FamousMan\Source\MyAdmin\Admin_News\Ad_Question.aspx || __DataBind__control4 || 79 || 13 || DataBinding: 'System.Data.DataRowView' does not contain a property with the name 'QuestionTypeName'. || Có lỗi xảy ra trong quá trình phân trang! || Chilinh
+03/08/2014 - 21:05:45 || vrtywmatxxiuhc55qbphh0vp || D:\Projects\FamousMan\Source\MyAdmin\Admin_Control\Admin_Paging.ascx.cs || BindDa || 164 || 13 || DataBinding: 'System.Data.DataRowView' does not contain a property with the name 'QuestionTypeName'. || Có lỗi xảy ra trong quá trình phân trang! || Chilinh
+03/08/2014 - 21:05:45 || vrtywmatxxiuhc55qbphh0vp || D:\Projects\FamousMan\Source\MyAdmin\Admin_Control\Admin_Paging.ascx.cs || lbtn_First_Click || 174 || 17 || DataBinding: 'System.Data.DataRowView' does not contain a property with the name 'QuestionTypeName'. || Có lỗi xảy ra trong quá trình phân trang! || Chilinh
+-----------------------------------------------------------
+03/08/2014 - 21:35:33 || vrtywmatxxiuhc55qbphh0vp || D:\Projects\FamousMan\Source\MyAdmin\Admin_News\Ad_Suggest.aspx.cs || Admin_Paging1_GetTotalPage_Callback_Change || 145 || 9 || @SearchContent is not a parameter for procedure Sp_Suggest_Search. || Có lỗi xảy ra trong quá trình tải dữ liệu! || Chilinh
+03/08/2014 - 21:35:33 || vrtywmatxxiuhc55qbphh0vp || D:\Projects\FamousMan\Source\MyAdmin\Admin_Control\Admin_Paging.ascx.cs || ReGetTotalPage || 127 || 17 || @SearchContent is not a parameter for procedure Sp_Suggest_Search. || Có lỗi xảy ra trong quá trình tải dữ liệu! || Chilinh
+03/08/2014 - 21:35:33 || vrtywmatxxiuhc55qbphh0vp || D:\Projects\FamousMan\Source\MyAdmin\Admin_Control\Admin_Paging.ascx.cs || Page_Load || 104 || 21 || @SearchContent is not a parameter for procedure Sp_Suggest_Search. || Có lỗi xảy ra trong quá trình tải dữ liệu! || Chilinh
+-----------------------------------------------------------
+03/08/2014 - 21:35:38 || vrtywmatxxiuhc55qbphh0vp || D:\Projects\FamousMan\Source\MyAdmin\Admin_News\Ad_Suggest.aspx.cs || Admin_Paging1_GetTotalPage_Callback_Change || 145 || 9 || @SearchContent is not a parameter for procedure Sp_Suggest_Search. || Có lỗi xảy ra trong quá trình tải dữ liệu! || Chilinh
+03/08/2014 - 21:35:38 || vrtywmatxxiuhc55qbphh0vp || D:\Projects\FamousMan\Source\MyAdmin\Admin_Control\Admin_Paging.ascx.cs || ReGetTotalPage || 127 || 17 || @SearchContent is not a parameter for procedure Sp_Suggest_Search. || Có lỗi xảy ra trong quá trình tải dữ liệu! || Chilinh
+03/08/2014 - 21:35:38 || vrtywmatxxiuhc55qbphh0vp || D:\Projects\FamousMan\Source\MyAdmin\Admin_Control\Admin_Paging.ascx.cs || Page_Load || 104 || 21 || @SearchContent is not a parameter for procedure Sp_Suggest_Search. || Có lỗi xảy ra trong quá trình tải dữ liệu! || Chilinh
+-----------------------------------------------------------
+03/08/2014 - 21:40:49 || vrtywmatxxiuhc55qbphh0vp || D:\Projects\FamousMan\Source\MyAdmin\Admin_News\Ad_Suggest_Edit.aspx.cs || Save || 240 || 9 || Cannot insert the value NULL into column 'OrderNumber', table 'FamousMan.dbo.Suggest'; column does not allow nulls. INSERT fails.
+The statement has been terminated. || Có lỗi xảy ra trong quá trình lưu dữ liệu! || Chilinh
+03/08/2014 - 21:40:49 || vrtywmatxxiuhc55qbphh0vp || D:\Projects\FamousMan\Source\MyAdmin\Admin_News\Ad_Suggest_Edit.aspx.cs || lbtn_Save_Click || 246 || 17 || Cannot insert the value NULL into column 'OrderNumber', table 'FamousMan.dbo.Suggest'; column does not allow nulls. INSERT fails.
+The statement has been terminated. || Có lỗi xảy ra trong quá trình lưu dữ liệu! || Chilinh
+-----------------------------------------------------------
+03/08/2014 - 21:43:58 || vrtywmatxxiuhc55qbphh0vp || D:\Projects\FamousMan\Source\MyAdmin\Admin_News\Ad_Suggest_Edit.aspx.cs || Save || 240 || 9 || Cannot insert the value NULL into column 'IsActive', table 'FamousMan.dbo.Suggest'; column does not allow nulls. INSERT fails.
+The statement has been terminated. || Có lỗi xảy ra trong quá trình lưu dữ liệu! || Chilinh
+03/08/2014 - 21:43:58 || vrtywmatxxiuhc55qbphh0vp || D:\Projects\FamousMan\Source\MyAdmin\Admin_News\Ad_Suggest_Edit.aspx.cs || lbtn_Save_Click || 246 || 17 || Cannot insert the value NULL into column 'IsActive', table 'FamousMan.dbo.Suggest'; column does not allow nulls. INSERT fails.
+The statement has been terminated. || Có lỗi xảy ra trong quá trình lưu dữ liệu! || Chilinh
+-----------------------------------------------------------

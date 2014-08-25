@@ -1,0 +1,168 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<title>Nhận diện người nổi tiếng</title>
+<link rel="icon" href="images/favicon.ico" type="image/x-icon" />
+<link rel="shortcut icon" href="images/favicon.ico" type="image/x-icon" />
+<link href="css/style.css" rel="stylesheet" type="text/css" />
+<link type="text/css" href="css/jquery.jscrollpane.css" rel="stylesheet" media="all" />
+<script type="text/javascript" src="js/jquery.min.js"></script>
+<script type="text/javascript" src="js/jquery.mousewheel.js"></script>
+<script type="text/javascript" src="js/jquery.jscrollpane.min.js"></script>
+<script type="text/javascript" src="http://ajax.googleapis.com/ajax/libs/jquery/1.8.2/jquery.min.js"></script>
+<script type="text/javascript">
+		$(function()
+		{
+			var bars = '.jspHorizontalBar, .jspVerticalBar';
+		
+			$('.scroll-pane').bind('jsp-initialised', function (event, isScrollable) {
+				
+				//hide the scroll bar on first load hide or show
+				$(this).find(bars).show();
+			
+			}).jScrollPane().hover(
+			
+				//hide show scrollbar
+				function () {
+					$(this).find(bars).stop().fadeTo('fast', 1);// 0.9
+				},
+				function () {
+					$(this).find(bars).stop().fadeTo('fast', 1);// 0
+				}
+
+			);				
+
+		});
+</script>
+</head>
+<body>
+<table width="100%" border="0" cellspacing="0" cellpadding="0">
+  <tr>
+    <td align="center">
+    	<div id="container">
+        	<!--header-->
+        	<div id="header">
+    		  <div id="header_in">
+                	<div class="banner">
+                    	<div class="banner_in">
+                    	<div class="logo">
+                        	<a href="index.html"><img src="images/logo_vinaphone.png" alt="" title="" /></a>
+                        </div>
+                        	<div class="top_bar">
+                            	<ul style="margin-left:8px;">
+                                	<li><a href="#">Đăng ký dịch vụ</a></li>
+                                    <li>|</li>
+                                    <li><a href="#">Tra cước</a></li>
+                                    <li>|</li>
+                                    <li><a href="#">Chọn số</a></li>
+                                    <li>|</li>
+                                    <li><a href="#">Chăm sóc khách hàng</a></li>
+                                    <li>|</li>
+                                    <li><a href="#">Trang cá nhân</a></li>
+                                    <li>|</li>
+                                    <li><a href="#">Đăng nhập</a></li>
+                                    <li>|</li>
+                                    <li><a href="#">Đăng ký</a></li>
+                                </ul>
+                            </div>
+            			</div>
+                    </div>	
+           		  <div class="h_nav">
+                   	  <div class="navigation">
+                          <div class="nav">
+                              <ul style="margin-left:40px;">
+                               		  <li><a href="index.html" class="select"><img src="images/icon_home.png" alt="" title="" class="icon" /></a></li>
+                                      <li><a href="thong-tin-dich-vu.html">Thông tin dịch vụ</a></li>
+                                      <li><a href="huong-dan-cach-choi.html">Hướng dẫn cách chơi</a></li>
+                                      <li><a href="khach-hang-trung-thuong.html">Khách hàng trúng thưởng</a></li>
+                                      <li><a href="the-le-giai-thuong.html">Thể lệ giải thưởng</a></li>
+                                      <li><a href="hoi-dap.html">Hỏi đáp</a></li>
+                                      <li><a href="lien-he.html">Liên hệ</a></li>
+                              </ul>
+                          </div>
+                   	  </div>
+                  </div>
+              </div>
+            </div>
+            <!--home-->
+            <div id="home">
+            	<div id="home_in">
+                	<div class="huongdan_choi">
+                    	<div class="box_huongdan_choi">
+                        	
+                            <div class="noidung_huongdan_choi">
+                            	<div class="noidung_huongdan_choi_in scroll-pane">
+                                	<h1 class="left">HƯỚNG DẪN CÁCH CHƠI</h1>
+                                    <li class="noidung_choi">
+-  Mỗi ngày sẽ có một phiên dự đoán tên người nổi tiếng, phiên dự đoán bắt đầu từ 08h00 đến 23h59’ hàng ngày. Trước khi bắt đầu mỗi phiên dự đoán, khách hàng sẽ nhận được bản tin SMS mời khách hàng tham gia dự đoán tên một người nổi tiếng và hướng dẫn khách hàng mua dữ kiện thông tin để có cơ sở dự đoán.</br>
+<strong>-</strong> Để mua dữ kiện thông tin, khách hàng soạn tin MUA gửi 1566. </br>
+<strong>+</strong> Tương ứng với mỗi thao tác mua dữ kiện thành công, khách hàng sẽ nhận được một thông tin về người nổi tiếng qua bản tin SMS. </br>
+<strong>+</strong> Giá trị các dữ kiện cung cấp sau mỗi lần khách hàng thao tác mua thành công là ngang nhau và đều là các cơ sở thông tin giúp cho khách hàng dự đoán đúng tên người nổi tiếng.</br>
+<strong>+</strong> Khác nhau</br>
+<strong>+</strong> Trong mỗi phiên dự đoán, khách hàng được thực hiện tối đa 20 thao tác mua dữ kiện thông tin và tương ứng được nhận được 20 nội dung thông tin khác nhau về người nổi tiếng.</br>
+<strong>+</strong> Thao tác mua chỉ có hiệu lực trong thời gian hiệu lực của phiên dự đoán.</br>
+<strong>-</strong> Để dự đoán tên người nổi tiếng, khách hàng soạn tin DD_[Tên Người nổi tiếng] gửi 1566; trong đó:</br>
+<strong>»</strong> Dấu “_” trong cú pháp tin nhắn tượng trưng cho dấu cách;</br>
+<strong>»</strong> Tên người nổi tiếng trong cú pháp tin nhắn: viết không dấu, viết liền hoặc viết cách, có thể viết thường hoặc viết hoa.</br>
+<strong>+</strong> Thao tác dự đoán chỉ có hiệu lực trong thời gian hiệu lực của phiên dự đoán và sau khi khách hàng đã thực hiện ít nhất 01 thao tác mua dữ kiện thành công.</br>
+<strong>+</strong> Trong mỗi phiên dự đoán, khách hàng được thực hiện tối đa 20 thao tác dự đoán tên người nổi tiếng.</br>
+<strong>+</strong> Trường hợp khách hàng dự đoán đúng:</br>
+<strong>»</strong> Khách hàng được coi là dự đoán đúng khi dự đoán trùng khớp chính xác 100% với tên người nổi tiếng của dịch vụ.</br>
+<strong>»</strong> Khách hàng sẽ nhận được bản tin SMS thông báo kết quả dự đoán chính xác và khách hàng sẽ không được tiếp tục tham gia dự đoán trong phiên dự đoán đó nữa.</br>
+<strong>+</strong> Trường hợp khách hàng dự đoán sai, khách hàng phải thực hiện thao tác mua thêm dữ kiện mới được quyền dự đoán lại tên người nổi tiếng.
+<br/>
+									</li>
+									
+                                    
+                            	</div>
+                                
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <!--footer-->
+            <div id="footer">
+            	<div id="footer_in">
+                	<div class="add_footer">
+                    	<div class="logo_footer">
+                        	<a href="index.html"><img src="images/logo_vinaphone.png" alt="" title="" /></a>
+                        </div>
+                        <div class="add_cty">
+                        	<div class="nav_footer">
+                                <ul>
+                                    <li><a href="index.html">Trang chủ</a></li>
+                                    <li>|</li>
+                                    <li><a href="#">Giới thiệu</a></li>
+                                    <li>|</li>
+                                    <li><a href="#">Tin tức</a></li>
+                                    <li>|</li>
+                                    <li><a href="#">Dịch vụ</a></li>
+                                    <li>|</li>
+                                    <li><a href="#">Thiết bị Gói cước</a></li>
+                                    <li>|</li>
+                                    <li><a href="#">Hỗ trợ</a></li>
+                                    <li>|</li>
+                                    <li><a href="#">Liên hệ</a></li>
+                                    <li>|</li>
+                                    <li><a href="#">English</a></li>
+                                    
+                                </ul>
+                        	</div>
+                            <div class="copyright">
+                            	<li>Phát triển bởi VinaPhone 2005-2014. Bản quyền đã đăng ký.</li>
+                                <li>Giấy phép số: 337/GP-BC do Bộ Thông tin - Truyền thông cấp ngày 10/11/2006.</li>
+                            </div>
+                        </div>
+                       
+                    </div>
+                </div>
+            </div>
+        </div>
+    </td>
+  </tr>
+</table>
+
+</body>
+</html>

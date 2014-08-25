@@ -1,0 +1,344 @@
+﻿using System;
+using System.Data;
+using System.Web;
+using System.Web.UI;
+using System.Web.UI.WebControls;
+using System.Web.UI.WebControls.WebParts;
+using System.Web.UI.HtmlControls;
+using MyUtility;
+using MyFamousMan;
+using MyFamousMan.News;
+using MyFamousMan.Service;
+
+namespace MyAdmin.Admin_News
+{
+    public partial class Ad_Suggest : System.Web.UI.Page
+    {
+        public GetRole mGetRole;
+        public int PageIndex = 1;
+
+        Suggest mSuggest = new Suggest();
+        public int QuestionID = 0;
+        private void BindCombo(int type)
+        {
+            try
+            {
+               
+            }
+            catch (Exception ex)
+            {
+                throw ex;
+            }
+        }
+
+        private void BindData()
+        {
+            Admin_Paging1.ResetLoadData();
+        }
+
+        private bool CheckPermission()
+        {
+            try
+            {
+                if (mGetRole.ViewRole == false)
+                {
+                    Response.Redirect(mGetRole.URLNotView, false);
+                    return false;
+                }
+
+                link_Add.Visible = mGetRole.AddRole;
+                link_Edit.Visible = mGetRole.EditRole;
+                lbtn_Active.Visible = mGetRole.PublishRole;
+                lbtn_UnActive.Visible = mGetRole.PublishRole;
+                lbtn_Delete.Visible = mGetRole.DeleteRole;
+
+            }
+            catch (Exception ex)
+            {
+                MyLogfile.WriteLogError(ex, true, MyNotice.AdminError.CheckPermissionError, "Chilinh");
+                return false;
+            }
+            return true;
+        }
+
+        protected void Page_Init(object sender, EventArgs e)
+        {
+            bool IsRedirect = false;
+            try
+            {
+                //Phân quyền
+                if (ViewState["Role"] == null)
+                {
+                    mGetRole = new GetRole(MySetting.AdminSetting.ListPage.Suggest, Member.MemberGroupID());
+                }
+                else
+                {
+                    mGetRole = (GetRole)ViewState["Role"];
+                }
+
+                if (!CheckPermission())
+                {
+                    IsRedirect = true;
+                }
+            }
+            catch (Exception ex)
+            {
+                MyLogfile.WriteLogError(ex, true, MyNotice.AdminError.LoadDataError, "Chilinh");
+            }
+            if (IsRedirect)
+            {
+                Response.End();
+            }
+        }
+
+        protected void Page_Load(object sender, EventArgs e)
+        {
+            try
+            {
+
+                MyAdmin.MasterPages.Admin mMaster = (MyAdmin.MasterPages.Admin)Page.Master;
+                mMaster.str_PageTitle = mGetRole.PageName;
+
+                QuestionID = Request.QueryString["QID"] == null ? 0 : int.Parse(Request.QueryString["QID"]);
+
+                if (!IsPostBack)
+                {
+                    ViewState["SortBy"] = string.Empty;
+                    BindCombo(3);
+                    BindCombo(4);
+                }
+
+                Admin_Paging1.rpt_Data = rpt_Data;
+                Admin_Paging1.GetData_Callback_Change += new MyAdmin.Admin_Control.Admin_Paging.GetData_Callback(Admin_Paging1_GetData_Callback_Change);
+                Admin_Paging1.GetTotalPage_Callback_Change += new MyAdmin.Admin_Control.Admin_Paging.GetTotalPage_Callback(Admin_Paging1_GetTotalPage_Callback_Change);
+            }
+            catch (Exception ex)
+            {
+                MyLogfile.WriteLogError(ex, true, MyNotice.AdminError.LoadDataError, "Chilinh");
+            }
+        }
+
+        int Admin_Paging1_GetTotalPage_Callback_Change()
+        {
+            try
+            {
+                int? SearchType = null;
+                string str_SearchContent = null;
+                string SortBy = ViewState["SortBy"].ToString();
+                bool? IsActive = null;
+
+                SearchType = int.Parse(sel_SearchType.Value);
+
+                str_SearchContent = tbx_Search.Value.Length < 1 ? null : MyText.ValidSearchContent(tbx_Search.Value);
+
+                if (rad_Active.Checked)
+                    IsActive = true;
+                if (rad_UnActive.Checked)
+                    IsActive = false;
+
+                return mSuggest.TotalRow(SearchType, str_SearchContent, QuestionID, IsActive);
+            }
+            catch (Exception ex)
+            {
+                throw ex;
+            }
+        }
+
+        DataTable Admin_Paging1_GetData_Callback_Change()
+        {
+            try
+            {
+                int? SearchType = null;
+                string str_SearchContent = null;
+                string SortBy = ViewState["SortBy"].ToString();
+                bool? IsActive = null;
+
+                SearchType = int.Parse(sel_SearchType.Value);
+
+                str_SearchContent = tbx_Search.Value.Length < 1 ? null : MyText.ValidSearchContent(tbx_Search.Value);
+
+                if (rad_Active.Checked)
+                    IsActive = true;
+                if (rad_UnActive.Checked)
+                    IsActive = false;
+
+                PageIndex = (Admin_Paging1.mPaging.CurrentPageIndex - 1) * Admin_Paging1.mPaging.PageSize + 1;
+
+                return mSuggest.Search(SearchType, Admin_Paging1.mPaging.BeginRow, Admin_Paging1.mPaging.EndRow, str_SearchContent, QuestionID, IsActive, SortBy);
+            }
+            catch (Exception ex)
+            {
+                throw ex;
+            }
+        }
+
+        protected void lbtn_Sort_Click(object sender, EventArgs e)
+        {
+            try
+            {
+                lbtn_Sort_1.CssClass = "Sort";
+                lbtn_Sort_2.CssClass = "Sort";
+                lbtn_Sort_3.CssClass = "Sort";
+                //lbtn_Sort_4.CssClass = "Sort";
+                //lbtn_Sort_5.CssClass = "Sort";
+                //lbtn_Sort_6.CssClass = "Sort";
+                //lbtn_Sort_7.CssClass = "Sort";
+
+                LinkButton mLinkButton = (LinkButton)sender;
+                ViewState["SortBy"] = mLinkButton.CommandArgument;
+
+                if (mLinkButton.CommandArgument.IndexOf(" ASC") >= 0)
+                {
+                    mLinkButton.CssClass = "SortActive_Up";
+                    mLinkButton.CommandArgument = mLinkButton.CommandArgument.Replace(" ASC", " DESC");
+                }
+                else
+                {
+                    mLinkButton.CssClass = "SortActive_Down";
+                    mLinkButton.CommandArgument = mLinkButton.CommandArgument.Replace(" DESC", " ASC");
+                }
+
+                BindData();
+            }
+            catch (Exception ex)
+            {
+                MyLogfile.WriteLogError(ex, true, MyNotice.AdminError.SortError, "Chilinh");
+            }
+        }
+
+        protected void lbtn_Delete_Click(object sender, EventArgs e)
+        {
+            try
+            {
+                char[] key_1 = { '|' };
+
+                string[] arr_1 = hid_ListCheckAll.Value.Split(key_1);
+
+
+                DataSet dds_Parent = new DataSet("Parent");
+                DataTable tbl_Child = new DataTable("Child");
+                DataColumn col_1 = new DataColumn("ID", typeof(int));
+                tbl_Child.Columns.Add(col_1);
+
+                for (int i = 0; i < arr_1.Length; i++)
+                {
+                    DataRow mRow = tbl_Child.NewRow();
+
+                    mRow["ID"] = int.Parse(arr_1[i]);
+
+                    tbl_Child.Rows.Add(mRow);
+                }
+                tbl_Child.AcceptChanges();
+
+                dds_Parent.Tables.Add(tbl_Child);
+                dds_Parent.AcceptChanges();
+
+                if (mSuggest.Delete(0, dds_Parent.GetXml()))
+                {
+                    #region Log member
+                    MemberLog mLog = new MemberLog();
+                    MemberLog.ActionType Action = MemberLog.ActionType.Delete;
+                    mLog.Insert("Suggest", string.Empty, dds_Parent.GetXml(), Action, true, string.Empty);
+                    #endregion
+
+                    MyMessage.ShowMessage("Xóa dữ liệu thành công.");
+                    BindData();
+                }
+                else
+                {
+                    MyMessage.ShowMessage("Xóa dữ liệu KHÔNG thành công!");
+                }
+            }
+            catch (Exception ex)
+            {
+                MyLogfile.WriteLogError(ex, true, MyNotice.AdminError.DeleteDataError, "Chilinh");
+            }
+        }
+
+        protected void btn_Search_Click(object sender, EventArgs e)
+        {
+            try
+            {
+                BindData();
+            }
+            catch (Exception ex)
+            {
+                MyLogfile.WriteLogError(ex, true, MyNotice.AdminError.SeachError, "Chilinh");
+            }
+        }
+
+        private void Active(bool IsActive)
+        {
+            try
+            {
+                char[] key_1 = { '|' };
+
+                string[] arr_1 = hid_ListCheckAll.Value.Split(key_1);
+
+                DataSet dds_Parent = new DataSet("Parent");
+                DataTable tbl_Child = new DataTable("Child");
+                DataColumn col_1 = new DataColumn("ID", typeof(int));
+                tbl_Child.Columns.Add(col_1);
+
+                for (int i = 0; i < arr_1.Length; i++)
+                {
+                    DataRow mRow = tbl_Child.NewRow();
+                    mRow["ID"] = int.Parse(arr_1[i]);
+                    tbl_Child.Rows.Add(mRow);
+                }
+                tbl_Child.AcceptChanges();
+
+                dds_Parent.Tables.Add(tbl_Child);
+                dds_Parent.AcceptChanges();
+
+                if (mSuggest.Active(0, IsActive, dds_Parent.GetXml()))
+                {
+                    #region Log Suggest
+                    MemberLog mLog = new MemberLog();
+                    MemberLog.ActionType Action = IsActive ? MemberLog.ActionType.Active : MemberLog.ActionType.InActive;
+                    mLog.Insert("Suggest", string.Empty, dds_Parent.GetXml(), Action, true, string.Empty);
+                    #endregion
+                    MyMessage.ShowMessage("Cập nhật dữ liệu thành công.");
+                    BindData();
+                }
+                else
+                {
+                    MyMessage.ShowMessage("Cập nhật dữ liệu KHÔNG thành công!");
+                }
+            }
+            catch (Exception ex)
+            {
+                throw ex;
+            }
+        }
+
+        protected void lbtn_Active_Click(object sender, EventArgs e)
+        {
+            try
+            {
+                Active(true);
+            }
+            catch (Exception ex)
+            {
+                MyLogfile.WriteLogError(ex, true, MyNotice.AdminError.ActiveError, "Chilinh");
+            }
+        }
+
+        protected void lbtn_UnActive_Click(object sender, EventArgs e)
+        {
+            try
+            {
+                Active(false);
+            }
+            catch (Exception ex)
+            {
+                MyLogfile.WriteLogError(ex, true, MyNotice.AdminError.ActiveError, "Chilinh");
+            }
+        }
+   
+     protected void lbtn_Add_Click(object sender, EventArgs e)
+        {
+            Response.Redirect("Ad_Suggest_Edit.aspx?QID=" + QuestionID.ToString());
+        }
+    }
+}
