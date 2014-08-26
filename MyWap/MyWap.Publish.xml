@@ -11,13 +11,12 @@
     <file relUrl="Page/guide.ashx" publishTime="06/05/2014 16:20:20" />
     <file relUrl="Templates/the-le-giai-thuong.html" publishTime="08/10/2014 18:56:44" />
     <file relUrl="Templates/dang-nhap.html" publishTime="08/10/2014 18:56:45" />
-    <file relUrl="Web.config" publishTime="08/14/2014 09:19:49" />
+    <file relUrl="Web.config" publishTime="08/26/2014 23:31:59" />
     <file relUrl="bin/MyConnect.pdb" publishTime="07/10/2014 10:22:35" />
     <file relUrl="vnp/accept.ashx" publishTime="06/17/2014 15:40:14" />
     <file relUrl="Templates/Static/home.htm" publishTime="08/13/2014 17:46:25" />
     <file relUrl="Templates/Static/Header.htm" publishTime="08/10/2014 20:23:46" />
     <file relUrl="Templates/dang-ky.html" publishTime="08/10/2014 18:56:44" />
-    <file relUrl="bin/MyConnect.xml" publishTime="07/10/2014 10:22:35" />
     <file relUrl="img/favicon.ico" publishTime="08/10/2014 18:53:41" />
     <file relUrl="CookiesRequired.aspx" publishTime="06/23/2014 17:02:27" />
     <file relUrl="Global.asax" publishTime="06/19/2014 11:21:55" />
@@ -26,76 +25,77 @@
     <file relUrl="Templates/khuyen-mai.html" publishTime="08/10/2014 18:56:45" />
     <file relUrl="Templates/Static/Notice_SportMillion.htm" publishTime="06/05/2014 15:35:25" />
     <file relUrl="bin/Newtonsoft.Json.xml" publishTime="06/08/2012 23:01:36" />
-    <file relUrl="bin/MySetting.dll" publishTime="08/15/2014 16:59:02" />
+    <file relUrl="bin/MySetting.dll" publishTime="08/26/2014 21:09:51" />
     <file relUrl="img/Huy.png" publishTime="08/13/2014 15:20:16" />
     <file relUrl="Templates/Static/Paging.htm" publishTime="06/06/2014 10:02:19" />
+    <file relUrl="img/dang_ky_ngay.png" publishTime="08/10/2014 18:53:41" />
     <file relUrl="Page/home.ashx" publishTime="06/05/2014 15:52:36" />
     <file relUrl="Scripts/compactmenu.js" publishTime="08/10/2014 18:56:18" />
-    <file relUrl="bin/Newtonsoft.Json.pdb" publishTime="06/08/2012 23:01:36" />
     <file relUrl="Templates/dich-vu.html" publishTime="08/10/2014 18:56:45" />
     <file relUrl="Templates/Service/Service.htm" publishTime="08/10/2014 20:46:06" />
-    <file relUrl="img/dang_ky_ngay.png" publishTime="08/10/2014 18:53:41" />
+    <file relUrl="bin/MyBase.xml" publishTime="07/10/2014 10:22:36" />
     <file relUrl="Templates/Static/Note.htm" publishTime="08/13/2014 18:33:27" />
     <file relUrl="Page/dereg.ashx" publishTime="08/13/2014 17:07:06" />
     <file relUrl="Templates/Static/Footer.htm" publishTime="08/15/2014 10:11:59" />
     <file relUrl="Style/compactmenu.css" publishTime="08/10/2014 18:54:14" />
-    <file relUrl="bin/MyLoad_Wap.dll" publishTime="08/18/2014 12:24:48" />
+    <file relUrl="bin/MyLoad_Wap.dll" publishTime="08/26/2014 21:43:03" />
     <file relUrl="Templates/Service/Promo.htm" publishTime="08/10/2014 21:00:30" />
+    <file relUrl="bin/MyBase.dll" publishTime="07/10/2014 10:22:36" />
     <file relUrl="bin/MyBase.pdb" publishTime="07/10/2014 10:22:36" />
     <file relUrl="Templates/Static/rule.htm" publishTime="08/13/2014 17:09:08" />
+    <file relUrl="Templates/Static/Contact.htm" publishTime="08/10/2014 20:55:43" />
     <file relUrl="NotAuthorized.aspx" publishTime="06/23/2014 17:02:13" />
-    <file relUrl="bin/MyLoad_Wap.pdb" publishTime="08/18/2014 12:24:48" />
+    <file relUrl="bin/MyLoad_Wap.pdb" publishTime="08/26/2014 21:43:02" />
     <file relUrl="Scripts/Begin.js" publishTime="08/15/2014 11:43:52" />
-    <file relUrl="bin/MyFamousMan.pdb" publishTime="08/18/2014 12:24:47" />
+    <file relUrl="bin/MyFamousMan.pdb" publishTime="08/26/2014 21:09:52" />
     <file relUrl="Test.aspx" publishTime="06/13/2014 15:44:16" />
-    <file relUrl="vnp/lp.ashx" publishTime="06/17/2014 14:05:47" />
     <file relUrl="Style/style.css" publishTime="08/15/2014 10:19:07" />
     <file relUrl="img/icon_next.png" publishTime="08/10/2014 18:53:41" />
     <file relUrl="VNPLogin.aspx" publishTime="06/24/2014 17:13:48" />
     <file relUrl="bin/FiftyOne.Foundation.xml" publishTime="02/11/2011 08:51:37" />
-    <file relUrl="bin/MyBase.xml" publishTime="07/10/2014 10:22:36" />
-    <file relUrl="bin/MyWap.pdb" publishTime="08/18/2014 12:24:51" />
-    <file relUrl="Templates/Static/Reg_Exist.htm" publishTime="08/13/2014 17:11:33" />
+    <file relUrl="bin/MyWap.pdb" publishTime="08/26/2014 23:31:58" />
+    <file relUrl="Templates/Static/Reg_Exist.htm" publishTime="08/26/2014 23:16:08" />
     <file relUrl="vnp/confirm_free.ashx" publishTime="06/17/2014 15:24:53" />
-    <file relUrl="Templates/Static/Reg_NotExist.htm" publishTime="08/10/2014 20:43:24" />
+    <file relUrl="Templates/Static/Reg_NotExist.htm" publishTime="08/26/2014 23:16:07" />
     <file relUrl="Page/service.ashx" publishTime="08/10/2014 20:47:45" />
+    <file relUrl="bin/MySql.Data.dll" publishTime="08/13/2010 11:59:01" />
     <file relUrl="bin/UrlRewritingNet.UrlRewriter.dll" publishTime="03/20/2012 09:48:35" />
     <file relUrl="Page/winner.ashx" publishTime="06/05/2014 15:12:42" />
     <file relUrl="Templates/Static/Confirm.htm" publishTime="08/13/2014 17:09:08" />
     <file relUrl="bin/DotNetCasClient.dll" publishTime="06/23/2014 14:47:09" />
     <file relUrl="Page/contact.ashx" publishTime="08/10/2014 20:54:33" />
     <file relUrl="vnp/Success.ashx" publishTime="06/17/2014 14:35:13" />
-    <file relUrl="Templates/Static/guide.htm" publishTime="08/10/2014 20:52:44" />
     <file relUrl="img/icon_home.png" publishTime="08/10/2014 18:53:41" />
     <file relUrl="bin/DotNetCasClient.pdb" publishTime="06/23/2014 14:47:09" />
     <file relUrl="bin/Newtonsoft.Json.dll" publishTime="06/08/2012 23:01:36" />
-    <file relUrl="bin/MyFamousMan.dll" publishTime="08/18/2014 12:24:47" />
+    <file relUrl="bin/MyFamousMan.dll" publishTime="08/26/2014 21:09:52" />
     <file relUrl="Templates/Service/Rule.htm" publishTime="08/10/2014 20:50:07" />
     <file relUrl="Templates/khach-hang-trung-thuong.html" publishTime="08/10/2014 18:56:45" />
     <file relUrl="img/vinaphone.png" publishTime="08/10/2014 18:53:41" />
-    <file relUrl="bin/MyBase.dll" publishTime="07/10/2014 10:22:36" />
+    <file relUrl="bin/Newtonsoft.Json.pdb" publishTime="06/08/2012 23:01:36" />
     <file relUrl="Templates/lien-he.html" publishTime="08/10/2014 18:56:45" />
     <file relUrl="bin/DotNetCasClient.xml" publishTime="06/23/2014 14:47:09" />
-    <file relUrl="bin/MySql.Data.dll" publishTime="08/13/2010 11:59:01" />
-    <file relUrl="bin/MyUtility.pdb" publishTime="08/10/2014 22:14:06" />
+    <file relUrl="vnp/lp.ashx" publishTime="06/17/2014 14:05:47" />
+    <file relUrl="bin/MyUtility.pdb" publishTime="08/20/2014 21:20:42" />
     <file relUrl="Templates/huong-dan-choi.html" publishTime="08/10/2014 18:56:45" />
+    <file relUrl="Notify.ashx" publishTime="08/13/2014 18:29:13" />
     <file relUrl="Page/reg.ashx" publishTime="08/10/2014 19:49:38" />
     <file relUrl="Templates/hoi-dap.html" publishTime="08/10/2014 18:56:45" />
     <file relUrl="img/icon_phone.png" publishTime="08/10/2014 18:53:41" />
     <file relUrl="Templates/index.html" publishTime="08/10/2014 18:56:45" />
     <file relUrl="Page/faq.ashx" publishTime="06/05/2014 15:13:08" />
-    <file relUrl="bin/MyUtility.dll" publishTime="08/10/2014 22:14:06" />
+    <file relUrl="bin/MyUtility.dll" publishTime="08/20/2014 21:20:42" />
     <file relUrl="test/wh.ashx" publishTime="06/24/2014 09:17:49" />
     <file relUrl="Page/accept.ashx" publishTime="08/10/2014 20:33:58" />
-    <file relUrl="Templates/Static/Contact.htm" publishTime="08/10/2014 20:55:43" />
+    <file relUrl="bin/MyConnect.xml" publishTime="07/10/2014 10:22:35" />
     <file relUrl="bin/FiftyOne.Foundation.dll" publishTime="02/11/2011 08:51:37" />
-    <file relUrl="bin/MySetting.pdb" publishTime="08/15/2014 16:59:02" />
     <file relUrl="Templates/Service/winner.htm" publishTime="08/10/2014 20:58:10" />
-    <file relUrl="Notify.ashx" publishTime="08/13/2014 18:29:13" />
+    <file relUrl="bin/MySetting.pdb" publishTime="08/26/2014 21:09:51" />
     <file relUrl="Logout.ashx" publishTime="06/24/2014 15:53:38" />
     <file relUrl="img/choi_ngay.png" publishTime="08/10/2014 18:53:41" />
+    <file relUrl="bin/MyUtility.xml" publishTime="08/20/2014 21:20:42" />
     <file relUrl="bin/FiftyOne.Foundation.pdb" publishTime="02/11/2011 08:51:37" />
-    <file relUrl="bin/MyWap.dll" publishTime="08/18/2014 12:24:51" />
-    <file relUrl="bin/MyUtility.xml" publishTime="08/10/2014 22:14:06" />
+    <file relUrl="bin/MyWap.dll" publishTime="08/26/2014 23:31:58" />
+    <file relUrl="Templates/Static/guide.htm" publishTime="08/10/2014 20:52:44" />
   </publishProfile>
 </publishData>

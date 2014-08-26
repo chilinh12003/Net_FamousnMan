@@ -323,3 +323,5 @@
 2014-08-15T03:08:33 - 5728 - Info - Loaded 14013 devices using 11769 strings in 355ms
 2014-08-15T03:11:45 - 5728 - Info - Loaded 14013 devices using 11769 strings in 166ms
 2014-08-15T03:17:31 - 5728 - Info - Loaded 14013 devices using 11769 strings in 958ms
+2014-08-26T15:42:40 - 4664 - Info - Loaded 14013 devices using 11769 strings in 276ms
+2014-08-26T15:43:56 - 4664 - Info - Loaded 14013 devices using 11769 strings in 742ms

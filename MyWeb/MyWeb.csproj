@@ -261,9 +261,9 @@
           <AutoAssignPort>True</AutoAssignPort>
           <DevelopmentServerPort>3011</DevelopmentServerPort>
           <DevelopmentServerVPath>/</DevelopmentServerVPath>
-          <IISUrl>http://localhost:8080/FamousMan_Web</IISUrl>
+          <IISUrl>http://localhost:8082/FamousMan_Web</IISUrl>
           <OverrideIISAppRootUrl>True</OverrideIISAppRootUrl>
-          <IISAppRootUrl>http://localhost:8080/FamousMan_Web</IISAppRootUrl>
+          <IISAppRootUrl>http://localhost:8082/FamousMan_Web</IISAppRootUrl>
           <NTLMAuthentication>False</NTLMAuthentication>
           <UseCustomServer>False</UseCustomServer>
           <CustomServerUrl>

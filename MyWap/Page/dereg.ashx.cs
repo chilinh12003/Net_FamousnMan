@@ -52,20 +52,20 @@ namespace MyWap.Page
                     return;
                 }
 
-                //kiểm tra nếu truy cập quá nhanh
-                if (Session["RequestTime_Accept"] != null)
-                {
-                    DateTime RequestTime = (DateTime)Session["RequestTime_Accept"];
-                    TimeSpan Interval_Time = DateTime.Now - RequestTime;
-                    if (Interval_Time.TotalSeconds < 60)
-                    {
-                        MyLoadNote mNote = new MyLoadNote("Bạn đang truy cập lặp lại quá nhanh, xin vui lòng chờ trong 1 phút và hãy thử lại.");
-                        Write(mNote.GetHTML());
-                        return;
-                    }
-                }
+                ////kiểm tra nếu truy cập quá nhanh
+                //if (Session["RequestTime_Accept"] != null)
+                //{
+                //    DateTime RequestTime = (DateTime)Session["RequestTime_Accept"];
+                //    TimeSpan Interval_Time = DateTime.Now - RequestTime;
+                //    if (Interval_Time.TotalSeconds < 60)
+                //    {
+                //        MyLoadNote mNote = new MyLoadNote("Bạn đang truy cập lặp lại quá nhanh, xin vui lòng chờ trong 1 phút và hãy thử lại.");
+                //        Write(mNote.GetHTML());
+                //        return;
+                //    }
+                //}
 
-                Session["RequestTime_Accept"] = DateTime.Now;
+                //Session["RequestTime_Accept"] = DateTime.Now;
 
              
                 MyConfig.Telco mTelco = MyConfig.Telco.Nothing;
@@ -91,7 +91,7 @@ namespace MyWap.Page
                 switch (ErrorCode)
                 {
                     case "1":
-                        ErrorDesc = "Bạn đã hủy công dịch vụ Nhận diện người nổi tiếng.";
+                        ErrorDesc = "Bạn đã hủy thành công dịch vụ Nhận diện người nổi tiếng.";
                         break;
                     case "0":
                         ErrorDesc = "Hủy dịch vụ không thành công, xin vui lòng thử lại sau ít phút.";

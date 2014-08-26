@@ -1,0 +1,42 @@
+﻿26/08/2014 - 21:47:17 || D:\Projects\DLL Libraries\Source\MyConnect\MyConnectConfig.cs || GetConfigConnectionString || 17 || 13 || Errors in the process connection! ||  || 
+26/08/2014 - 21:47:17 || D:\Projects\DLL Libraries\Source\MyConnect\SQLServer\MyConnect.cs || GetConnection || 19 || 17 || Errors in the process connection! ||  || 
+26/08/2014 - 21:47:17 || D:\Projects\DLL Libraries\Source\MyConnect\SQLServer\MyExecuteData.cs || .ctor || 20 || 13 || Errors in the process connection! ||  || 
+26/08/2014 - 21:47:17 || D:\Projects\FamousMan\Source\MyVOVTraffic\Sub\Subscriber.cs || .ctor || 102 || 13 || Errors in the process connection! ||  || 
+26/08/2014 - 21:47:17 || D:\Projects\FamousMan\Source\MyService\Action.asmx.cs || Check || 117 || 17 || Errors in the process connection! ||  || 
+-----------------------------------------------------------
+26/08/2014 - 21:47:57 || D:\Projects\DLL Libraries\Source\MyConnect\MyConnectConfig.cs || GetConfigConnectionString || 17 || 13 || Errors in the process connection! ||  || 
+26/08/2014 - 21:47:57 || D:\Projects\DLL Libraries\Source\MyConnect\SQLServer\MyConnect.cs || GetConnection || 19 || 17 || Errors in the process connection! ||  || 
+26/08/2014 - 21:47:57 || D:\Projects\DLL Libraries\Source\MyConnect\SQLServer\MyExecuteData.cs || .ctor || 20 || 13 || Errors in the process connection! ||  || 
+26/08/2014 - 21:47:57 || D:\Projects\FamousMan\Source\MyVOVTraffic\Sub\Subscriber.cs || .ctor || 102 || 13 || Errors in the process connection! ||  || 
+26/08/2014 - 21:47:57 || D:\Projects\FamousMan\Source\MyService\Action.asmx.cs || Check || 117 || 17 || Errors in the process connection! ||  || 
+-----------------------------------------------------------
+26/08/2014 - 21:49:31 || D:\Projects\DLL Libraries\Source\MyConnect\MyConnectConfig.cs || GetConfigConnectionString || 17 || 13 || Errors in the process connection! ||  || 
+26/08/2014 - 21:49:31 || D:\Projects\DLL Libraries\Source\MyConnect\SQLServer\MyConnect.cs || GetConnection || 19 || 17 || Errors in the process connection! ||  || 
+26/08/2014 - 21:49:31 || D:\Projects\DLL Libraries\Source\MyConnect\SQLServer\MyExecuteData.cs || .ctor || 20 || 13 || Errors in the process connection! ||  || 
+26/08/2014 - 21:49:31 || D:\Projects\FamousMan\Source\MyVOVTraffic\Sub\Subscriber.cs || .ctor || 102 || 13 || Errors in the process connection! ||  || 
+26/08/2014 - 21:49:31 || D:\Projects\FamousMan\Source\MyService\Action.asmx.cs || Check || 117 || 17 || Errors in the process connection! ||  || 
+-----------------------------------------------------------
+26/08/2014 - 21:50:33 || D:\Projects\DLL Libraries\Source\MyUtility\MySecurity.cs || Decrypt || 985 || 17 || Invalid length for a Base-64 char array. ||  || 
+26/08/2014 - 21:50:33 || D:\Projects\FamousMan\Source\MyService\Action.asmx.cs || CheckSignature || 69 || 17 || Invalid length for a Base-64 char array. ||  || 
+-----------------------------------------------------------
+26/08/2014 - 21:52:11 || D:\Projects\DLL Libraries\Source\MyUtility\MySecurity.cs || Decrypt || 985 || 17 || Invalid length for a Base-64 char array. ||  || 
+26/08/2014 - 21:52:11 || D:\Projects\FamousMan\Source\MyService\Action.asmx.cs || CheckSignature || 69 || 17 || Invalid length for a Base-64 char array. ||  || 
+-----------------------------------------------------------
+26/08/2014 - 21:59:51 || D:\Projects\DLL Libraries\Source\MyConnect\MyConnectConfig.cs || GetConfigConnectionString || 17 || 13 || Errors in the process connection! ||  || 
+26/08/2014 - 21:59:51 || D:\Projects\DLL Libraries\Source\MyConnect\SQLServer\MyConnect.cs || GetConnection || 19 || 17 || Errors in the process connection! ||  || 
+26/08/2014 - 21:59:51 || D:\Projects\DLL Libraries\Source\MyConnect\SQLServer\MyExecuteData.cs || .ctor || 20 || 13 || Errors in the process connection! ||  || 
+26/08/2014 - 21:59:51 || D:\Projects\FamousMan\Source\MyVOVTraffic\Sub\Subscriber.cs || .ctor || 102 || 13 || Errors in the process connection! ||  || 
+26/08/2014 - 21:59:51 || D:\Projects\FamousMan\Source\MyService\Action.asmx.cs || Check || 117 || 17 || Errors in the process connection! ||  || 
+-----------------------------------------------------------
+26/08/2014 - 22:01:25 || D:\Projects\DLL Libraries\Source\MyConnect\MyConnectConfig.cs || GetConfigConnectionString || 17 || 13 || Errors in the process connection! ||  || 
+26/08/2014 - 22:01:25 || D:\Projects\DLL Libraries\Source\MyConnect\SQLServer\MyConnect.cs || GetConnection || 19 || 17 || Errors in the process connection! ||  || 
+26/08/2014 - 22:01:25 || D:\Projects\DLL Libraries\Source\MyConnect\SQLServer\MyExecuteData.cs || .ctor || 20 || 13 || Errors in the process connection! ||  || 
+26/08/2014 - 22:01:25 || D:\Projects\FamousMan\Source\MyVOVTraffic\Sub\Subscriber.cs || .ctor || 102 || 13 || Errors in the process connection! ||  || 
+26/08/2014 - 22:01:25 || D:\Projects\FamousMan\Source\MyService\Action.asmx.cs || Check || 117 || 17 || Errors in the process connection! ||  || 
+-----------------------------------------------------------
+26/08/2014 - 22:46:03 || D:\Projects\DLL Libraries\Source\MyConnect\MyConnectConfig.cs || GetConfigConnectionString || 17 || 13 || Errors in the process connection! ||  || 
+26/08/2014 - 22:46:03 || D:\Projects\DLL Libraries\Source\MyConnect\SQLServer\MyConnect.cs || GetConnection || 19 || 17 || Errors in the process connection! ||  || 
+26/08/2014 - 22:46:03 || D:\Projects\DLL Libraries\Source\MyConnect\SQLServer\MyExecuteData.cs || .ctor || 20 || 13 || Errors in the process connection! ||  || 
+26/08/2014 - 22:46:03 || D:\Projects\FamousMan\Source\MyVOVTraffic\Sub\Subscriber.cs || .ctor || 102 || 13 || Errors in the process connection! ||  || 
+26/08/2014 - 22:46:03 || D:\Projects\FamousMan\Source\MyService\Action.asmx.cs || Dereg || 230 || 17 || Errors in the process connection! ||  || 
+-----------------------------------------------------------
