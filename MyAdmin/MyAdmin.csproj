@@ -815,9 +815,9 @@
           <AutoAssignPort>True</AutoAssignPort>
           <DevelopmentServerPort>56895</DevelopmentServerPort>
           <DevelopmentServerVPath>/</DevelopmentServerVPath>
-          <IISUrl>http://localhost:8080/FamousManCMS</IISUrl>
+          <IISUrl>http://localhost:8082/FamousManCMS</IISUrl>
           <OverrideIISAppRootUrl>True</OverrideIISAppRootUrl>
-          <IISAppRootUrl>http://localhost:8080/FamousManCMS</IISAppRootUrl>
+          <IISAppRootUrl>http://localhost:8082/FamousManCMS</IISAppRootUrl>
           <NTLMAuthentication>False</NTLMAuthentication>
           <UseCustomServer>False</UseCustomServer>
           <CustomServerUrl>

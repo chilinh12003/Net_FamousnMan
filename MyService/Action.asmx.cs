@@ -23,9 +23,8 @@ namespace MyService
     // [System.Web.Script.Services.ScriptService]
     public class Action : System.Web.Services.WebService
     {
-        Subscriber mSub = new Subscriber();
-        UnSubscriber mUnSub = new UnSubscriber();
-        sms_receive_queue mQuere = new sms_receive_queue(MySetting.AdminSetting.MySQLConnection_Gateway);
+        
+     
 
         private class PartnerSignature
         {
@@ -109,11 +108,16 @@ namespace MyService
         [WebMethod]
         public string Check(string Signature)
         {
+
             REGResult mResult = REGResult.UnknowError;
             PartnerSignature mSig = new PartnerSignature();
             string RequestID = string.Empty;
             try
             {
+                Subscriber mSub = new Subscriber();
+                UnSubscriber mUnSub = new UnSubscriber();
+                sms_receive_queue mQuere = new sms_receive_queue(MySetting.AdminSetting.MySQLConnection_Gateway);
+
                 mSig = CheckSignature(Signature);
 
                 MyConfig.Telco mTelco = MyConfig.Telco.Nothing;
@@ -166,6 +170,10 @@ namespace MyService
             string RequestID = string.Empty;
             try
             {
+                Subscriber mSub = new Subscriber();
+                UnSubscriber mUnSub = new UnSubscriber();
+                sms_receive_queue mQuere = new sms_receive_queue(MySetting.AdminSetting.MySQLConnection_Gateway);
+
                 mSig = CheckSignature(Signature);
 
                 MyConfig.Telco mTelco = MyConfig.Telco.Nothing;
@@ -219,6 +227,10 @@ namespace MyService
             string RequestID = string.Empty;
             try
             {
+                Subscriber mSub = new Subscriber();
+                UnSubscriber mUnSub = new UnSubscriber();
+                sms_receive_queue mQuere = new sms_receive_queue(MySetting.AdminSetting.MySQLConnection_Gateway);
+
                 mSig = CheckSignature(Signature);
 
                 MyConfig.Telco mTelco = MyConfig.Telco.Nothing;
@@ -269,7 +281,9 @@ namespace MyService
             DataTable mTable_Return = new DataTable();
             try
             {
-
+                Subscriber mSub = new Subscriber();
+                UnSubscriber mUnSub = new UnSubscriber();
+                sms_receive_queue mQuere = new sms_receive_queue(MySetting.AdminSetting.MySQLConnection_Gateway);
             }
             catch (Exception ex)
             {

@@ -1,23 +1,23 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
 <publishData>
   <publishProfile publishUrl="D:\Publish\FamousMan\WebService" deleteExistingFiles="True" ftpAnonymousLogin="False" ftpPassiveMode="True" msdeploySite="" msdeploySiteID="" msdeployRemoteSitePhysicalPath="" msdeployAllowUntrustedCertificate="False" msdeploySkipExtraFilesOnServer="True" msdeployMarkAsApp="False" profileName="Profile1" publishMethod="FileSystem" replaceMatchingFiles="False" userName="" savePWD="False" userPWD="" SelectedForPublish="True">
-    <file relUrl="Web.config" publishTime="08/12/2014 20:05:33" />
+    <file relUrl="Web.config" publishTime="08/26/2014 21:10:01" />
     <file relUrl="bin/Newtonsoft.Json.pdb" publishTime="06/08/2012 23:01:36" />
+    <file relUrl="bin/MyService.pdb" publishTime="08/26/2014 21:09:53" />
     <file relUrl="bin/MyConnect.xml" publishTime="07/10/2014 10:22:35" />
     <file relUrl="bin/Newtonsoft.Json.xml" publishTime="06/08/2012 23:01:36" />
-    <file relUrl="bin/MySetting.pdb" publishTime="08/12/2014 20:05:17" />
-    <file relUrl="bin/MyFamousMan.dll" publishTime="08/12/2014 20:05:18" />
+    <file relUrl="bin/MySetting.pdb" publishTime="08/26/2014 21:09:51" />
+    <file relUrl="bin/MyFamousMan.dll" publishTime="08/26/2014 21:09:52" />
     <file relUrl="Action.asmx" publishTime="08/10/2014 18:11:51" />
-    <file relUrl="bin/MyFamousMan.pdb" publishTime="08/12/2014 20:05:18" />
-    <file relUrl="bin/MyUtility.xml" publishTime="08/10/2014 22:14:06" />
-    <file relUrl="bin/MySetting.dll" publishTime="08/12/2014 20:05:17" />
+    <file relUrl="bin/MyFamousMan.pdb" publishTime="08/26/2014 21:09:52" />
+    <file relUrl="bin/MyUtility.xml" publishTime="08/20/2014 21:20:42" />
+    <file relUrl="bin/MySetting.dll" publishTime="08/26/2014 21:09:51" />
     <file relUrl="bin/Newtonsoft.Json.dll" publishTime="06/08/2012 23:01:36" />
-    <file relUrl="bin/MyUtility.pdb" publishTime="08/10/2014 22:14:06" />
-    <file relUrl="bin/MyUtility.dll" publishTime="08/10/2014 22:14:06" />
-    <file relUrl="bin/MyService.pdb" publishTime="08/12/2014 20:05:25" />
+    <file relUrl="bin/MyUtility.dll" publishTime="08/20/2014 21:20:42" />
+    <file relUrl="bin/MyUtility.pdb" publishTime="08/20/2014 21:20:42" />
     <file relUrl="bin/MySql.Data.dll" publishTime="08/13/2010 11:59:01" />
     <file relUrl="bin/MyConnect.pdb" publishTime="07/10/2014 10:22:35" />
     <file relUrl="bin/MyConnect.dll" publishTime="07/10/2014 10:22:35" />
-    <file relUrl="bin/MyService.dll" publishTime="08/12/2014 20:05:25" />
+    <file relUrl="bin/MyService.dll" publishTime="08/26/2014 21:09:53" />
   </publishProfile>
 </publishData>

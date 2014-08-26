@@ -300,9 +300,9 @@
           <AutoAssignPort>True</AutoAssignPort>
           <DevelopmentServerPort>51779</DevelopmentServerPort>
           <DevelopmentServerVPath>/</DevelopmentServerVPath>
-          <IISUrl>http://localhost:8080/FamousMan_Wap</IISUrl>
+          <IISUrl>http://localhost:8082/FamousMan_Wap</IISUrl>
           <OverrideIISAppRootUrl>True</OverrideIISAppRootUrl>
-          <IISAppRootUrl>http://localhost:8080/FamousMan_Wap</IISAppRootUrl>
+          <IISAppRootUrl>http://localhost:8082/FamousMan_Wap</IISAppRootUrl>
           <NTLMAuthentication>False</NTLMAuthentication>
           <UseCustomServer>False</UseCustomServer>
           <CustomServerUrl>
