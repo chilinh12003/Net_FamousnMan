@@ -45,7 +45,12 @@ namespace MyAdmin.Admin_CCare
         {
 
         }
-        public SubInfo(DataTable mTable)
+        /// <summary>
+        /// 
+        /// </summary>
+        /// <param name="mTable"></param>
+        /// <param name="IsDereg">Cho biết thue bao đang ở table Hủy hay table Sub</param>
+        public SubInfo(DataTable mTable, bool IsDereg)
         {
             if (mTable == null || mTable.Rows.Count < 1)
             {
@@ -63,7 +68,15 @@ namespace MyAdmin.Admin_CCare
             RenewChargeDate = mRow["RenewChargeDate"] != DBNull.Value ?((DateTime)mRow["RenewChargeDate"]).ToString(MyConfig.LongDateFormat) : "NULL";
             
             ChannelTypeName = mRow["ChannelTypeID"] != null ?((MyConfig.ChannelType)(int)mRow["ChannelTypeID"]).ToString() : "NULL";
-            StatusName = mRow["StatusID"] != DBNull.Value ?MyEnum.StringValueOf((Subscriber.Status)(int)mRow["StatusID"]) : "NULL";
+
+            if (IsDereg && (Subscriber.Status)(int)mRow["StatusID"] !=Subscriber.Status.UndoSub )
+            {
+                StatusName = MyEnum.StringValueOf(Subscriber.Status.Deactive);
+            }
+            else
+            {
+                StatusName = mRow["StatusID"] != DBNull.Value ? MyEnum.StringValueOf((Subscriber.Status)(int)mRow["StatusID"]) : "NULL";
+            }
             
             SuggestByDay = mRow["SuggestByDay"] != DBNull.Value ?((int)mRow["SuggestByDay"]).ToString(MyConfig.IntFormat) : "NULL";
             TotalSuggest = mRow["TotalSuggest"] != DBNull.Value ?((int)mRow["TotalSuggest"]).ToString(MyConfig.IntFormat) : "NULL";
@@ -182,11 +195,15 @@ namespace MyAdmin.Admin_CCare
                 Subscriber mSub = new Subscriber();
                 UnSubscriber mUnSub = new UnSubscriber();
                 DataTable mTable = mSub.Select(2, PID.ToString(), MSISDN);
+                bool IsDereg = false;
 
-                if(mTable.Rows.Count < 1)
+                if (mTable.Rows.Count < 1)
+                {
                     mTable = mUnSub.Select(2, PID.ToString(), MSISDN);
+                    IsDereg = true;
+                }
 
-                mSubInfo = new SubInfo(mTable);
+                mSubInfo = new SubInfo(mTable, IsDereg);
                 mSubInfo.MSISDN = MSISDN;
             }
             catch (Exception ex)
