@@ -31,7 +31,10 @@ namespace MyFamousMan.Report
         public double SubWAP = 0;
         public double SubAPP = 0;
         public double SubCSKH = 0;
+
         public double UnsubTotal = 0;
+        public double UnsubNew = 0;
+        public double UnsubSuccess = 0;
         public double UnsubSelf = 0;
         public double UnsubExtend = 0;
         public double UnSubSMS = 0;
@@ -41,6 +44,7 @@ namespace MyFamousMan.Report
         public double UnSubWAP = 0;
         public double UnSubAPP = 0;
         public double UnSubCSKH = 0;
+
         public double UseByDay = 0;
         public double UseByMonth = 0;
         public double RenewTotal = 0;
@@ -82,6 +86,8 @@ namespace MyFamousMan.Report
             SubAPP = 0;
             SubCSKH = 0;
             UnsubTotal = 0;
+            UnsubNew = 0;
+            UnsubSuccess = 0;
             UnsubSelf = 0;
             UnsubExtend = 0;
             UnSubSMS = 0;
@@ -205,6 +211,8 @@ namespace MyFamousMan.Report
                 mRow["SubAPP"] = this.SubAPP;
                 mRow["SubCSKH"] = this.SubCSKH;
                 mRow["UnsubTotal"] = this.UnsubTotal;
+                mRow["UnsubNew"] = this.UnsubNew;
+                mRow["UnsubSuccess"] = this.UnsubSuccess;
                 mRow["UnsubSelf"] = this.UnsubSelf;
                 mRow["UnsubExtend"] = this.UnsubExtend;
                 mRow["UnSubSMS"] = this.UnSubSMS;
@@ -316,6 +324,7 @@ namespace MyFamousMan.Report
         /// </summary>
         /// <param name="Type">
         /// <para>Type = 2: Lấy theo ngày (Para_1 = BeginDate, Para_2 = Endate)</para>
+        /// <para>Type = 3: Lấy theo ngày cho report email (Para_1 = BeginDate, Para_2 = Endate)</para>
         /// </param>
         /// <param name="Para_1"></param>
         /// <param name="Para_2"></param>

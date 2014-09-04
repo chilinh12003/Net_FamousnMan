@@ -161,8 +161,9 @@ namespace MyTool.ReportSync
                         mRP_Sub_Current.ReportDay = BeginDate;
 
                         //Lấy thông tin tổng quan
-                        mRP_Sub_Current.SubTotal = double.Parse(mSub.Select(7, string.Empty).Rows[0][0].ToString());
-
+                        mRP_Sub_Current.SubTotal = double.Parse(mSub.Select(8, EndDate.ToString(MyConfig.DateFormat_InsertToDB)).Rows[0][0].ToString());
+                        mRP_Sub_Current.UnsubTotal = double.Parse(mUnSub.Select(8, EndDate.ToString(MyConfig.DateFormat_InsertToDB)).Rows[0][0].ToString());
+                        
                         for (int PID = 0; PID <= MaxPID; PID++)
                         {
                             if (StopThread)
@@ -221,11 +222,17 @@ namespace MyTool.ReportSync
                             #endregion
 
                             #region Thông tin Hủy đăng ký
-                            mRP_Sub_Current.UnsubTotal += double.Parse(mChargeLog.Select(11, PID.ToString(), ((int)ChargeLog.ChargeType.UNREG).ToString(),
-                                                                                          ((int)ChargeLog.ChargeStatus.ChargeSuccess).ToString(),
-                                                                                          BeginDate.ToString(MyConfig.DateFormat_InsertToDB),
+                            //Tổng đăng ký (Thành công + không thành công
+                            mRP_Sub_Current.UnsubNew += double.Parse(mChargeLog.Select(10, PID.ToString(), ((int)ChargeLog.ChargeType.UNREG).ToString(),
+                                                                         BeginDate.ToString(MyConfig.DateFormat_InsertToDB),
                                                                          EndDate.ToString(MyConfig.DateFormat_InsertToDB)).Rows[0][0].ToString()
-                                                                                          );
+                                                                         );
+
+                            mRP_Sub_Current.UnsubSuccess += double.Parse(mChargeLog.Select(11, PID.ToString(), ((int)ChargeLog.ChargeType.UNREG).ToString(),
+                                                                         ((int)ChargeLog.ChargeStatus.ChargeSuccess).ToString(),
+                                                                         BeginDate.ToString(MyConfig.DateFormat_InsertToDB),
+                                                                         EndDate.ToString(MyConfig.DateFormat_InsertToDB)).Rows[0][0].ToString()
+                                                                         );
 
                             mRP_Sub_Current.UnSubAPP += double.Parse(mChargeLog.Select(9, PID.ToString(), ((int)ChargeLog.ChargeType.UNREG).ToString(),
                                                                          ((int)ChargeLog.ChargeStatus.ChargeSuccess).ToString(),

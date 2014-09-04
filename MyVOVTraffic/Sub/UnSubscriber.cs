@@ -54,6 +54,7 @@ namespace MyFamousMan.Sub
         /// <para>Type = 1: Lấy chi tiết 1 Record (Para_1 = MSISDN)</para>
         /// <para>Type = 6: Lấy tổng thuê bao theo partner (Para_1 = PartnerID)</para>
         /// <para>Type = 7: Lấy tổng thuê bao</para>
+        /// <para>Type = 8: Lấy tổng số thuê bao từ đầu đến ngày (Para_1 = EndDate)</para>
         /// </param>
         /// <param name="Para_1"></param>
         /// <returns></returns>
