@@ -28,7 +28,7 @@ namespace MyAdmin.Admin_Report
             {
                 try
                 {
-                    if (ViewState["RP_MO"] != null)
+                    if (ViewState["RP_MO"] != null && ((DataTable)ViewState["RP_MO"]).Rows.Count > 0)
                         return (DataTable)ViewState["RP_MO"];
                     else
                     {
@@ -44,6 +44,10 @@ namespace MyAdmin.Admin_Report
                 {
                     throw ex;
                 }
+            }
+            set
+            {
+                ViewState["RP_MO"] = value;
             }
         }
 
@@ -227,6 +231,8 @@ namespace MyAdmin.Admin_Report
         {
             try
             {
+                mTable_RP_MO = null;
+
                 //lbtn_Sort_1.CssClass = "Sort";
                 //lbtn_Sort_2.CssClass = "Sort";
                 //lbtn_Sort_3.CssClass = "Sort";
@@ -261,6 +267,7 @@ namespace MyAdmin.Admin_Report
         {
             try
             {
+                mTable_RP_MO = null;
                 BindData();
             }
             catch (Exception ex)

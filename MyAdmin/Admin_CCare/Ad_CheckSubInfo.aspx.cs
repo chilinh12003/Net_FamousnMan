@@ -69,7 +69,7 @@ namespace MyAdmin.Admin_CCare
             TotalSuggest = mRow["TotalSuggest"] != DBNull.Value ?((int)mRow["TotalSuggest"]).ToString(MyConfig.IntFormat) : "NULL";
             LastSuggestDate = mRow["LastSuggestDate"] != DBNull.Value ?((DateTime)mRow["LastSuggestDate"]).ToString(MyConfig.LongDateFormat) : "NULL";
 
-            LastAnswer = mRow["LastAnswer"] != DBNull.Value ?((int)mRow["LastAnswer"]).ToString(MyConfig.IntFormat) : "NULL";
+            LastAnswer = mRow["LastAnswer"] != DBNull.Value ?mRow["LastAnswer"].ToString() : "NULL";
             AnswerByDay = mRow["AnswerByDay"] != DBNull.Value ?((int)mRow["AnswerByDay"]).ToString(MyConfig.IntFormat) : "NULL";
             AnswerStatusName = mRow["AnswerStatusID"] != DBNull.Value ? MyEnum.StringValueOf((Play.Status)(int)mRow["AnswerStatusID"]) : "NULL";
             LastAnswerDate = mRow["LastAnswerDate"] != DBNull.Value ? ((DateTime)mRow["LastAnswerDate"]).ToString(MyConfig.LongDateFormat) : "NULL";

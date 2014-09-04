@@ -15,7 +15,7 @@
         }
         .info
         {
-            width: 360px;
+            width: 365px;
             float: left;
             margin-right: 15px;
         }

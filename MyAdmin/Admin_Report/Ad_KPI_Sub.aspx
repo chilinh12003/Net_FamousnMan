@@ -28,7 +28,7 @@
                 <td style="border-style: none solid solid none; border-width: 1px; border-color: #000000;" rowspan="3">STT</td>
                 <td style="border-style: none solid solid none; border-width: 1px; border-color: #000000; width:100px;" rowspan="3">Ngày báo cáo</td>
                 <td style="border-style: none solid solid none; border-width: 1px; border-color: #000000;" colspan="24">Thuê bao</td>
-                <td style="border-style: none solid solid none; border-width: 1px; border-color: #000000;" colspan="4">Tần suất sử dụng</td>
+                <td style="border-style: none solid solid none; border-width: 1px; border-color: #000000;" colspan="5">Tần suất sử dụng</td>
                 <td style="border-style: none solid solid none; border-width: 1px; border-color: #000000;" colspan="4">Doanh thu</td>
                 <td style="border-style: none solid solid none; border-width: 1px; border-color: #000000;" colspan="4">Đánh Giá</td>
             </tr>
@@ -41,6 +41,7 @@
                 <td style="border-style: none solid solid none; border-width: 1px; border-color: #000000;" rowspan="2">[Không sử dụng]</td>
                 <td style="border-style: none solid solid none; border-width: 1px; border-color: #000000;" rowspan="2">[Ít]</td>
                 <td style="border-style: none solid solid none; border-width: 1px; border-color: #000000;" rowspan="2">[Vừa]</td>
+                <td style="border-style: none solid solid none; border-width: 1px; border-color: #000000;" rowspan="2">[Nhiều]</td>
                 <td style="border-style: none solid solid none; border-width: 1px; border-color: #000000;" rowspan="2">[Rất nhiều]</td>
                 <td style="border-style: none solid solid none; border-width: 1px; border-color: #000000;" rowspan="2">Doanh thu từ đăng ký mới</td>
                 <td style="border-style: none solid solid none; border-width: 1px; border-color: #000000;" rowspan="2">Doanh thu từ gia hạn</td>
@@ -109,6 +110,7 @@
                         <td style="border-style: none solid solid none; border-width: 1px; border-color: #000000;"> <%#Eval("UseNot")%></td>
                         <td style="border-style: none solid solid none; border-width: 1px; border-color: #000000;"> <%#Eval("UseFew")%></td>
                         <td style="border-style: none solid solid none; border-width: 1px; border-color: #000000;"> <%#Eval("UseModerate")%></td>
+                        <td style="border-style: none solid solid none; border-width: 1px; border-color: #000000;"> <%#Eval("UseMuch")%></td>
                         <td style="border-style: none solid solid none; border-width: 1px; border-color: #000000;"> <%#Eval("UserVeryMuch")%></td>
                         <td style="border-style: none solid solid none; border-width: 1px; border-color: #000000;"> <%#((double)Eval("SaleReg")).ToString(MyUtility.MyConfig.IntFormat)%></td>
                         <td style="border-style: none solid solid none; border-width: 1px; border-color: #000000;"> <%# ((double)Eval("SaleRenew")).ToString(MyUtility.MyConfig.IntFormat)%></td>
@@ -151,6 +153,7 @@
                         <td style="border-style: none solid solid none; border-width: 1px; border-color: #000000;"> <%#Eval("UseNot")%></td>
                         <td style="border-style: none solid solid none; border-width: 1px; border-color: #000000;"> <%#Eval("UseFew")%></td>
                         <td style="border-style: none solid solid none; border-width: 1px; border-color: #000000;"> <%#Eval("UseModerate")%></td>
+                        <td style="border-style: none solid solid none; border-width: 1px; border-color: #000000;"> <%#Eval("UseMuch")%></td>
                         <td style="border-style: none solid solid none; border-width: 1px; border-color: #000000;"> <%#Eval("UserVeryMuch")%></td>
                         <td style="border-style: none solid solid none; border-width: 1px; border-color: #000000;"> <%#((double)Eval("SaleReg")).ToString(MyUtility.MyConfig.IntFormat)%></td>
                         <td style="border-style: none solid solid none; border-width: 1px; border-color: #000000;"> <%# ((double)Eval("SaleRenew")).ToString(MyUtility.MyConfig.IntFormat)%></td>
@@ -164,7 +167,7 @@
                 </AlternatingItemTemplate>
             </asp:Repeater>
             <tr style="padding: 5px 0 5px 0; background-color: #E2E2E2; height: 30px;">
-                <td style="border-style: none solid solid none; border-width: 1px;" colspan="19">
+                <td style="border-style: none solid solid none; border-width: 1px;" colspan="20">
                     <uc1:Admin_Paging ID="Admin_Paging1" runat="server" />
                 </td>
             </tr>
