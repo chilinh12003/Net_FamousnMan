@@ -52,6 +52,25 @@ namespace MyWap.Page
                     return;
                 }
 
+                if (!string.IsNullOrEmpty(BeforeDate))
+                {
+                    try
+                    {
+                        DateTime Temp = DateTime.ParseExact(BeforeDate, "yyyyMMddHHmmssfff", null);
+                        TimeSpan TimeCount = DateTime.Now - Temp;
+                        if (TimeCount.Minutes >1)
+                        {
+                            MyLoadNote mNote = new MyLoadNote("Thông tin không hợp lệ, xin vui lòng thử lại với thông tin khác.");
+                            Write(mNote.GetHTML());
+                            return;
+                        }
+                    }
+                    catch (Exception ex)
+                    {
+                        MyLogfile.WriteLogError(ex);
+                    }
+                }
+
                 ////kiểm tra nếu truy cập quá nhanh
                 //if (Session["RequestTime_Accept"] != null)
                 //{

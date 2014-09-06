@@ -34,8 +34,16 @@ namespace MySetting
             News,
             [DescriptionAttribute("Quản trị câu hỏi")]
             Question,
- [DescriptionAttribute("Quản trị dữ kiện")]
+            [DescriptionAttribute("Quản trị dữ kiện")]
             Suggest,
+
+            [DescriptionAttribute("Lịch sử Mua dữ kiện, Dự đoán trong ngày")]
+            Play,
+            [DescriptionAttribute("Danh sách người chiến thắng")]
+            Winner,
+
+            [DescriptionAttribute("Thống kế cho dữ kiện trong ngày")]
+            SuggestLog,
 
             [DescriptionAttribute("Số lượng thuê bao đăng ký dịch vụ")]
             ReportCountSub,

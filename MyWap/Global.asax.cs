@@ -17,7 +17,7 @@ namespace MyWap
 
         protected void Session_Start(object sender, EventArgs e)
         {
-            //this.Session["MSISDN"] = "84919438389";
+           // this.Session["MSISDN"] = "84919438389";
         }
 
         protected void Application_BeginRequest(object sender, EventArgs e)

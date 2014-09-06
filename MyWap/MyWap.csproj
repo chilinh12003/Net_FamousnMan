@@ -96,6 +96,9 @@
     <Content Include="Page\faq.ashx" />
     <Content Include="Logout.ashx" />
     <Content Include="Page\reg.ashx" />
+    <Content Include="Reg\Accept.ashx" />
+    <Content Include="Reg\Deny.ashx" />
+    <Content Include="Reg\Register.ashx" />
     <Content Include="Scripts\Begin.js" />
     <Content Include="Scripts\compactmenu.js" />
     <Content Include="Page\accept.ashx" />
@@ -128,6 +131,7 @@
     <Content Include="Templates\Service\Service.htm" />
     <Content Include="Templates\Service\Winner.htm" />
     <Content Include="Templates\Static\Contact.htm" />
+    <Content Include="Templates\Static\Reg_Confirm.htm" />
     <Content Include="Templates\Static\Reg_NotExist.htm" />
     <Content Include="Templates\Static\faq.htm" />
     <Content Include="Templates\Static\Footer.htm" />
@@ -153,11 +157,6 @@
     <Content Include="Web.Release.config">
       <DependentUpon>Web.config</DependentUpon>
     </Content>
-    <Content Include="vnp\lp.ashx" />
-    <Content Include="vnp\Success.ashx" />
-    <Content Include="vnp\confirm_free.ashx" />
-    <Content Include="vnp\confirm_money.ashx" />
-    <Content Include="vnp\accept.ashx" />
     <Content Include="test\wh.ashx" />
   </ItemGroup>
   <ItemGroup>
@@ -225,6 +224,18 @@
       <DependentUpon>winner.ashx</DependentUpon>
     </Compile>
     <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="Reg\Accept.ashx.cs">
+      <DependentUpon>Accept.ashx</DependentUpon>
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Reg\Deny.ashx.cs">
+      <DependentUpon>Deny.ashx</DependentUpon>
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Reg\Register.ashx.cs">
+      <DependentUpon>Register.ashx</DependentUpon>
+      <SubType>Code</SubType>
+    </Compile>
     <Compile Include="Service References\MyService\Reference.cs">
       <AutoGen>True</AutoGen>
       <DesignTime>True</DesignTime>
@@ -247,22 +258,7 @@
     <Compile Include="VNPLogin.aspx.designer.cs">
       <DependentUpon>VNPLogin.aspx</DependentUpon>
     </Compile>
-    <Compile Include="vnp\accept.ashx.cs">
-      <DependentUpon>accept.ashx</DependentUpon>
-    </Compile>
-    <Compile Include="vnp\confirm_free.ashx.cs">
-      <DependentUpon>confirm_free.ashx</DependentUpon>
-    </Compile>
-    <Compile Include="vnp\confirm_money.ashx.cs">
-      <DependentUpon>confirm_money.ashx</DependentUpon>
-    </Compile>
     <Compile Include="vnp\GetMSISDN.cs" />
-    <Compile Include="vnp\lp.ashx.cs">
-      <DependentUpon>lp.ashx</DependentUpon>
-    </Compile>
-    <Compile Include="vnp\Success.ashx.cs">
-      <DependentUpon>Success.ashx</DependentUpon>
-    </Compile>
   </ItemGroup>
   <ItemGroup>
     <Folder Include="App_Data\" />

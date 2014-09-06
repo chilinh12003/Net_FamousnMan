@@ -58,6 +58,7 @@
     <Compile Include="LoadService\MyLoadRule.cs" />
     <Compile Include="LoadService\MyLoadService.cs" />
     <Compile Include="LoadService\MyLoadWinner.cs" />
+    <Compile Include="LoadStatic\MyLoadReg_Confirm.cs" />
     <Compile Include="LoadStatic\MyLoadContact.cs" />
     <Compile Include="LoadStatic\MyLoadReg_NotExist.cs" />
     <Compile Include="LoadStatic\MyLoadReg_Exist.cs" />

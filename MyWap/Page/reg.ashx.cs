@@ -74,7 +74,7 @@ namespace MyWap.Page
                 string Result_Check = mClient.Check(Signature);
                 string[] Arr_Result_Check = Result_Check.Split('|');
 
-                //Nếu đã từng sử dụng dịch vụ thì chuyển sang các trang thể thao 
+                //Thuê bao đã đăng ký trước đó
                 if (Arr_Result_Check[0].Equals("2"))
                 {
                     MyLoadReg_Exist mReg_Exist = new MyLoadReg_Exist(MSISDN);

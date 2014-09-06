@@ -18,7 +18,7 @@ namespace MyWap.Reg
     public class Accept : MyWapBase
     {
 
-        Keyword mKeyword = new Keyword("strConnection_SportMillion");
+        Keyword mKeyword = new Keyword();
 
         public override void WriteHTML()
         {
@@ -28,6 +28,7 @@ namespace MyWap.Reg
             int PartnerID = 0;
             string Keyword = string.Empty;
 
+            string BeforeDate = string.Empty;
             string ErrorCode = string.Empty;
             string ErrorDesc = string.Empty;
             try
@@ -40,15 +41,16 @@ namespace MyWap.Reg
 
                 if (!string.IsNullOrEmpty(Para))
                 {
-                    string Para_Decode = MySecurity.AES.Decrypt(Para, MyConfig.GetKeyInConfigFile("GetMSISDN_Password"));
+                    string Para_Decode = MySecurity.AES.Decrypt(Para, MySetting.AdminSetting.SpecialKey);
                     if (!string.IsNullOrEmpty(Para_Decode))
                     {
                         string[] arr = Para_Decode.Split('|');
-                        if (arr.Length == 3)
+                        if (arr.Length == 4)
                         {
                             MSISDN_VNP = arr[0];
                             int.TryParse(arr[1], out PartnerID);
                             Keyword = arr[2];
+                            BeforeDate = arr[3];
                         }
                     }
                 }
@@ -59,20 +61,39 @@ namespace MyWap.Reg
                     return;
                 }
 
-                //kiểm tra nếu truy cập quá nhanh
-                if (Session["RequestTime_Accept"] != null)
+                if (!string.IsNullOrEmpty(BeforeDate))
                 {
-                    DateTime RequestTime = (DateTime)Session["RequestTime_Accept"];
-                    TimeSpan Interval_Time = DateTime.Now - RequestTime;
-                    if (Interval_Time.TotalSeconds < 60)
+                    try
                     {
-                        MyLoadNote mNote = new MyLoadNote("Bạn đang truy cập lặp lại quá nhanh, xin vui lòng chờ trong 1 phút và hãy thử lại.");
-                        Write(mNote.GetHTML());
-                        return;
+                        DateTime Temp = DateTime.ParseExact(BeforeDate, "yyyyMMddHHmmssfff", null);
+                        TimeSpan TimeCount = DateTime.Now - Temp;
+                        if (TimeCount.Minutes > 1)
+                        {
+                            MyLoadNote mNote = new MyLoadNote("Thông tin không hợp lệ, xin vui lòng thử lại với thông tin khác.");
+                            Write(mNote.GetHTML());
+                            return;
+                        }
+                    }
+                    catch (Exception ex)
+                    {
+                        MyLogfile.WriteLogError(ex);
                     }
                 }
 
-                Session["RequestTime_Accept"] = DateTime.Now;
+                ////kiểm tra nếu truy cập quá nhanh
+                //if (Session["RequestTime_Accept"] != null)
+                //{
+                //    DateTime RequestTime = (DateTime)Session["RequestTime_Accept"];
+                //    TimeSpan Interval_Time = DateTime.Now - RequestTime;
+                //    if (Interval_Time.TotalSeconds < 30)
+                //    {
+                //        MyLoadNote mNote = new MyLoadNote("Bạn đang truy cập lặp lại quá nhanh, xin vui lòng chờ trong 30 giây và hãy thử lại.");
+                //        Write(mNote.GetHTML());
+                //        return;
+                //    }
+                //}
+
+                //Session["RequestTime_Accept"] = DateTime.Now;
 
                 DataTable mTable_Keyword = mKeyword.Select(3, Keyword, PartnerID.ToString());
 
@@ -100,8 +121,8 @@ namespace MyWap.Reg
                 }
 
                 MyService.ActionSoapClient mClient = new MyService.ActionSoapClient();
-                string Signature = MSISDN_VNP + "|HBWap|" + DateTime.Now.ToString("yyyyMMddHHmmssfff");
-                Signature = MySecurity.AES.Encrypt(Signature, "wre34WD45F");
+                string Signature = MSISDN + "|HBWap|" + DateTime.Now.ToString("yyyyMMddHHmmssfff");
+                Signature = MySecurity.AES.Encrypt(Signature, MySetting.AdminSetting.RegWSKey);
                 System.Net.ServicePointManager.Expect100Continue = false;
                 string Result = mClient.Reg((int)MyConfig.ChannelType.WAP, Signature, Keyword);
                 string[] Arr_Result = Result.Split('|');

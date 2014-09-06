@@ -132,6 +132,9 @@
     <Content Include="Admin_Report\Ad_Partner_Charge.aspx" />
     <Content Include="Admin_Report\Ad_Partner_Charge_ByPrice.aspx" />
     <Content Include="Admin_Report\Ad_Partner_Reg.aspx" />
+    <Content Include="Admin_Service\Ad_Play.aspx" />
+    <Content Include="Admin_Service\Ad_SuggestCount.aspx" />
+    <Content Include="Admin_Service\Ad_Winner.aspx" />
     <Content Include="App_Data\AllowIP.xml" />
     <Content Include="App_Data\VliveTest_Text_Cuoi.xml">
       <SubType>Designer</SubType>
@@ -486,6 +489,27 @@
     <Compile Include="Admin_Report\Ad_Partner_Reg.aspx.designer.cs">
       <DependentUpon>Ad_Partner_Reg.aspx</DependentUpon>
     </Compile>
+    <Compile Include="Admin_Service\Ad_Play.aspx.cs">
+      <DependentUpon>Ad_Play.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Admin_Service\Ad_Play.aspx.designer.cs">
+      <DependentUpon>Ad_Play.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Admin_Service\Ad_SuggestCount.aspx.cs">
+      <DependentUpon>Ad_SuggestCount.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Admin_Service\Ad_SuggestCount.aspx.designer.cs">
+      <DependentUpon>Ad_SuggestCount.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Admin_Service\Ad_Winner.aspx.cs">
+      <DependentUpon>Ad_Winner.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Admin_Service\Ad_Winner.aspx.designer.cs">
+      <DependentUpon>Ad_Winner.aspx</DependentUpon>
+    </Compile>
     <Compile Include="Captcha.ashx.cs">
       <DependentUpon>Captcha.ashx</DependentUpon>
     </Compile>
@@ -787,9 +811,7 @@
   <ItemGroup>
     <WCFMetadata Include="Service References\" />
   </ItemGroup>
-  <ItemGroup>
-    <Folder Include="Admin_Service\" />
-  </ItemGroup>
+  <ItemGroup />
   <ItemGroup>
     <WCFMetadataStorage Include="Service References\MyService\" />
   </ItemGroup>

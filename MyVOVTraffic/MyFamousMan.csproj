@@ -97,13 +97,12 @@
     <Compile Include="Report\RPChargeByDay.cs" />
     <Compile Include="Service\ChargeLog.cs" />
     <Compile Include="Role.cs" />
+    <Compile Include="Service\SuggestCount.cs" />
+    <Compile Include="Service\Winner.cs" />
     <Compile Include="Service\Play.cs" />
     <Compile Include="Service\DefineMT.cs" />
     <Compile Include="Service\Keyword.cs" />
-    <Compile Include="Service\Match.cs" />
     <Compile Include="Service\MOLog.cs" />
-    <Compile Include="Service\SubCode.cs" />
-    <Compile Include="Service\SubOTP.cs" />
     <Compile Include="Sub\UnSubscriber.cs" />
     <Compile Include="Sub\Subscriber.cs" />
   </ItemGroup>
