@@ -1,0 +1,221 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<title>Hỏi đáp</title>
+<link rel="icon" href="images/favicon.ico" type="image/x-icon" />
+<link rel="shortcut icon" href="images/favicon.ico" type="image/x-icon" />
+<link href="css/style.css" rel="stylesheet" type="text/css" />
+<link type="text/css" href="css/jquery.jscrollpane.css" rel="stylesheet" media="all" />
+<script type="text/javascript" src="js/jquery.min.js"></script>
+<script type="text/javascript" src="js/jquery.mousewheel.js"></script>
+<script type="text/javascript" src="js/jquery.jscrollpane.min.js"></script>
+<script type="text/javascript">
+		$(function()
+		{
+			var bars = '.jspHorizontalBar, .jspVerticalBar';
+		
+			$('.scroll-pane').bind('jsp-initialised', function (event, isScrollable) {
+				
+				//hide the scroll bar on first load hide or show
+				$(this).find(bars).show();
+			
+			}).jScrollPane().hover(
+			
+				//hide show scrollbar
+				function () {
+					$(this).find(bars).stop().fadeTo('fast', 1);// 0.9
+				},
+				function () {
+					$(this).find(bars).stop().fadeTo('fast', 1);// 0
+				}
+
+			);				
+
+		});
+</script>
+</head>
+<body>
+<table width="100%" border="0" cellspacing="0" cellpadding="0">
+  <tr>
+    <td align="center">
+    	<div id="container">
+        	<!--header-->
+        	<div id="header">
+   	    		<div id="header_in">
+                	<div class="banner">
+                    	<div class="banner_in">
+                    	<div class="logo">
+                        	<a href="index.html"><img src="images/logo_vinaphone.png" alt="" title="" /></a>
+                        </div>
+                        	<div class="top_bar">
+                            	<ul style="margin-left:8px;">
+                                	<li><a href="http://vinaphone.com.vn/idea/homepage" target="_blank">Ý tưởng sáng tạo</a></li>
+                                    <li>|</li>
+                                    <li><a href="http://chonso.vinaphone.com.vn" target="_blank">Chọn số</a></li>
+                                    <li>|</li>
+                                    <li><a href="http://cskh.vinaphone.com.vn" target="_blank">Chăm sóc khách hàng</a></li>
+                                    <li>|</li>
+                                    <li><a href="http://careplus.vinaphone.com.vn" target="_blank">Careplus</a></li>
+                                    <li>|</li>
+                                    <li><a href="http://vinaphone.com.vn/personals/homepage" target="_blank">Trang cá nhân</a></li>
+                                    <li>|</li>
+                                    <li><a href="https://vinaphone.com.vn/auth/login?service=http://kids.vinaphone.com.vn" target="_blank">Đăng nhập</a></li>
+                                    <li>|</li>
+                                    <li><a href="http://vinaphone.com.vn/personal/register.do" target="_blank">Đăng ký</a></li>
+                                </ul>
+                            </div>
+            			</div>
+                    </div>	
+            		<div class="h_nav">
+                    	<div class="navigation">
+                            <div class="nav">
+                              <ul style="margin-left:40px;">
+                               		  <li><a href="index.html" class="select"><img src="images/icon_home.png" alt="" title="" class="icon" /></a></li>
+                                      <li><a href="thong-tin-dich-vu.html">Thông tin dịch vụ</a></li>
+                                      <li><a href="huong-dan-cach-choi.html">Hướng dẫn cách chơi</a></li>
+                                      <li><a href="khach-hang-trung-thuong.html">Khách hàng trúng thưởng</a></li>
+                                      <li><a href="the-le-giai-thuong.html">Thể lệ giải thưởng</a></li>
+                                      <li><a href="hoi-dap.html">Hỏi đáp</a></li>
+                                      <li><a href="lien-he.html">Liên hệ</a></li>
+                              </ul>
+                          </div>
+                    	</div>
+                    </div>
+            
+                
+              </div>
+            </div>
+            <!--home-->
+            <div id="home">
+            	<div id="home_in">
+                	<div class="huongdan_choi">
+                    	<div class="box_huongdan_choi">
+                        	
+                            <div class="noidung_huongdan_choi">
+                                <div class="noidung_huongdan_choi_in scroll-pane">
+                                	<h1 class="left">HỎI ĐÁP</h1>
+                                	<div class="box_hoidap">
+                                    	<div class="images_hoidap">
+                                        	<img src="images/images_hoidap.png" alt="" title="" />
+                                        </div>
+                                        <div class="noidung_hoidap">
+<h3 class="tieude_hoidap">Câu 1. Dịch vụ “<span class="morelink">Nhận diện người nổi tiếng </span>”  là dịch vụ gì ?</h3>
+<li class="chitiet_noidung"><span class="red"><strong>Trả lời:&nbsp;&nbsp;&nbsp;&nbsp;</strong></span> 
+Dịch vụ Nhận diện người nổi tiếng là dịch vụ giải trí, cung cấp các thông tin và thành tựu nổi bật nhất về những con người nổi tiếng trên thế giới. Khách hàng muốn tham gia và nhận được thông tin từ chương trình khách hàng phải đăng ký sử dụng dịch vụ bằng cách soạn: DK gửi 1566 và MUA gửi 1566 để nhận được các thông tin về những nhân vật nổi tiếng và dự đoán tên người nổi tiếng 
+</li></br>
+<h3 class="tieude_hoidap">Câu 2.Cách thức tham gia chơi dịch vụ? </h3>
+<li class="chitiet_noidung"><span class="red"><strong>Trả lời:&nbsp;&nbsp;&nbsp;&nbsp;</strong></span> 
+Khách hàng muốn tham gia dịch vụ Nhận diện người nổi tiếng, khách hàng có 3 cách sau:</br>
+<strong>+ Cách 1:</strong>&nbsp;&nbsp; Từ điện thoại của khách hàng, soạn tin nhắn theo cú pháp “DK” gửi 1566.Sau khi đăng ký sử dụng dịch vụ thành công, khách hàng soạn: MUA gửi 1566 để bắt nhận được thông tin về người nổi tiếng và dự đoán tên người nổi tiếng. Dự đoán đúng tên người nổi tiếng - Trúng ngay điện thoại Nokia Lumia</br>
+<strong>+  Cách 2:</strong>&nbsp;&nbsp; Khách hàng truy cập vào website dịch vụ và chọn nút đăng ký.</br>
+<strong>+  Cách 3:</strong>&nbsp;&nbsp; Khách hàng truy cập vào wapsite dịch vụ và chọn nút đăng ký.</br></br>
+</li></br>
+<h3 class="tieude_hoidap">Câu 3. Dịch vụ Nhận diện người nổi tiếng hỏi về những ai?</h3>
+<li class="chitiet_noidung"><span class="red"><strong>Trả lời:&nbsp;&nbsp;&nbsp;&nbsp;</strong></span> 
+Dịch vụ Nhận diện người nổi tiếng hỏi về tất cả những nhân vật nổi tiếng trên mọi lĩnh vực: Khoa học - Xã hội; Y học; Phim ảnh; Ca nhạc; Lịch sử; Chính trị; Bóng đá;…</br>
+Ví dụ: Sir Isaac Newton; Tôn Thất Tùng; Tăng Thanh Hà; Mỹ Linh; Phan Bội Châu; Hồng Sơn; Washington</br>
+</li></br>
+<h3 class="tieude_hoidap">Câu 4. Quyền lợi của người chơi khi tham gia dịch vụ? </h3>
+<li class="chitiet_noidung"><span class="red"><strong>Trả lời:&nbsp;&nbsp;&nbsp;&nbsp;</strong></span> 
+Tham gia dịch vụ Nhận diện người nổi tiếng, khách hàng sẽ có cơ hội nhận được điện thoại Nokia Lumia hàng ngày
+Tham gia vào dịch vụ, khách hàng sẽ nhận được nhiều thông tin bổ ích về những nhân vật nổi tiếng và quyền lực nhất thế giới
+</li></br>
+<h3 class="tieude_hoidap">Câu 5. Giá cước sử dụng cho từng gói dịch vụ là bao nhiêu?</h3>
+<li class="chitiet_noidung"><span class="red"><strong>Trả lời:&nbsp;&nbsp;&nbsp;&nbsp;</strong></span> 
+<table style="width:100%" border="1">
+<tr>
+<td align="center">STT</td>
+<td align="center">Loại cước</td>
+<td align="center">Giá cước (Đã bao gồm VAT)</td>
+</tr>
+<tr>
+<td>Cước thuê bao</td>
+<td>Cước nhắn tin mua dữ kiện thông tin người nổi tiếng</td>
+<td>Cước nhắn tin khác gửi tới đầu số dịch vụ</td>
+</tr>
+<tr>
+<td>2.000đ/ngày</td>
+<td>1.000đ/tin nhắn</td>
+<td>Miễn phí</td>
+</tr>
+</table>
+</li></br>
+<h3 class="tieude_hoidap">Câu 6. Không đăng ký dịch vụ Nhận diện người nổi tiếng mà tham gia dự đoán người nổi tiếng luôn được không?</h3>
+<li class="chitiet_noidung"><span class="red"><strong>Trả lời:&nbsp;&nbsp;&nbsp;&nbsp;</strong></span> 
+Khách hàng muốn tham gia được dịch vụ Nhận diện người nổi tiếng bắt buộc phải đăng ký sử dụng dịch vụ bằng cú pháp: DK gửi 1566. Đăng ký dịch vụ thành công, khách hàng muốn tham gia dự đoán tên người nổi tiếng, bắt buộc phải thực hiện thêm cú pháp: MUA gửi 1566 mới dự đoán được tên người nổi tiếng bằng cú pháp: DD [ tên người nổi tiếng - viết không dấu] gửi 1566
+</li></br>
+<h3 class="tieude_hoidap">Câu 7. Làm cách nào để khách hàng có được những thông tin dự đoán tên người nổi tiếng?</h3>
+<li class="chitiet_noidung"><span class="red"><strong>Trả lời:&nbsp;&nbsp;&nbsp;&nbsp;</strong></span> 
+Để nhận được thông tin dự đoán người nổi tiếng, khách hàng soạn tin theo cú pháp: MUA gửi 1566
+</li></br>
+<h3 class="tieude_hoidap">Câu 8. Mỗi ngày, khách hàng được dự đoán tối đa bao nhiêu lần tên người nổi tiếng?</h3>
+<li class="chitiet_noidung"><span class="red"><strong>Trả lời:&nbsp;&nbsp;&nbsp;&nbsp;</strong></span> 
+Mỗi ngày khách hàng được dự đoán tối đa 20 lần / ngày</br>
+- Nếu khách hàng dự đoán đúng: Khách hàng sẽ nhận được bản tin SMS thông báo kết quả dự đoán chính xác và khách hàng sẽ không được tiếp tục tham gia dự đoán trong phiên dự đoán đó nữa.</br>
+- Nếu khách hàng dự đoán sai: Khách hàng phải thực hiện thao tác mua thêm dữ kiện mới được quyền dự đoán lại tên người nổi tiếng.
+</li></br>
+<h3 class="tieude_hoidap">Câu 9. Nếu khách hàng đang tham gia chương trình mà tài khoản bị hết thì có được quyền dự đoán tên người nổi tiếng không?</h3>
+<li class="chitiet_noidung"><span class="red"><strong>Trả lời:&nbsp;&nbsp;&nbsp;&nbsp;</strong></span> 
+Nếu khách hàng đã đăng ký thành công chương trình và tham gia MUA thành công ít nhất 1 dữ kiện của chương trình thì khách hàng sẽ được quyền tham gia dự đoán Tên người nổi tiếng khi tài khoản đã hết
+</li></br>
+<h3 class="tieude_hoidap">Câu 10. Thời gian bắt đầu và kết thúc chương trình là khi nào?  </h3>
+<li class="chitiet_noidung"><span class="red"><strong>Trả lời:&nbsp;&nbsp;&nbsp;&nbsp;</strong></span> 
+Nhận diện người nổi tiếng diễn ra hàng ngày. Phiên chơi bắt đầu lúc 8:00 và kết thúc vào lúc 23:59 cùng ngày
+</li></br>
+</div>
+                                    </div>
+                                </div>
+                                <div class="bg_bar">
+                                	<img src="images/bg_bar.jpg" alt="" title="" />
+                                </div>
+                                
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <!--footer-->
+            <div id="footer">
+            	<div id="footer_in">
+                	<div class="add_footer">
+                    	<div class="logo_footer">
+                        	<a href="index.html"><img src="images/logo_vinaphone.png" alt="" title="" /></a>
+                        </div>
+                        <div class="add_cty">
+                        	<div class="nav_footer">
+                                <ul>
+                                    <li style="padding-left:0px;"><a href="index.html">Trang chủ</a></li>
+                                    <li>|</li>
+                                    <li><a href="#">Giới thiệu</a></li>
+                                    <li>|</li>
+                                    <li><a href="#">Tin tức</a></li>
+                                    <li>|</li>
+                                    <li><a href="#">Dịch vụ</a></li>
+                                    <li>|</li>
+                                    <li><a href="#">Thiết bị Gói cước</a></li>
+                                    <li>|</li>
+                                    <li><a href="#">Hỗ trợ</a></li>
+                                    <li>|</li>
+                                    <li><a href="#">English</a></li>
+                                    <li>|</li>
+                                    <li><a href="#">Liên hệ</a></li>
+                                    
+                                </ul>
+                        	</div>
+                            <div class="copyright">
+                            	<li>Phát triển bởi VinaPhone 2005-2014. Bản quyền đã đăng ký.</li>
+                                <li>Giấy phép số: 337/GP-BC do Bộ Thông tin - Truyền thông cấp ngày 10/11/2006.</li>
+                            </div>
+                        </div>
+                       
+                    </div>
+                </div>
+            </div>
+        </div>
+    </td>
+  </tr>
+</table>
+
+</body>
+</html>

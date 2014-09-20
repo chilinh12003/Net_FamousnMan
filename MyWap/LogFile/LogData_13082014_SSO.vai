@@ -1,0 +1,27 @@
+﻿13/08/2014 - 17:11:53 || g4kbhz3d35ccc055hyvzxf45 || ticket:ST-2597514-lAcApec2qg2yJog62dFp-auth
+13/08/2014 - 17:11:53 || g4kbhz3d35ccc055hyvzxf45 || Response_SSO:<cas:serviceResponse xmlns:cas='http://www.yale.edu/tp/cas'>
+	<cas:authenticationSuccess>
+		<cas:user>84919438389</cas:user>
+
+
+	</cas:authenticationSuccess>
+</cas:serviceResponse>
+
+13/08/2014 - 17:16:52 || g4kbhz3d35ccc055hyvzxf45 || ticket:ST-2597639-zMbnhFBnAEVfn4UDt6pJ-auth
+13/08/2014 - 17:16:53 || g4kbhz3d35ccc055hyvzxf45 || Response_SSO:<cas:serviceResponse xmlns:cas='http://www.yale.edu/tp/cas'>
+	<cas:authenticationSuccess>
+		<cas:user>84919438389</cas:user>
+
+
+	</cas:authenticationSuccess>
+</cas:serviceResponse>
+
+13/08/2014 - 17:19:02 || g4kbhz3d35ccc055hyvzxf45 || ticket:ST-2597683-t4mPDb6a4SxaroqWSEp4-auth
+13/08/2014 - 17:19:02 || g4kbhz3d35ccc055hyvzxf45 || Response_SSO:<cas:serviceResponse xmlns:cas='http://www.yale.edu/tp/cas'>
+	<cas:authenticationSuccess>
+		<cas:user>84919438389</cas:user>
+
+
+	</cas:authenticationSuccess>
+</cas:serviceResponse>
+

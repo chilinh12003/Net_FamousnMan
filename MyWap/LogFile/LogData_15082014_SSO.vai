@@ -1,0 +1,9 @@
+﻿15/08/2014 - 10:19:18 || spf3mhmjn4kayb55zfprc5i2 || ticket:ST-2644455-bEd0Y3deEYGyFKfGrpG3-auth
+15/08/2014 - 10:19:18 || spf3mhmjn4kayb55zfprc5i2 || Response_SSO:<cas:serviceResponse xmlns:cas='http://www.yale.edu/tp/cas'>
+	<cas:authenticationSuccess>
+		<cas:user>84919438389</cas:user>
+
+
+	</cas:authenticationSuccess>
+</cas:serviceResponse>
+

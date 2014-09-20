@@ -1,0 +1,5 @@
+﻿10/09/2014 - 16:14:32 || awex1455xllw4mfovjxyil45 || D:\Projects\FamousMan\Source\MyAdmin\Admin_CCare\Ad_ResendMT.aspx.cs || UpdateMOLog || 196 || 9 || Cannot insert the value NULL into column 'PartnerID', table 'FamousMan.dbo.MOLog'; column does not allow nulls. INSERT fails.
+The statement has been terminated. || Có lỗi xảy ra trong quá trình tìm kiếm! || Chilinh
+10/09/2014 - 16:14:32 || awex1455xllw4mfovjxyil45 || D:\Projects\FamousMan\Source\MyAdmin\Admin_CCare\Ad_ResendMT.aspx.cs || btn_SendMT_Click || 154 || 21 || Cannot insert the value NULL into column 'PartnerID', table 'FamousMan.dbo.MOLog'; column does not allow nulls. INSERT fails.
+The statement has been terminated. || Có lỗi xảy ra trong quá trình tìm kiếm! || Chilinh
+-----------------------------------------------------------

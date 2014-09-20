@@ -1,0 +1,73 @@
+﻿25/08/2013 - 05:21:39 || pbyvieilfxi3dlz2ct2rv055 || D:\Projects\SportMillion\Source\MyWeb\Page\ListCode.aspx.cs || Admin_Paging1_GetTotalPage_Callback_Change || 62 || 9 || Object reference not set to an instance of an object. || Có lỗi xảy ra trong quá trình tải dữ liệu! || Chilinh
+25/08/2013 - 05:21:39 || pbyvieilfxi3dlz2ct2rv055 || D:\Projects\SportMillion\Source\MyWeb\Page\Admin_Paging.ascx.cs || ReGetTotalPage || 127 || 17 || Object reference not set to an instance of an object. || Có lỗi xảy ra trong quá trình tải dữ liệu! || Chilinh
+25/08/2013 - 05:21:39 || pbyvieilfxi3dlz2ct2rv055 || D:\Projects\SportMillion\Source\MyWeb\Page\Admin_Paging.ascx.cs || Page_Load || 104 || 21 || Object reference not set to an instance of an object. || Có lỗi xảy ra trong quá trình tải dữ liệu! || Chilinh
+-----------------------------------------------------------
+25/08/2013 - 05:22:18 || pbyvieilfxi3dlz2ct2rv055 || D:\Projects\SportMillion\Source\MyWeb\Page\ListCode.aspx.cs || Admin_Paging1_GetTotalPage_Callback_Change || 62 || 9 || Object reference not set to an instance of an object. || Có lỗi xảy ra trong quá trình tải dữ liệu! || Chilinh
+25/08/2013 - 05:22:18 || pbyvieilfxi3dlz2ct2rv055 || D:\Projects\SportMillion\Source\MyWeb\Page\Admin_Paging.ascx.cs || ReGetTotalPage || 127 || 17 || Object reference not set to an instance of an object. || Có lỗi xảy ra trong quá trình tải dữ liệu! || Chilinh
+25/08/2013 - 05:22:18 || pbyvieilfxi3dlz2ct2rv055 || D:\Projects\SportMillion\Source\MyWeb\Page\Admin_Paging.ascx.cs || Page_Load || 104 || 21 || Object reference not set to an instance of an object. || Có lỗi xảy ra trong quá trình tải dữ liệu! || Chilinh
+-----------------------------------------------------------
+25/08/2013 - 05:23:20 || pbyvieilfxi3dlz2ct2rv055 || D:\Projects\SportMillion\Source\MyWeb\Page\ListCode.aspx.cs || Admin_Paging1_GetTotalPage_Callback_Change || 62 || 9 || Object reference not set to an instance of an object. || Có lỗi xảy ra trong quá trình tải dữ liệu! || Chilinh
+25/08/2013 - 05:23:20 || pbyvieilfxi3dlz2ct2rv055 || D:\Projects\SportMillion\Source\MyWeb\Page\Admin_Paging.ascx.cs || ReGetTotalPage || 127 || 17 || Object reference not set to an instance of an object. || Có lỗi xảy ra trong quá trình tải dữ liệu! || Chilinh
+25/08/2013 - 05:23:20 || pbyvieilfxi3dlz2ct2rv055 || D:\Projects\SportMillion\Source\MyWeb\Page\Admin_Paging.ascx.cs || Page_Load || 104 || 21 || Object reference not set to an instance of an object. || Có lỗi xảy ra trong quá trình tải dữ liệu! || Chilinh
+-----------------------------------------------------------
+25/08/2013 - 05:26:44 || pbyvieilfxi3dlz2ct2rv055 || D:\Projects\SportMillion\Source\MyWeb\Page\ListCode.aspx.cs || Admin_Paging1_GetData_Callback_Change || 92 || 9 || 
+		BEGIN  
+		WITH Temp AS
+		(
+			SELECT	SubCode.*
+					, ROW_NUMBER() OVER (ORDER BY  CodeDate DESC  ) AS RowIndex 	
+			FROM	SubCode  
+				 WHERE SubCode.PID= 1 AND SubCode.MSISDN = '84919438389' 
+			
+		)
+		SELECT *
+		FROM	Temp
+		WHERE	RowIndex BETWEEN 1 AND 10	
+		END
+		 || Có lỗi xảy ra trong quá trình phân trang! || Chilinh
+25/08/2013 - 05:26:44 || pbyvieilfxi3dlz2ct2rv055 || D:\Projects\SportMillion\Source\MyWeb\Page\Admin_Paging.ascx.cs || get_Data || 51 || 21 || 
+		BEGIN  
+		WITH Temp AS
+		(
+			SELECT	SubCode.*
+					, ROW_NUMBER() OVER (ORDER BY  CodeDate DESC  ) AS RowIndex 	
+			FROM	SubCode  
+				 WHERE SubCode.PID= 1 AND SubCode.MSISDN = '84919438389' 
+			
+		)
+		SELECT *
+		FROM	Temp
+		WHERE	RowIndex BETWEEN 1 AND 10	
+		END
+		 || Có lỗi xảy ra trong quá trình phân trang! || Chilinh
+25/08/2013 - 05:26:44 || pbyvieilfxi3dlz2ct2rv055 || D:\Projects\SportMillion\Source\MyWeb\Page\Admin_Paging.ascx.cs || BindDa || 163 || 13 || 
+		BEGIN  
+		WITH Temp AS
+		(
+			SELECT	SubCode.*
+					, ROW_NUMBER() OVER (ORDER BY  CodeDate DESC  ) AS RowIndex 	
+			FROM	SubCode  
+				 WHERE SubCode.PID= 1 AND SubCode.MSISDN = '84919438389' 
+			
+		)
+		SELECT *
+		FROM	Temp
+		WHERE	RowIndex BETWEEN 1 AND 10	
+		END
+		 || Có lỗi xảy ra trong quá trình phân trang! || Chilinh
+25/08/2013 - 05:26:44 || pbyvieilfxi3dlz2ct2rv055 || D:\Projects\SportMillion\Source\MyWeb\Page\Admin_Paging.ascx.cs || lbtn_First_Click || 174 || 17 || 
+		BEGIN  
+		WITH Temp AS
+		(
+			SELECT	SubCode.*
+					, ROW_NUMBER() OVER (ORDER BY  CodeDate DESC  ) AS RowIndex 	
+			FROM	SubCode  
+				 WHERE SubCode.PID= 1 AND SubCode.MSISDN = '84919438389' 
+			
+		)
+		SELECT *
+		FROM	Temp
+		WHERE	RowIndex BETWEEN 1 AND 10	
+		END
+		 || Có lỗi xảy ra trong quá trình phân trang! || Chilinh
+-----------------------------------------------------------

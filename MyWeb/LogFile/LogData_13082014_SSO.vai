@@ -1,0 +1,27 @@
+﻿13/08/2014 - 17:51:05 || sdep2255thf4cyfxfkxnj3jx || ticket:ST-2598486-td2dKDUAAUwbdxftde4e-auth
+13/08/2014 - 17:51:05 || sdep2255thf4cyfxfkxnj3jx || Response_SSO:<cas:serviceResponse xmlns:cas='http://www.yale.edu/tp/cas'>
+	<cas:authenticationSuccess>
+		<cas:user>84919438389</cas:user>
+
+
+	</cas:authenticationSuccess>
+</cas:serviceResponse>
+||Count1
+13/08/2014 - 17:55:54 || 1dqn2qfsc5ngl455gr3eef55 || ticket:ST-2598602-KUqkpYNY5dnZOadi0I7U-auth
+13/08/2014 - 17:55:55 || 1dqn2qfsc5ngl455gr3eef55 || Response_SSO:<cas:serviceResponse xmlns:cas='http://www.yale.edu/tp/cas'>
+	<cas:authenticationSuccess>
+		<cas:user>84919438389</cas:user>
+
+
+	</cas:authenticationSuccess>
+</cas:serviceResponse>
+||Count1
+13/08/2014 - 17:59:28 || achscw55vu5oa055rqop5lqw || ticket:ST-2598676-HCh4BS3utzgi37izjeXR-auth
+13/08/2014 - 17:59:28 || achscw55vu5oa055rqop5lqw || Response_SSO:<cas:serviceResponse xmlns:cas='http://www.yale.edu/tp/cas'>
+	<cas:authenticationSuccess>
+		<cas:user>84919438389</cas:user>
+
+
+	</cas:authenticationSuccess>
+</cas:serviceResponse>
+||Count1
