@@ -39,11 +39,16 @@ namespace MySetting
 
             [DescriptionAttribute("Lịch sử Mua dữ kiện, Dự đoán trong ngày")]
             Play,
+            [DescriptionAttribute("Lịch sử Mua dữ kiện, Dự đoán")]
+            PlayLog,
             [DescriptionAttribute("Danh sách người chiến thắng")]
             Winner,
 
             [DescriptionAttribute("Thống kế cho dữ kiện trong ngày")]
-            SuggestLog,
+            SuggestCount,
+
+            [DescriptionAttribute("Thống kế cho dữ kiện")]
+            SuggestCountLog,
 
             [DescriptionAttribute("Số lượng thuê bao đăng ký dịch vụ")]
             ReportCountSub,

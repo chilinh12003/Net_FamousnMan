@@ -133,7 +133,9 @@
     <Content Include="Admin_Report\Ad_Partner_Charge_ByPrice.aspx" />
     <Content Include="Admin_Report\Ad_Partner_Reg.aspx" />
     <Content Include="Admin_Service\Ad_Play.aspx" />
+    <Content Include="Admin_Service\Ad_PlayLog.aspx" />
     <Content Include="Admin_Service\Ad_SuggestCount.aspx" />
+    <Content Include="Admin_Service\Ad_SuggestCountLog.aspx" />
     <Content Include="Admin_Service\Ad_Winner.aspx" />
     <Content Include="Admin_Service\Ad_Winner_Edit.aspx" />
     <Content Include="App_Data\AllowIP.xml" />
@@ -498,12 +500,26 @@
     <Compile Include="Admin_Service\Ad_Play.aspx.designer.cs">
       <DependentUpon>Ad_Play.aspx</DependentUpon>
     </Compile>
+    <Compile Include="Admin_Service\Ad_PlayLog.aspx.cs">
+      <DependentUpon>Ad_PlayLog.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Admin_Service\Ad_PlayLog.aspx.designer.cs">
+      <DependentUpon>Ad_PlayLog.aspx</DependentUpon>
+    </Compile>
     <Compile Include="Admin_Service\Ad_SuggestCount.aspx.cs">
       <DependentUpon>Ad_SuggestCount.aspx</DependentUpon>
       <SubType>ASPXCodeBehind</SubType>
     </Compile>
     <Compile Include="Admin_Service\Ad_SuggestCount.aspx.designer.cs">
       <DependentUpon>Ad_SuggestCount.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Admin_Service\Ad_SuggestCountLog.aspx.cs">
+      <DependentUpon>Ad_SuggestCountLog.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Admin_Service\Ad_SuggestCountLog.aspx.designer.cs">
+      <DependentUpon>Ad_SuggestCountLog.aspx</DependentUpon>
     </Compile>
     <Compile Include="Admin_Service\Ad_Winner.aspx.cs">
       <DependentUpon>Ad_Winner.aspx</DependentUpon>

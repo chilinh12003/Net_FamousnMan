@@ -97,6 +97,8 @@
     <Compile Include="Report\RPChargeByDay.cs" />
     <Compile Include="Service\ChargeLog.cs" />
     <Compile Include="Role.cs" />
+    <Compile Include="Service\PlayLog.cs" />
+    <Compile Include="Service\SuggestCountLog.cs" />
     <Compile Include="Service\SuggestCount.cs" />
     <Compile Include="Service\Winner.cs" />
     <Compile Include="Service\Play.cs" />

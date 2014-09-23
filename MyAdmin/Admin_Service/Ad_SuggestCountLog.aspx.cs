@@ -13,18 +13,17 @@ using MyFamousMan.Service;
 
 namespace MyAdmin.Admin_Service
 {
-    public partial class Ad_SuggestCount : System.Web.UI.Page
+    public partial class Ad_SuggestCountLog : System.Web.UI.Page
     {
         public GetRole mGetRole;
         public int PageIndex = 1;
 
-        SuggestCount mData = new SuggestCount();
+        SuggestCountLog mData = new SuggestCountLog();
 
         private void BindCombo(int type)
         {
             try
             {
-
             }
             catch (Exception ex)
             {
@@ -70,7 +69,7 @@ namespace MyAdmin.Admin_Service
                 //Phân quyền
                 if (ViewState["Role"] == null)
                 {
-                    mGetRole = new GetRole(MySetting.AdminSetting.ListPage.SuggestCount, Member.MemberGroupID());
+                    mGetRole = new GetRole(MySetting.AdminSetting.ListPage.SuggestCountLog, Member.MemberGroupID());
                 }
                 else
                 {
@@ -98,10 +97,13 @@ namespace MyAdmin.Admin_Service
             {
                 MyAdmin.MasterPages.Admin mMaster = (MyAdmin.MasterPages.Admin)Page.Master;
                 mMaster.str_PageTitle = mGetRole.PageName;
-                mMaster.ShowSearchBox = false;
+                
                 if (!IsPostBack)
                 {
                     ViewState["SortBy"] = string.Empty;
+                    tbx_FromDate.Value = MyConfig.StartDayOfMonth.ToString(MyConfig.ShortDateFormat);
+                    tbx_ToDate.Value = DateTime.Now.ToString(MyConfig.ShortDateFormat);
+
                 }
 
                 Admin_Paging1.rpt_Data = rpt_Data;
@@ -123,7 +125,10 @@ namespace MyAdmin.Admin_Service
                 int QuestionID = 0;
                 int SuggestID = 0;
 
-                return mData.TotalRow(SearchType,  QuestionID, SuggestID);
+                DateTime BeginDate = tbx_FromDate.Value.Length > 0 ? DateTime.ParseExact(tbx_FromDate.Value, "dd/MM/yyyy", null) : DateTime.MinValue;
+                DateTime EndDate = tbx_ToDate.Value.Length > 0 ? DateTime.ParseExact(tbx_ToDate.Value, "dd/MM/yyyy", null) : DateTime.MinValue;
+
+                return mData.TotalRow(SearchType, QuestionID, SuggestID,BeginDate,EndDate);
             }
             catch (Exception ex)
             {
@@ -139,10 +144,12 @@ namespace MyAdmin.Admin_Service
                 string SortBy = ViewState["SortBy"].ToString();
                 int QuestionID = 0;
                 int SuggestID = 0;
+                DateTime BeginDate = tbx_FromDate.Value.Length > 0 ? DateTime.ParseExact(tbx_FromDate.Value, "dd/MM/yyyy", null) : DateTime.MinValue;
+                DateTime EndDate = tbx_ToDate.Value.Length > 0 ? DateTime.ParseExact(tbx_ToDate.Value, "dd/MM/yyyy", null) : DateTime.MinValue;
 
                 PageIndex = (Admin_Paging1.mPaging.CurrentPageIndex - 1) * Admin_Paging1.mPaging.PageSize + 1;
 
-                return mData.Search(SearchType, Admin_Paging1.mPaging.BeginRow, Admin_Paging1.mPaging.EndRow, QuestionID, SuggestID, SortBy);
+                return mData.Search(SearchType, Admin_Paging1.mPaging.BeginRow, Admin_Paging1.mPaging.EndRow, QuestionID, SuggestID,BeginDate,EndDate, SortBy);
             }
             catch (Exception ex)
             {
