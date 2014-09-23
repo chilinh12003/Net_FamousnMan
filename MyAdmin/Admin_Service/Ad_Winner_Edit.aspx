@@ -6,7 +6,7 @@
     <script src="../Calendar/dhtmlgoodies_calendar/dhtmlgoodies_calendar.js" type="text/javascript"></script>
 </asp:Content>
 <asp:Content ID="Content2" ContentPlaceHolderID="cph_Tools" runat="server">
-    <a href="Ad_Question.aspx" runat="server" id="link_Cancel"><span class="Cancel"></span>Hủy </a>
+    <a href="Ad_Winner.aspx" runat="server" id="link_Cancel"><span class="Cancel"></span>Hủy </a>
     <asp:LinkButton runat="server" ID="lbtn_Save" OnClick="lbtn_Save_Click" OnClientClick="return CheckAll();">
      <span class="Save"></span>
             Lưu
@@ -21,32 +21,28 @@
 </asp:Content>
 <asp:Content ID="Content4" ContentPlaceHolderID="cph_Search" runat="server">
     <div class="Edit_Left">
-        <div class="Edit_Title" style="height: 40px;">
-            Ngày chơi</div>
-        <div class="Edit_Control" style="height: 50px;">
-            <input type="text" runat="server" id="tbx_PlayDate" style="width: 70px;" />
-            <input type="button" value="..." onclick="displayCalendar(document.getElementById('<%=tbx_PlayDate.ClientID %>'),'dd/mm/yyyy',this)" />
-        </div>
+
         <div class="Edit_Title">
-            Tiêu đề
+            Số điện thoại:
         </div>
         <div class="Edit_Control">
-            <input type="text" runat="server" id="tbx_QuestionName" style="width: 99%;" />
+            <input type="text" runat="server" id="tbx_MSISDN" />
         </div>
-        <div class="Edit_Title" >
-            Câu trả lời:</div>
-        <div class="Edit_Control_Editor">
-            <input type="text" runat="server" id="tbx_RightAnswer" style="width: 99%;" />
+        <div class="Edit_Title">
+            Họ và Tên:
         </div>
-        <div class="Edit_Title" >
-            Giải thưởng:</div>
-        <div class="Edit_Control_Editor">
+        <div class="Edit_Control">
+            <input type="text" runat="server" id="tbx_WinnerName" />
+        </div>
+        <div class="Edit_Title">Địa chỉ:</div>
+        <div class="Edit_Control">
+            <input type="text" runat="server" id="tbx_Address" style="width: 99%;" />
+        </div>
+        <div class="Edit_Title">
+            Giải thưởng:
+        </div>
+        <div class="Edit_Control">
             <input type="text" runat="server" id="tbx_Prize" style="width: 99%;" />
-        </div>
-         <div class="Edit_Title" >
-            Giá trị Giải thưởng:</div>
-        <div class="Edit_Control_Editor">
-            <input type="text" runat="server" id="tbx_Price" style="width: 99%;" />
         </div>
     </div>
     <div class="Edit_Right">
@@ -57,10 +53,10 @@
         </div>
         <div class="Properties">
             <div class="Properties_Title">
-                Tình trạng:</div>
+                Kích hoạt:
+            </div>
             <div class="Properties_Control">
-                <select runat="server" id="sel_Status">
-                </select>
+                <input type="checkbox" runat="server" id="chk_IsActive" />
             </div>
         </div>
     </div>

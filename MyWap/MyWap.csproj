@@ -141,6 +141,7 @@
     <Content Include="Templates\Service\Promo.htm" />
     <Content Include="Templates\Service\Rule.htm" />
     <Content Include="Templates\Service\Service.htm" />
+    <Content Include="Templates\Service\Winner_Repeat.htm" />
     <Content Include="Templates\Service\Winner.htm" />
     <Content Include="Templates\Static\Contact.htm" />
     <Content Include="Templates\Static\Reg_Confirm.htm" />

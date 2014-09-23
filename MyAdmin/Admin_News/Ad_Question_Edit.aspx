@@ -34,17 +34,17 @@
         </div>
         <div class="Edit_Title" >
             Câu trả lời:</div>
-        <div class="Edit_Control_Editor">
+        <div class="Edit_Control">
             <input type="text" runat="server" id="tbx_RightAnswer" style="width: 99%;" />
         </div>
         <div class="Edit_Title" >
             Giải thưởng:</div>
-        <div class="Edit_Control_Editor">
+        <div class="Edit_Control">
             <input type="text" runat="server" id="tbx_Prize" style="width: 99%;" />
         </div>
          <div class="Edit_Title" >
             Giá trị Giải thưởng:</div>
-        <div class="Edit_Control_Editor">
+        <div class="Edit_Control">
             <input type="text" runat="server" id="tbx_Price" style="width: 99%;" />
         </div>
     </div>

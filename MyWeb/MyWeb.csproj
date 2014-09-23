@@ -141,7 +141,6 @@
     <Content Include="Templates\Static\Contact.htm" />
     <Content Include="Templates\Static\Note.htm" />
     <Content Include="Templates\Static\Rule.htm" />
-    <Content Include="Templates\Static\Winner.htm" />
     <Content Include="Templates\Static\Service.htm" />
     <Content Include="Templates\Static\Guide.htm" />
     <Content Include="Templates\Static\faq.htm" />

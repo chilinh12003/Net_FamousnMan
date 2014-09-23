@@ -49,31 +49,31 @@ namespace MyAdmin.Admin_Service {
         protected global::System.Web.UI.HtmlControls.HtmlAnchor link_Add;
         
         /// <summary>
-        /// tbx_PlayDate control.
+        /// tbx_MSISDN control.
         /// </summary>
         /// <remarks>
         /// Auto-generated field.
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
-        protected global::System.Web.UI.HtmlControls.HtmlInputText tbx_PlayDate;
+        protected global::System.Web.UI.HtmlControls.HtmlInputText tbx_MSISDN;
         
         /// <summary>
-        /// tbx_QuestionName control.
+        /// tbx_WinnerName control.
         /// </summary>
         /// <remarks>
         /// Auto-generated field.
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
-        protected global::System.Web.UI.HtmlControls.HtmlInputText tbx_QuestionName;
+        protected global::System.Web.UI.HtmlControls.HtmlInputText tbx_WinnerName;
         
         /// <summary>
-        /// tbx_RightAnswer control.
+        /// tbx_Address control.
         /// </summary>
         /// <remarks>
         /// Auto-generated field.
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
-        protected global::System.Web.UI.HtmlControls.HtmlInputText tbx_RightAnswer;
+        protected global::System.Web.UI.HtmlControls.HtmlInputText tbx_Address;
         
         /// <summary>
         /// tbx_Prize control.
@@ -85,21 +85,12 @@ namespace MyAdmin.Admin_Service {
         protected global::System.Web.UI.HtmlControls.HtmlInputText tbx_Prize;
         
         /// <summary>
-        /// tbx_Price control.
+        /// chk_IsActive control.
         /// </summary>
         /// <remarks>
         /// Auto-generated field.
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
-        protected global::System.Web.UI.HtmlControls.HtmlInputText tbx_Price;
-        
-        /// <summary>
-        /// sel_Status control.
-        /// </summary>
-        /// <remarks>
-        /// Auto-generated field.
-        /// To modify move field declaration from designer file to code-behind file.
-        /// </remarks>
-        protected global::System.Web.UI.HtmlControls.HtmlSelect sel_Status;
+        protected global::System.Web.UI.HtmlControls.HtmlInputCheckBox chk_IsActive;
     }
 }

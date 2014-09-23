@@ -147,6 +147,7 @@
     <None Include="Properties\DataSources\System.Data.DataTable.datasource" />
     <Content Include="Error.aspx" />
     <Content Include="Images\Buttons\images.jpg" />
+    <None Include="Properties\PublishProfiles\Profile1.pubxml" />
     <None Include="Service References\MyService\Action.disco" />
     <None Include="Service References\MyService\configuration91.svcinfo" />
     <None Include="Service References\MyService\configuration.svcinfo" />

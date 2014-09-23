@@ -501,9 +501,7 @@ select, input, label
 }
 .Table_Row_1 td, .Table_Row_2 td
 {
-	border-right-style: solid;
-	border-right-width: 1px;
-	border-right-color: #DADADA;
+	
 	padding-left:3px;
 }
 .Table_Header th,.Table_Footer td

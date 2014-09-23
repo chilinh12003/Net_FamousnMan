@@ -200,6 +200,127 @@ namespace MyAdmin.Admin_Service
             }
         }
 
+        protected void lbtn_Delete_Click(object sender, EventArgs e)
+        {
+            try
+            {
+                char[] key_1 = { '|' };
 
+                string[] arr_1 = hid_ListCheckAll.Value.Split(key_1);
+
+
+                DataSet dds_Parent = new DataSet("Parent");
+                DataTable tbl_Child = new DataTable("Child");
+                DataColumn col_1 = new DataColumn("ID", typeof(int));
+                tbl_Child.Columns.Add(col_1);
+
+                for (int i = 0; i < arr_1.Length; i++)
+                {
+                    DataRow mRow = tbl_Child.NewRow();
+
+                    mRow["ID"] = int.Parse(arr_1[i]);
+
+                    tbl_Child.Rows.Add(mRow);
+                }
+                tbl_Child.AcceptChanges();
+
+                dds_Parent.Tables.Add(tbl_Child);
+                dds_Parent.AcceptChanges();
+
+                if (mData.Delete(0, dds_Parent.GetXml()))
+                {
+                    #region Log member
+                    MemberLog mLog = new MemberLog();
+                    MemberLog.ActionType Action = MemberLog.ActionType.Delete;
+                    mLog.Insert("Winner", string.Empty, dds_Parent.GetXml(), Action, true, string.Empty);
+                    #endregion
+
+                    MyMessage.ShowMessage("Xóa dữ liệu thành công.");
+                    BindData();
+                }
+                else
+                {
+                    MyMessage.ShowMessage("Xóa dữ liệu KHÔNG thành công!");
+                }
+            }
+            catch (Exception ex)
+            {
+                MyLogfile.WriteLogError(ex, true, MyNotice.AdminError.DeleteDataError, "Chilinh");
+            }
+        }
+
+        private void Active(bool IsActive)
+        {
+            try
+            {
+                char[] key_1 = { '|' };
+
+                string[] arr_1 = hid_ListCheckAll.Value.Split(key_1);
+
+
+                DataSet dds_Parent = new DataSet("Parent");
+                DataTable tbl_Child = new DataTable("Child");
+                DataColumn col_1 = new DataColumn("ID", typeof(int));
+                tbl_Child.Columns.Add(col_1);
+
+                for (int i = 0; i < arr_1.Length; i++)
+                {
+                    DataRow mRow = tbl_Child.NewRow();
+
+                    mRow["ID"] = int.Parse(arr_1[i]);
+
+                    tbl_Child.Rows.Add(mRow);
+                }
+                tbl_Child.AcceptChanges();
+
+                dds_Parent.Tables.Add(tbl_Child);
+                dds_Parent.AcceptChanges();
+
+                if (mData.Active(0, IsActive, dds_Parent.GetXml()))
+                {
+                    #region Log member
+                    MemberLog mLog = new MemberLog();
+                    MemberLog.ActionType Action = IsActive ? MemberLog.ActionType.Active : MemberLog.ActionType.InActive;
+                    mLog.Insert("Winner", string.Empty, dds_Parent.GetXml(), Action, true, string.Empty);
+                    #endregion
+                    MyMessage.ShowMessage("Cập nhật dữ liệu thành công.");
+                    BindData();
+                }
+                else
+                {
+                    MyMessage.ShowMessage("Cập nhật dữ liệu KHÔNG thành công!");
+                }
+            }
+            catch (Exception ex)
+            {
+                throw ex;
+            }
+        }
+
+        protected void lbtn_Active_Click(object sender, EventArgs e)
+        {
+
+            try
+            {
+                Active(true);
+            }
+            catch (Exception ex)
+            {
+                MyLogfile.WriteLogError(ex, true, MyNotice.AdminError.ActiveError, "Chilinh");
+            }
+        }
+
+        protected void lbtn_UnActive_Click(object sender, EventArgs e)
+        {
+
+            try
+            {
+                Active(false);
+            }
+            catch (Exception ex)
+            {
+                MyLogfile.WriteLogError(ex, true, MyNotice.AdminError.ActiveError, "Chilinh");
+            }
+        }
     }
 }

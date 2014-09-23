@@ -39,7 +39,7 @@
         </div>
         <div class="Edit_Title">
             Thứ tự:</div>
-        <div class="Edit_Control_Editor">
+        <div class="Edit_Control">
             <input type="text" runat="server" id="tbx_OrderNumber" value="1" onkeypress="return isNumberKey_int(event);" />
         </div>
         <div class="Edit_Title">

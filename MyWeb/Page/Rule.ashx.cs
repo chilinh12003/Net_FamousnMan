@@ -17,14 +17,11 @@ namespace MyWeb.Page
         {
             try
             {
-               
-
                 LoadHeader_Sub mHeader_Sub = new LoadHeader_Sub();
                 LoadHeader mHeader = new LoadHeader();
                 mHeader.Title = "Thể lệ giải thưởng";
                 mHeader.Header_Sub = mHeader_Sub.GetHTML();
                 Write(mHeader.GetHTML());
-
 
                 LoadRule mRule = new LoadRule();
                 Write(mRule.GetHTML());

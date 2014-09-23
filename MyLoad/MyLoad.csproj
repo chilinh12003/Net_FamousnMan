@@ -61,7 +61,7 @@
     <Compile Include="LoadService\LoadReg_Exist.cs" />
     <Compile Include="LoadStatic\LoadNote.cs" />
     <Compile Include="LoadStatic\LoadFAQ.cs" />
-    <Compile Include="LoadStatic\LoadWinner.cs" />
+    <Compile Include="LoadService\LoadWinner.cs" />
     <Compile Include="LoadStatic\LoadRule.cs" />
     <Compile Include="LoadStatic\LoadService.cs" />
     <Compile Include="LoadStatic\LoadGuide.cs" />
