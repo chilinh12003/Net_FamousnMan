@@ -303,6 +303,118 @@ namespace MyFamousMan.Service
             }
         }
 
+        #region ChargeLog_Partner
+
+        /// <summary>
+        /// 
+        /// </summary>
+        /// <param name="Type">
+        /// <para>Type = 8: Lay số lượng thuê bao theo từng dịch vụ và đối tác (Para_1 = PID, Para_2 = ChargeTypeID,Para_3 = ChargeStatusID, Para_4 = ChannelTypeID, Para_5 = BeginDate, Para_6 = EndDate</para>
+        /// <para>Type = 11: Lấy tổng tiền theo từng dịch vụ và đối tác (Para_1 = PID, Para_2 = ChargeTypeID,Para_3 = ChargeStatusID, Para_4 = ChannelTypeID, Para_5 = BeginDate, Para_6 = EndDate</para>
+        /// </param>
+        /// <param name="Para_1"></param>
+        /// <param name="Para_2"></param>
+        /// <param name="Para_3"></param>
+        /// <param name="Para_4"></param>
+        /// <param name="Para_5"></param>
+        /// <param name="Para_6"></param>
+        /// <returns></returns>
+        public DataTable Select_Partner(int Type, string Para_1, string Para_2, string Para_3, string Para_4, string Para_5, string Para_6)
+        {
+            try
+            {
+                string[] mPara = { "Type", "Para_1", "Para_2", "Para_3", "Para_4", "Para_5", "Para_6" };
+                string[] mValue = { Type.ToString(), Para_1, Para_2, Para_3, Para_4, Para_5, Para_6 };
+                return mGet.GetDataTable("Sp_ChargeLog_Partner_Select", mPara, mValue);
+            }
+            catch (Exception ex)
+            {
+                throw ex;
+            }
+        }
+
+        /// <summary>
+        /// 
+        /// </summary>
+        /// <param name="Type">
+        /// <para>Type = 7: Lay số lượng thuê bao theo từng dịch vụ và đối tác (Para_1 = PID, Para_2 = ChargeTypeID,Para_3 = ChargeStatusID, Para_4 = BeginDate, Para_5 = EndDate</para>
+        /// <para>Type = 10: Lấy tổng tiền theo từng dịch vụ và đối tác (Para_1 = PID, Para_2 = ChargeTypeID,Para_3 = ChargeStatusID, Para_4 = BeginDate, Para_5 = EndDate</para>
+        /// </param>
+        /// <param name="Para_1"></param>
+        /// <param name="Para_2"></param>
+        /// <param name="Para_3"></param>
+        /// <param name="Para_4"></param>
+        /// <param name="Para_5"></param>
+        /// <param name="Para_6"></param>
+        /// <returns></returns>
+        public DataTable Select_Partner(int Type, string Para_1, string Para_2, string Para_3, string Para_4, string Para_5)
+        {
+            try
+            {
+                string[] mPara = { "Type", "Para_1", "Para_2", "Para_3", "Para_4", "Para_5" };
+                string[] mValue = { Type.ToString(), Para_1, Para_2, Para_3, Para_4, Para_5 };
+                return mGet.GetDataTable("Sp_ChargeLog_Partner_Select", mPara, mValue);
+            }
+            catch (Exception ex)
+            {
+                throw ex;
+            }
+        }
+
+
+        /// <summary>
+        /// 
+        /// </summary>
+        /// <param name="Type">Cách thức lấy
+        /// <para>Type = 2: Lấy tổng số lệnh charge (Para_1 = ChargeStatusID,Para_2= ChargeTypeID, Para_3=BeginDate, Para_4 = EndDate)</para>
+        /// <para>Type = 6: Lay số lượng thuê bao theo từng dịch vụ và đối tác (Para_1 = PID, Para_2 = ChargeTypeID,Para_3 = BeginDate, Para_4 = EndDate</para>
+        /// <para>Type = 9: Lấy tổng tiền theo từng dịch vụ và đối tác (Para_1 = PID, Para_2 = ChargeTypeID,Para_3 = BeginDate, Para_4 = EndDate</para>
+        /// </param>
+        /// <param name="Para_1"></param>
+        /// <param name="Para_2"></param>
+        /// <param name="Para_3"></param>
+        /// <returns></returns>
+        public DataTable Select_Partner(int Type, string Para_1, string Para_2, string Para_3, string Para_4)
+        {
+            try
+            {
+                string[] mPara = { "Type", "Para_1", "Para_2", "Para_3", "Para_4" };
+                string[] mValue = { Type.ToString(), Para_1, Para_2, Para_3, Para_4 };
+                return mGet.GetDataTable("Sp_ChargeLog_Partner_Select", mPara, mValue);
+            }
+            catch (Exception ex)
+            {
+                throw ex;
+            }
+        }
+
+        /// <summary>
+        /// 
+        /// </summary>
+        /// <param name="Type">Cách thức lấy
+        /// <para>Type = 3: Lấy tổng số lệnh charge (Para_1= ChargeTypeID, Para_2=BeginDate, Para_3 = EndDate)</para>
+        ///<para>Type = 4: Lấy tổng số lệnh charge (Para_1 = ChargeStatusID, Para_2=BeginDate, Para_3 = EndDate)</para>
+        ///<para>Type = 6: Lấy tổng số lệnh charge group by (Para_1 = PID, Para_2=BeginDate, Para_3 = EndDate)</para>
+        /// </param>
+        /// <param name="Para_1"></param>
+        /// <param name="Para_2"></param>
+        /// <param name="Para_3"></param>
+        /// <returns></returns>
+        public DataTable Select_Partner(int Type, string Para_1, string Para_2, string Para_3)
+        {
+            try
+            {
+                string[] mPara = { "Type", "Para_1", "Para_2", "Para_3" };
+                string[] mValue = { Type.ToString(), Para_1, Para_2, Para_3 };
+                return mGet.GetDataTable("Sp_ChargeLog_Partner_Select", mPara, mValue);
+            }
+            catch (Exception ex)
+            {
+                throw ex;
+            }
+        }
+        #endregion
+
       
         public DataTable Select(int Type)
         {

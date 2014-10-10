@@ -145,6 +145,19 @@ namespace MyFamousMan
                 throw ex;
             }
         }
+        public DataTable Select(int? Type)
+        {
+            try
+            {
+                string[] mpara = { "Type"};
+                string[] mValue = { Type.ToString() };
+                return mGet.GetDataTable("Sp_Partner_Select", mpara, mValue);
+            }
+            catch (Exception ex)
+            {
+                throw ex;
+            }
+        }
 
         /// <summary>
         /// Lấy dữ liệu Partner

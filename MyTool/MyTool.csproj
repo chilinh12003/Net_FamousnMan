@@ -78,6 +78,7 @@
     <Compile Include="Properties\AssemblyInfo.cs" />
     <Compile Include="ReportSync\MOSync.cs" />
     <Compile Include="ReportSync\SubSync.cs" />
+    <Compile Include="ReportSync\SyncSub_Partner.cs" />
   </ItemGroup>
   <ItemGroup>
     <None Include="App.config">

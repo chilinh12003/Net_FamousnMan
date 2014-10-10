@@ -95,6 +95,8 @@
     <Compile Include="Report\RP_MO.cs" />
     <Compile Include="Report\RP_Sub.cs" />
     <Compile Include="Report\RPChargeByDay.cs" />
+    <Compile Include="Report\RP_Sub_Partner.cs" />
+    <Compile Include="Report\RP_Sub_Partner_Object.cs" />
     <Compile Include="Service\ChargeLog.cs" />
     <Compile Include="Role.cs" />
     <Compile Include="Service\PlayLog.cs" />

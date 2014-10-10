@@ -54,8 +54,9 @@
     <CodeAnalysisRuleSet>AllRules.ruleset</CodeAnalysisRuleSet>
   </PropertyGroup>
   <ItemGroup>
-    <Reference Include="AntiXSSLibrary">
-      <HintPath>..\..\..\DLL\AntiXSS Library v4.2\NET35\AntiXSSLibrary.dll</HintPath>
+    <Reference Include="AntiXSSLibrary, Version=4.2.0.0, Culture=neutral, PublicKeyToken=d127efab8a9c114f, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\..\Lib\AntiXSS Library v4.2\NET35\AntiXSSLibrary.dll</HintPath>
     </Reference>
     <Reference Include="CuteEditor, Version=6.6.0.0, Culture=neutral, PublicKeyToken=3858aa6802b1223a, processorArchitecture=MSIL">
       <SpecificVersion>False</SpecificVersion>
@@ -120,6 +121,7 @@
     <Content Include="Admin_News\Ad_Question_Edit.aspx" />
     <Content Include="Admin_News\Ad_Suggest.aspx" />
     <Content Include="Admin_News\Ad_Suggest_Edit.aspx" />
+    <Content Include="Admin_Private\Ad_SetWinner.aspx" />
     <Content Include="Admin_Report\Ad_ChargeByDay.aspx" />
     <Content Include="Admin_Report\Ad_ChargeByDay_Price.aspx" />
     <Content Include="Admin_Report\Ad_ChargeLog.aspx" />
@@ -132,6 +134,7 @@
     <Content Include="Admin_Report\Ad_Partner_Charge.aspx" />
     <Content Include="Admin_Report\Ad_Partner_Charge_ByPrice.aspx" />
     <Content Include="Admin_Report\Ad_Partner_Reg.aspx" />
+    <Content Include="Admin_Report\Ad_RP_Sub_Partner.aspx" />
     <Content Include="Admin_Service\Ad_Play.aspx" />
     <Content Include="Admin_Service\Ad_PlayLog.aspx" />
     <Content Include="Admin_Service\Ad_SuggestCount.aspx" />
@@ -157,6 +160,8 @@
       <Generator>WCF Proxy Generator</Generator>
       <LastGenOutput>Reference.cs</LastGenOutput>
     </None>
+    <Content Include="Images\Images\Table_TL_Repeat.png" />
+    <Content Include="Images\Images\Table_TR_Repeat.png" />
     <Content Include="Templates\HTMLPage1.htm" />
     <Content Include="Templates\KPI_MO.htm" />
     <Content Include="Web.config">
@@ -409,6 +414,13 @@
     <Compile Include="Admin_News\Ad_Suggest_Edit.aspx.designer.cs">
       <DependentUpon>Ad_Suggest_Edit.aspx</DependentUpon>
     </Compile>
+    <Compile Include="Admin_Private\Ad_SetWinner.aspx.cs">
+      <DependentUpon>Ad_SetWinner.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Admin_Private\Ad_SetWinner.aspx.designer.cs">
+      <DependentUpon>Ad_SetWinner.aspx</DependentUpon>
+    </Compile>
     <Compile Include="Admin_Report\Ad_ChargeByDay.aspx.cs">
       <DependentUpon>Ad_ChargeByDay.aspx</DependentUpon>
       <SubType>ASPXCodeBehind</SubType>
@@ -492,6 +504,13 @@
     </Compile>
     <Compile Include="Admin_Report\Ad_Partner_Reg.aspx.designer.cs">
       <DependentUpon>Ad_Partner_Reg.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Admin_Report\Ad_RP_Sub_Partner.aspx.cs">
+      <DependentUpon>Ad_RP_Sub_Partner.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Admin_Report\Ad_RP_Sub_Partner.aspx.designer.cs">
+      <DependentUpon>Ad_RP_Sub_Partner.aspx</DependentUpon>
     </Compile>
     <Compile Include="Admin_Service\Ad_Play.aspx.cs">
       <DependentUpon>Ad_Play.aspx</DependentUpon>

@@ -138,6 +138,7 @@ namespace MyFamousMan.Sub
         /// <para>Type = 6: Lấy tổng thuê bao theo partner (Para_1 = PartnerID)</para>
         /// <para>Type = 7: Lấy tổng thuê bao</para>
         /// <para>Type = 8: Lấy tổng số thuê bao từ đầu đến ngày (Para_1 = EndDate)</para>
+        /// <para>Type = 9: Lấy tổng số thuê bao theo Partner</para>
         /// </param>
         /// <param name="Para_1"></param>
         /// <returns></returns>

@@ -9,7 +9,7 @@ using MyFamousMan.Report;
 using MyFamousMan.Sub;
 namespace MyTool.ReportSync
 {
-    public class ReportSync
+    public class SubSync
     {
         /// <summary>
         /// Cho biết dừng thread hay không
@@ -51,7 +51,7 @@ namespace MyTool.ReportSync
         Subscriber mSub = null;
         UnSubscriber mUnSub = null;
 
-        public ReportSync()
+        public SubSync()
         {
             try
             {
@@ -103,7 +103,7 @@ namespace MyTool.ReportSync
                 if (!string.IsNullOrEmpty(MyConfig.GetKeyInConfigFile("StartDate")))
                 {
 
-                    return DateTime.ParseExact(MyConfig.GetKeyInConfigFile("StartDate"), "yyyy-MM-dd", null);
+                    return DateTime.ParseExact(MyConfig.GetKeyInConfigFile("StartDate"), "dd-MM-yyyy", null);
                 }
                 return DateTime.MinValue;
             }
@@ -169,7 +169,7 @@ namespace MyTool.ReportSync
                             if (StopThread)
                                 break;
 
-                            Console.WriteLine("BeginDate:"+BeginDate.ToString(MyConfig.LongDateFormat)+" || Lay du lieu voi pid = " + PID.ToString());
+                            Console.WriteLine("BeginDate:" + BeginDate.ToString(MyConfig.LongDateFormat) + " || Lay du lieu voi pid = " + PID.ToString());
               
                             #region Thông tin Đăng ký
 
@@ -178,6 +178,7 @@ namespace MyTool.ReportSync
                                                                          BeginDate.ToString(MyConfig.DateFormat_InsertToDB),
                                                                          EndDate.ToString(MyConfig.DateFormat_InsertToDB)).Rows[0][0].ToString()
                                                                          );
+
                             mRP_Sub_Current.SubSuccess += double.Parse(mChargeLog.Select(11, PID.ToString(), ((int)ChargeLog.ChargeType.REG).ToString(),
                                                                          ((int)ChargeLog.ChargeStatus.ChargeSuccess).ToString(),
                                                                          BeginDate.ToString(MyConfig.DateFormat_InsertToDB),

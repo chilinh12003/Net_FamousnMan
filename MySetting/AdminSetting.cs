@@ -66,7 +66,8 @@ namespace MySetting
             [DescriptionAttribute("Lịch sử trả MT")]
             ReportMTHisTory,
 
-
+            [DescriptionAttribute("Thống kê thuê bao")]
+            RP_Sub_Partner,
             [DescriptionAttribute("Lịch sử trừ tiền")]
             ChargeLog,
 
