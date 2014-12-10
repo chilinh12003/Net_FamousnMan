@@ -59,11 +59,11 @@
     </Reference>
     <Reference Include="MyBase, Version=1.0.0.0, Culture=neutral, processorArchitecture=MSIL">
       <SpecificVersion>False</SpecificVersion>
-      <HintPath>..\..\..\Projects\DLL Libraries\Source\MyBase\bin\Debug\MyBase.dll</HintPath>
+      <HintPath>..\..\MyLibrary\MyBase\bin\Debug\MyBase.dll</HintPath>
     </Reference>
     <Reference Include="MyUtility, Version=1.0.0.0, Culture=neutral, processorArchitecture=MSIL">
       <SpecificVersion>False</SpecificVersion>
-      <HintPath>..\..\..\Projects\DLL Libraries\Source\MyUtility\bin\Debug\MyUtility.dll</HintPath>
+      <HintPath>..\..\MyLibrary\MyUtility\bin\Debug\MyUtility.dll</HintPath>
     </Reference>
     <Reference Include="System" />
     <Reference Include="System.Data" />
@@ -92,19 +92,12 @@
     <Content Include="images\bg_home.jpg" />
     <Content Include="images\bg_huongdancachchoi.png" />
     <Content Include="images\bg_nav.jpg" />
-    <Content Include="images\cattiensa.png" />
     <Content Include="images\dang_ky_ngay.png" />
     <Content Include="images\Huy.png" />
     <Content Include="images\icon_home.png" />
     <Content Include="images\icon_huongdanchoi.png" />
     <Content Include="images\images_hoidap.png" />
-    <Content Include="images\index1.jpg" />
     <Content Include="images\logo_vinaphone.png" />
-    <Content Include="images\nhan dien nguoi noi tieng.jpg" />
-    <Content Include="images\nhan dien nguoi noi tiengoption 2.jpg" />
-    <Content Include="images\nhan dien nguoi noi tiengoption 3.jpg" />
-    <Content Include="images\nhan dien nguoi noi tiengoption4 .jpg" />
-    <Content Include="images\nhan dien nguoi noi tiengoption4.jpg" />
     <Content Include="images\nhandiennguoinoitieng.png" />
     <Content Include="Scripts\Begin.js" />
     <Content Include="Scripts\Google.js" />
@@ -161,6 +154,7 @@
     <Content Include="Web.Release.config">
       <DependentUpon>Web.config</DependentUpon>
     </Content>
+    <Content Include="vnp\RedirectVNP.ashx" />
   </ItemGroup>
   <ItemGroup>
     <Compile Include="Default.aspx.cs">
@@ -214,10 +208,12 @@
     </Compile>
     <Compile Include="VNPLogin.aspx.cs">
       <DependentUpon>VNPLogin.aspx</DependentUpon>
-      <SubType>ASPXCodeBehind</SubType>
     </Compile>
     <Compile Include="VNPLogin.aspx.designer.cs">
       <DependentUpon>VNPLogin.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="vnp\RedirectVNP.ashx.cs">
+      <DependentUpon>RedirectVNP.ashx</DependentUpon>
     </Compile>
   </ItemGroup>
   <ItemGroup>

@@ -30,11 +30,11 @@ namespace MyLoad_Wap.LoadStatic
         {
             try
             {
-                if (!MyUtility.MyCheck.CheckMobileDevide())
-                {
-                    MyCurrent.CurrentPage.Response.Redirect(MySetting.WebSetting.LinkWeb);
-                    return string.Empty;
-                }
+                //if (!MyUtility.MyCheck.CheckMobileDevide())
+                //{
+                //    MyCurrent.CurrentPage.Response.Redirect(MySetting.WebSetting.LinkWeb);
+                //    return string.Empty;
+                //}
 
                 string[] arr = { Title, MSISDN };
                 return mLoadTempLate.LoadTemplateByArray(mTemplatePath, arr);

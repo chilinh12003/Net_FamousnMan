@@ -144,6 +144,17 @@ namespace MySetting
                     return Temp;
             }
         }
+        public static string PackageName
+        {
+            get
+            {
+                string Temp = MyConfig.GetKeyInConfigFile("PackageName");
+                if (string.IsNullOrEmpty(Temp))
+                    return "NGUOINOITIENG";
+                else
+                    return Temp;
+            }
+        }
         
         public static int MaxPID
         {

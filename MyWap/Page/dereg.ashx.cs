@@ -124,7 +124,7 @@ namespace MyWap.Page
             }
             catch (Exception ex)
             {
-                MyLogfile.WriteLogError("_Error", ex, false, MyNotice.EndUserError.LoadDataError, "Chilinh");
+                mLog.Error(ex);
                 Write(MyNotice.EndUserError.LoadDataError);
             }
             finally

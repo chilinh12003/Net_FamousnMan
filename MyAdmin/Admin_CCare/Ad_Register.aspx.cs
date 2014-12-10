@@ -114,10 +114,13 @@ namespace MyAdmin.Admin_CCare
                 }
 
                 MyService.ActionSoapClient mClient = new MyService.ActionSoapClient();
-                Signature = MSISDN + "|CMS|" + DateTime.Now.ToString("yyyyMMddHHmmssfff");
+                Signature = MSISDN + "|CMS|" + DateTime.Now.ToString("yyyyMMddHHmmssfff") +"|NGUOINOITIENG";
                 Signature = MySecurity.AES.Encrypt(Signature, MySetting.AdminSetting.RegWSKey);
                 System.Net.ServicePointManager.Expect100Continue = false;
-                Result = mClient.Dereg((int)MyConfig.ChannelType.CSKH, Signature, CommandCode);
+                //Result = mClient.DeReg((int)MyConfig.ChannelType.CSKH, Signature, CommandCode);
+
+                Result = mClient.DeReg_VNP(Member.LoginName(), MyCurrent.GetRequestIP, Signature, MyService.ChannelType.CSKH);
+
                 string[] Arr_Result = Result.Split('|');
 
                 ErrorCode = Arr_Result[0];
@@ -167,10 +170,11 @@ namespace MyAdmin.Admin_CCare
                 }
 
                 MyService.ActionSoapClient mClient = new MyService.ActionSoapClient();
-                Signature = MSISDN + "|CMS|" + DateTime.Now.ToString("yyyyMMddHHmmssfff");
+                Signature = MSISDN + "|CMS|" + DateTime.Now.ToString("yyyyMMddHHmmssfff") + "|NGUOINOITIENG";
                 Signature = MySecurity.AES.Encrypt(Signature, MySetting.AdminSetting.RegWSKey);
                 System.Net.ServicePointManager.Expect100Continue = false;
-                Result = mClient.Reg((int)MyConfig.ChannelType.CSKH, Signature, CommandCode);
+                //Result = mClient.Reg((int)MyConfig.ChannelType.CSKH, Signature, CommandCode);
+                Result = mClient.Reg_VNP(Member.LoginName(), MyCurrent.GetRequestIP, Signature, MyService.ChannelType.CSKH);
                 string[] Arr_Result = Result.Split('|');
 
                 ErrorCode = Arr_Result[0];

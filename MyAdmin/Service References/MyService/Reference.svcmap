@@ -18,11 +18,11 @@
     <ServiceContractMappings />
   </ClientOptions>
   <MetadataSources>
-    <MetadataSource Address="http://localhost:8080/FamousMan_WebService/Action.asmx" Protocol="http" SourceId="1" />
+    <MetadataSource Address="http://localhost:8082/FamousMan_WebService/Action.asmx" Protocol="http" SourceId="1" />
   </MetadataSources>
   <Metadata>
-    <MetadataFile FileName="Action.wsdl" MetadataType="Wsdl" ID="1df50ed4-83da-444b-8329-d81f8c111991" SourceId="1" SourceUrl="http://localhost:8080/FamousMan_WebService/Action.asmx?wsdl" />
-    <MetadataFile FileName="Action.disco" MetadataType="Disco" ID="8c15f335-d821-4806-9601-13ec54c6e04c" SourceId="1" SourceUrl="http://localhost:8080/FamousMan_WebService/Action.asmx?disco" />
+    <MetadataFile FileName="Action1.wsdl" MetadataType="Wsdl" ID="f6b57683-8498-47ab-8b21-f5900316742f" SourceId="1" SourceUrl="http://localhost:8082/FamousMan_WebService/Action.asmx?wsdl" />
+    <MetadataFile FileName="Action1.disco" MetadataType="Disco" ID="d048134c-8b43-4349-954a-856598bc6775" SourceId="1" SourceUrl="http://localhost:8082/FamousMan_WebService/Action.asmx?disco" />
   </Metadata>
   <Extensions>
     <ExtensionFile FileName="configuration91.svcinfo" Name="configuration91.svcinfo" />

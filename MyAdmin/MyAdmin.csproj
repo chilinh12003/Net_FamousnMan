@@ -153,7 +153,7 @@
     <Content Include="Error.aspx" />
     <Content Include="Images\Buttons\images.jpg" />
     <None Include="Properties\PublishProfiles\Profile1.pubxml" />
-    <None Include="Service References\MyService\Action.disco" />
+    <None Include="Service References\MyService\Action1.wsdl" />
     <None Include="Service References\MyService\configuration91.svcinfo" />
     <None Include="Service References\MyService\configuration.svcinfo" />
     <None Include="Service References\MyService\Reference.svcmap">
@@ -162,12 +162,12 @@
     </None>
     <Content Include="Images\Images\Table_TL_Repeat.png" />
     <Content Include="Images\Images\Table_TR_Repeat.png" />
+    <None Include="Service References\MyService\Action1.disco" />
     <Content Include="Templates\HTMLPage1.htm" />
     <Content Include="Templates\KPI_MO.htm" />
     <Content Include="Web.config">
       <SubType>Designer</SubType>
     </Content>
-    <None Include="Service References\MyService\Action.wsdl" />
   </ItemGroup>
   <ItemGroup>
     <Compile Include="Admin\Ad_Alert.aspx.cs">

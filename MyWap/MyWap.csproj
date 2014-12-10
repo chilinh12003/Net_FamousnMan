@@ -52,19 +52,13 @@
   </PropertyGroup>
   <ItemGroup>
     <Reference Include="DotNetCasClient">
-      <HintPath>..\..\..\DLL\SSO_Vinaphone\DotNetCasClient.dll</HintPath>
+      <HintPath>..\..\Lib\SSO_Vinaphone\DotNetCasClient.dll</HintPath>
     </Reference>
-    <Reference Include="FiftyOne.Foundation, Version=0.1.10.2, Culture=neutral, processorArchitecture=MSIL">
-      <SpecificVersion>False</SpecificVersion>
-      <HintPath>..\..\..\DLL\FiftyOne.Foundation.dll</HintPath>
+    <Reference Include="MyBase">
+      <HintPath>..\..\MyLibrary\MyBase\bin\Debug\MyBase.dll</HintPath>
     </Reference>
-    <Reference Include="MyBase, Version=1.0.0.0, Culture=neutral, processorArchitecture=MSIL">
-      <SpecificVersion>False</SpecificVersion>
-      <HintPath>..\..\..\Projects\DLL Libraries\Source\MyBase\bin\Debug\MyBase.dll</HintPath>
-    </Reference>
-    <Reference Include="MyUtility, Version=1.0.0.0, Culture=neutral, processorArchitecture=MSIL">
-      <SpecificVersion>False</SpecificVersion>
-      <HintPath>..\..\..\Projects\DLL Libraries\Source\MyUtility\bin\Debug\MyUtility.dll</HintPath>
+    <Reference Include="MyUtility">
+      <HintPath>..\..\MyLibrary\MyUtility\bin\Debug\MyUtility.dll</HintPath>
     </Reference>
     <Reference Include="System" />
     <Reference Include="System.Data" />
@@ -82,10 +76,13 @@
     <Reference Include="System.EnterpriseServices" />
     <Reference Include="System.Web.Mobile" />
     <Reference Include="UrlRewritingNet.UrlRewriter">
-      <HintPath>..\..\..\DLL\UrlRewritingNet.UrlRewriter.dll</HintPath>
+      <HintPath>..\packages\UrlRewritingNet.2.0.6.1\lib\UrlRewritingNet.UrlRewriter.dll</HintPath>
     </Reference>
   </ItemGroup>
   <ItemGroup>
+    <Content Include="App_Data\web_browsers_patch.xml">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
     <Content Include="CookiesRequired.aspx" />
     <Content Include="Default.aspx" />
     <Content Include="Global.asax" />
@@ -107,9 +104,6 @@
     <Content Include="Page\faq.ashx" />
     <Content Include="Logout.ashx" />
     <Content Include="Page\reg.ashx" />
-    <Content Include="Reg\Accept.ashx" />
-    <Content Include="Reg\Deny.ashx" />
-    <Content Include="Reg\Register.ashx" />
     <Content Include="Scripts\Begin.js" />
     <Content Include="Scripts\compactmenu.js" />
     <Content Include="Page\accept.ashx" />
@@ -118,8 +112,15 @@
     <Content Include="Page\promo.ashx" />
     <Content Include="Page\dereg.ashx" />
     <Content Include="Notify.ashx" />
+    <Content Include="App_Data\wurfl.zip">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="packages.config" />
     <None Include="Properties\DataSources\System.Data.DataTable.datasource" />
     <None Include="Properties\PublishProfiles\Profile1.pubxml" />
+    <Content Include="Reg\Accept.ashx" />
+    <Content Include="Reg\Deny.ashx" />
+    <Content Include="Reg\Register.ashx" />
     <None Include="Service References\MyService\Action.disco" />
     <None Include="Service References\MyService\configuration91.svcinfo" />
     <None Include="Service References\MyService\configuration.svcinfo" />
@@ -129,15 +130,6 @@
     </None>
     <Content Include="Style\compactmenu.css" />
     <Content Include="Style\style.css" />
-    <Content Include="Templates\dang-ky.html" />
-    <Content Include="Templates\dang-nhap.html" />
-    <Content Include="Templates\dich-vu.html" />
-    <Content Include="Templates\hoi-dap.html" />
-    <Content Include="Templates\huong-dan-choi.html" />
-    <Content Include="Templates\index.html" />
-    <Content Include="Templates\khach-hang-trung-thuong.html" />
-    <Content Include="Templates\khuyen-mai.html" />
-    <Content Include="Templates\lien-he.html" />
     <Content Include="Templates\Service\Promo.htm" />
     <Content Include="Templates\Service\Rule.htm" />
     <Content Include="Templates\Service\Service.htm" />
@@ -155,10 +147,8 @@
     <Content Include="Templates\Static\Paging.htm" />
     <Content Include="Templates\Static\Reg.htm" />
     <Content Include="Templates\Static\Reg_Exist.htm" />
-    <Content Include="Templates\Static\rule.htm" />
     <Content Include="Templates\Static\Confirm.htm" />
     <Content Include="Templates\Static\Notice_SportMillion.htm" />
-    <Content Include="Templates\the-le-giai-thuong.html" />
     <Content Include="Test.aspx" />
     <Content Include="VNPLogin.aspx" />
     <Content Include="Web.config">
@@ -171,6 +161,7 @@
       <DependentUpon>Web.config</DependentUpon>
     </Content>
     <Content Include="test\wh.ashx" />
+    <Content Include="vnp\RedirectVNP.ashx" />
   </ItemGroup>
   <ItemGroup>
     <Compile Include="CookiesRequired.aspx.cs">
@@ -239,15 +230,12 @@
     <Compile Include="Properties\AssemblyInfo.cs" />
     <Compile Include="Reg\Accept.ashx.cs">
       <DependentUpon>Accept.ashx</DependentUpon>
-      <SubType>Code</SubType>
     </Compile>
     <Compile Include="Reg\Deny.ashx.cs">
       <DependentUpon>Deny.ashx</DependentUpon>
-      <SubType>Code</SubType>
     </Compile>
     <Compile Include="Reg\Register.ashx.cs">
       <DependentUpon>Register.ashx</DependentUpon>
-      <SubType>Code</SubType>
     </Compile>
     <Compile Include="Service References\MyService\Reference.cs">
       <AutoGen>True</AutoGen>
@@ -272,10 +260,11 @@
       <DependentUpon>VNPLogin.aspx</DependentUpon>
     </Compile>
     <Compile Include="vnp\GetMSISDN.cs" />
+    <Compile Include="vnp\RedirectVNP.ashx.cs">
+      <DependentUpon>RedirectVNP.ashx</DependentUpon>
+    </Compile>
   </ItemGroup>
-  <ItemGroup>
-    <Folder Include="App_Data\" />
-  </ItemGroup>
+  <ItemGroup />
   <ItemGroup>
     <ProjectReference Include="..\MyLoad_Wap\MyLoad_Wap.csproj">
       <Project>{6c47ab9c-0af5-4737-acc0-fffa64768987}</Project>

@@ -14,10 +14,10 @@ using DotNetCasClient;
 using DotNetCasClient.Utils;
 using DotNetCasClient.Validation;
 using System.Data;
-
+using MyBase.MyWeb;
 namespace MyWeb
 {
-    public partial class VNPLogin : System.Web.UI.Page
+    public partial class VNPLogin : MyASPXBase
     {
         //protected void Page_Load(object sender, EventArgs e)
         //{
@@ -55,7 +55,7 @@ namespace MyWeb
                     return;
                 }
 
-                MyUtility.MyLogfile.WriteLogData("SSO", "ticket:" + tkt);
+                mLog.Debug("SSO", "ticket:" + tkt);
 
                 // Second time (back from CAS) there is a ticket= to validate
                 string validateurl = CASHOST + "serviceValidate?" +
@@ -64,7 +64,7 @@ namespace MyWeb
                 StreamReader Reader = new StreamReader(new WebClient().OpenRead(validateurl));
 
                 string Response_SSO = Reader.ReadToEnd();
-                MyUtility.MyLogfile.WriteLogData("SSO", "Response_SSO:" + Response_SSO + "||Count" + Session["countlogin"].ToString());
+                mLog.Debug("SSO", "Response_SSO:" + Response_SSO + "||Count" + Session["countlogin"].ToString());
                 DataSet mSet = MyXML.GetDataSetFromXMLString(Response_SSO);
 
                 string MSISDN = string.Empty;
@@ -82,7 +82,7 @@ namespace MyWeb
             }
             catch (Exception ex)
             {
-                MyLogfile.WriteLogError(ex);
+                 mLog.Error(ex);
             }
         }
     }

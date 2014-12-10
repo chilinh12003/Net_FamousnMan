@@ -22,9 +22,8 @@ namespace MyLoad.LoadService
         {
             try
             {
-                string ConfirmPara = MSISDN + "|" + DateTime.Now.ToString("yyyyMMddHHmmssfff");
-                string ConfirmPara_Encode = MySecurity.AES.Encrypt(ConfirmPara, MySetting.AdminSetting.SpecialKey);
-                string[] Arr = new string[] { MSISDN, HttpUtility.UrlEncode(ConfirmPara_Encode) };
+              
+                string[] Arr = new string[] { MSISDN };
                 return mLoadTempLate.LoadTemplateByArray(mTemplatePath, Arr);
             }
             catch (Exception ex)

@@ -125,6 +125,14 @@ img { border: 0 none;}
     color: #000;
 }
 
+.noidung_huongdan_choi_2{float:right; width:550px; height:212px; background:url(http://nguoinoitieng.vinaphone.com.vn/images/bg_content.png); border-radius:5px;-moz-border-radius:5px; box-shadow: 0 0 10px #ccc;}
+.noidung_huongdan_choi_in_2 {float:left;}
+.noidung_huongdan_choi_2 ul {
+    list-style:square;
+}
+.noidung_huongdan_choi_2 ul li { text-align:justify; line-height:23px; list-style:square;}
+.noidung_huongdan_choi_2 h1 { width:100%; font-size:13px; text-align:left; line-height:20px; color:#034b6d; padding-bottom:5px;}
+
 .bg_bar{width:1px;float: right; position: relative; top:10px; right:15px; z-index:1;}
 .bg_bar img{width:1px; height:200px;position: absolute;}
 
@@ -215,3 +223,21 @@ img { border: 0 none;}
 .list_maduthuong{width:100%; float:left; margin-top:5px;}
 .list_maduthuong ul{ margin:0; padding:0;}
 .list_maduthuong  li{float:left; line-height:16px; color:#015884; font-size:12px; text-align:center;}
+
+.wrapping-link {
+    word-break: break-word;
+    word-wrap: break-word;
+    -webkit-hyphens: auto;
+    -moz-hyphens: auto;
+    hyphens: auto;
+    white-space:pre-line;
+}
+.wrapping-link-inline 
+{
+    word-break: normal;
+    word-wrap: normal;
+    -webkit-hyphens: auto;
+    -moz-hyphens: auto;
+    hyphens: auto;
+    white-space:nowrap;
+}
