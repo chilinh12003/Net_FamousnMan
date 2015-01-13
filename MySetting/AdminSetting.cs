@@ -44,6 +44,9 @@ namespace MySetting
             [DescriptionAttribute("Danh sách người chiến thắng")]
             Winner,
 
+            [DescriptionAttribute("Danh sách người chiến thắng theo tuần")]
+            WinnerWeek,
+
             [DescriptionAttribute("Thống kế cho dữ kiện trong ngày")]
             SuggestCount,
 

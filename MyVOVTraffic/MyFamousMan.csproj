@@ -102,6 +102,7 @@
     <Compile Include="Service\PlayLog.cs" />
     <Compile Include="Service\SuggestCountLog.cs" />
     <Compile Include="Service\SuggestCount.cs" />
+    <Compile Include="Service\WinnerWeek.cs" />
     <Compile Include="Service\Winner.cs" />
     <Compile Include="Service\Play.cs" />
     <Compile Include="Service\DefineMT.cs" />

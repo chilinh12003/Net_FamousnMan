@@ -96,6 +96,16 @@ namespace MyFamousMan.Report
             }
         }
 
+        /// <summary>
+        /// 
+        /// </summary>
+        /// <param name="Type">
+        /// <para>Type = 4: Lấy theo ngày và theo PartnerID (Para_1 = BeginDate, Para_2 = Endate, Para_3 = PartnerID)</para>
+        /// </param>
+        /// <param name="Para_1"></param>
+        /// <param name="Para_2"></param>
+        /// <param name="Para_3"></param>
+        /// <returns></returns>
         public DataTable Select(int Type, string Para_1, string Para_2, string Para_3)
         {
             try

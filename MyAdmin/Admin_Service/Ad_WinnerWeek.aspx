@@ -1,4 +1,4 @@
-﻿<%@ Page Title="" Language="C#" MasterPageFile="~/MasterPages/Admin.Master" AutoEventWireup="true" CodeBehind="Ad_Winner.aspx.cs" Inherits="MyAdmin.Admin_Service.Ad_Winner" %>
+﻿<%@ Page Title="" Language="C#" MasterPageFile="~/MasterPages/Admin.Master" AutoEventWireup="true" CodeBehind="Ad_WinnerWeek.aspx.cs" Inherits="MyAdmin.Admin_Service.Ad_WinnerWeek" %>
 
 
 <%@ Register Src="../Admin_Control/Admin_Paging.ascx" TagName="Admin_Paging" TagPrefix="uc1" %>
@@ -13,7 +13,7 @@
         <span class="Delete"></span>
             Xóa
     </asp:LinkButton>
-    <a href="Ad_Winner_Edit.aspx" runat="server" id="link_Add">
+    <a href="Ad_WinnerWeek_Edit.aspx" runat="server" id="link_Add">
         <span class="Add"></span>
         Thêm </a>
     <asp:LinkButton runat="server" ID="lbtn_Active" OnClientClick="return Active();"
@@ -43,37 +43,21 @@
                 <th width="10">STT
                 </th>
                 <th>
-                    <asp:LinkButton runat="server" CssClass="Sort" ID="lbtn_Sort_1" CommandArgument="QuestionID ASC" OnClick="lbtn_Sort_Click">Mã câu hỏi</asp:LinkButton>
+                    <asp:LinkButton runat="server" CssClass="Sort" ID="lbtn_Sort_1" CommandArgument="MSISDN ASC" OnClick="lbtn_Sort_Click">Thuê bao</asp:LinkButton>
                 </th>
                 <th>
-                    <asp:LinkButton runat="server" CssClass="Sort" ID="lbtn_Sort_2" CommandArgument="PlayDate DESC" OnClick="lbtn_Sort_Click">Ngày chơi</asp:LinkButton>
+                    <asp:LinkButton runat="server" CssClass="Sort" ID="lbtn_Sort_2" CommandArgument="BeginSession DESC" OnClick="lbtn_Sort_Click">Tuần</asp:LinkButton>
                 </th>
                 <th>
-                    <asp:LinkButton runat="server" CssClass="Sort" ID="lbtn_Sort_3" CommandArgument="MSISDN ASC" OnClick="lbtn_Sort_Click">Thuê bao</asp:LinkButton>
+                    <asp:LinkButton runat="server" CssClass="Sort" ID="lbtn_Sort_3" CommandArgument="WinnerCount DESC" OnClick="lbtn_Sort_Click">SL Ngày chiến thắng</asp:LinkButton>
                 </th>
                 <th>
-                    <asp:LinkButton runat="server" CssClass="Sort" ID="lbtn_Sort_4" CommandArgument="SuggestID ASC" OnClick="lbtn_Sort_Click">Mã dữ kiện</asp:LinkButton>
-                </th>
-                <th>Dự đoán của KH
-                </th>
-                <th>Kết quả
-                </th>
-                <th>
-                    <asp:LinkButton runat="server" CssClass="Sort" ID="lbtn_Sort_5" CommandArgument="BuyCount ASC" OnClick="lbtn_Sort_Click">SL Mua Dữ kiện</asp:LinkButton>
-                </th>
-                <th>
-                    <asp:LinkButton runat="server" CssClass="Sort" ID="lbtn_Sort_6" CommandArgument="CorrectCount ASC" OnClick="lbtn_Sort_Click">SL Dự đoán đúng</asp:LinkButton>
-                </th>
-                <th>
-                    <asp:LinkButton runat="server" CssClass="Sort" ID="lbtn_Sort_7" CommandArgument="IncorrectCount ASC" OnClick="lbtn_Sort_Click">SL Dự đoán sai</asp:LinkButton>
-                </th>
-                <th>
-                    <asp:LinkButton runat="server" CssClass="Sort" ID="lbtn_Sort_8" CommandArgument="ReceiveDate DESC" OnClick="lbtn_Sort_Click">Ngày dự đoán</asp:LinkButton>
-                </th>
+                    <asp:LinkButton runat="server" CssClass="Sort" ID="lbtn_Sort_4" CommandArgument="TotalTime ASC" OnClick="lbtn_Sort_Click">Tổng thời gian dự đoán(mili giây)</asp:LinkButton>
+                </th>               
                 <th>Họ và Tên</th>
                 <th>Địa chỉ</th>
                 <th>Giải thưởng</th>
-                 <th>OnWeb</th>
+                <th>OnWeb</th>
                 <th align="center" width="10">
                     <input type="checkbox" onclick="SelectCheckBox_All(this);" /></th>
                 <th class="Table_TR"></th>
@@ -86,35 +70,18 @@
                             <%#(Container.ItemIndex + PageIndex).ToString()%>
                         </td>
                         <td>
-                            <%#Eval("QuestionID")%>
-                        </td>
-                        <td>
-                            <%#Eval("PlayDate") == DBNull.Value ? string.Empty : ((DateTime)Eval("ReceiveDate")).ToString(MyUtility.MyConfig.ShortDateFormat)%>
-                        </td>
-                        <td>
                             <%#Eval("MSISDN")%>
                         </td>
                         <td>
-                            <%#Eval("SuggestID")%>
+                            <%#Eval("BeginSession") == DBNull.Value ? string.Empty : ((DateTime)Eval("BeginSession")).ToString(MyUtility.MyConfig.ShortDateFormat)%>
+                            -<%#Eval("EndSession") == DBNull.Value ? string.Empty : ((DateTime)Eval("EndSession")).ToString(MyUtility.MyConfig.ShortDateFormat)%>
                         </td>
+                         <td>
+                            <%#Eval("WinnerCount")%>
+                        </td> 
                         <td>
-                            <%#Eval("UserAnswer")%>
-                        </td>
-                        <td>
-                            <%#Eval("RightAnswer") %>
-                        </td>
-                        <td>
-                            <%#Eval("BuyCount")%>
-                        </td>
-                        <td>
-                            <%#Eval("CorrectCount")%>
-                        </td>
-                        <td>
-                            <%#Eval("IncorrectCount")%>
-                        </td>
-                        <td>
-                            <%#Eval("ReceiveDate") == DBNull.Value ? string.Empty : ((DateTime)Eval("ReceiveDate")).ToString(MyUtility.MyConfig.LongDateFormat)%>
-                        </td>
+                            <%#Eval("TotalTime")%>
+                        </td>                       
                         <td>
                             <%#Eval("WinnerName")%>
                         </td>
@@ -128,7 +95,7 @@
                            <img src="<%#(((bool)Eval("IsActive"))?"../Images/Buttons/Active_Grid.png":"../Images/Buttons/UnActive_Grid.png") %>" />
                         </td>
                         <td align="center" width="10">
-                            <%#"<input type='checkbox' id='CheckAll_" + Container.ItemIndex.ToString() + "' value='" + Eval("QuestionID").ToString() + "' />"%>
+                            <%#"<input type='checkbox' id='CheckAll_" + Container.ItemIndex.ToString() + "' value='" + Eval("WeekID").ToString() + "' />"%>
                         </td>
                         <td class="Table_MR_1"></td>
                     </tr>
@@ -139,36 +106,19 @@
                         <td>
                             <%#(Container.ItemIndex + PageIndex).ToString()%>
                         </td>
-                        <td>
-                            <%#Eval("QuestionID")%>
-                        </td>
-                        <td>
-                            <%#Eval("PlayDate") == DBNull.Value ? string.Empty : ((DateTime)Eval("ReceiveDate")).ToString(MyUtility.MyConfig.ShortDateFormat)%>
-                        </td>
-                        <td>
+                       <td>
                             <%#Eval("MSISDN")%>
                         </td>
                         <td>
-                            <%#Eval("SuggestID")%>
+                            <%#Eval("BeginSession") == DBNull.Value ? string.Empty : ((DateTime)Eval("BeginSession")).ToString(MyUtility.MyConfig.ShortDateFormat)%>
+                            -<%#Eval("EndSession") == DBNull.Value ? string.Empty : ((DateTime)Eval("EndSession")).ToString(MyUtility.MyConfig.ShortDateFormat)%>
                         </td>
+                         <td>
+                            <%#Eval("WinnerCount")%>
+                        </td> 
                         <td>
-                            <%#Eval("UserAnswer")%>
-                        </td>
-                        <td>
-                            <%#Eval("RightAnswer") %>
-                        </td>
-                        <td>
-                            <%#Eval("BuyCount")%>
-                        </td>
-                        <td>
-                            <%#Eval("CorrectCount")%>
-                        </td>
-                        <td>
-                            <%#Eval("IncorrectCount")%>
-                        </td>
-                        <td>
-                            <%#Eval("ReceiveDate") == DBNull.Value ? string.Empty : ((DateTime)Eval("ReceiveDate")).ToString(MyUtility.MyConfig.LongDateFormat)%>
-                        </td>
+                            <%#Eval("TotalTime")%>
+                        </td>                       
                         <td>
                             <%#Eval("WinnerName")%>
                         </td>
@@ -182,7 +132,7 @@
                            <img src="<%#(((bool)Eval("IsActive"))?"../Images/Buttons/Active_Grid.png":"../Images/Buttons/UnActive_Grid.png") %>" />
                         </td>
                         <td align="center" width="10">
-                            <%#"<input type='checkbox' id='CheckAll_" + Container.ItemIndex.ToString() + "' value='" + Eval("QuestionID").ToString() + "' />"%>
+                            <%#"<input type='checkbox' id='CheckAll_" + Container.ItemIndex.ToString() + "' value='" + Eval("WeekID").ToString() + "' />"%>
                         </td>
                         <td class="Table_MR_2"></td>
                     </tr>
@@ -209,7 +159,7 @@
 
         function EditData() {
             if (BeforeEditData()) {
-                document.location = '../Admin_Service/Ad_Winner_Edit.aspx?ID=' + hid_ListCheckAll.value;
+                document.location = '../Admin_Service/Ad_WinnerWeek_Edit.aspx?ID=' + hid_ListCheckAll.value;
 
                 return true;
             }

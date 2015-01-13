@@ -139,7 +139,9 @@
     <Content Include="Admin_Service\Ad_PlayLog.aspx" />
     <Content Include="Admin_Service\Ad_SuggestCount.aspx" />
     <Content Include="Admin_Service\Ad_SuggestCountLog.aspx" />
+    <Content Include="Admin_Service\Ad_WinnerWeek.aspx" />
     <Content Include="Admin_Service\Ad_Winner.aspx" />
+    <Content Include="Admin_Service\Ad_WinnerWeek_Edit.aspx" />
     <Content Include="Admin_Service\Ad_Winner_Edit.aspx" />
     <Content Include="App_Data\AllowIP.xml" />
     <Content Include="App_Data\VliveTest_Text_Cuoi.xml">
@@ -540,12 +542,26 @@
     <Compile Include="Admin_Service\Ad_SuggestCountLog.aspx.designer.cs">
       <DependentUpon>Ad_SuggestCountLog.aspx</DependentUpon>
     </Compile>
+    <Compile Include="Admin_Service\Ad_WinnerWeek.aspx.cs">
+      <DependentUpon>Ad_WinnerWeek.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Admin_Service\Ad_WinnerWeek.aspx.designer.cs">
+      <DependentUpon>Ad_WinnerWeek.aspx</DependentUpon>
+    </Compile>
     <Compile Include="Admin_Service\Ad_Winner.aspx.cs">
       <DependentUpon>Ad_Winner.aspx</DependentUpon>
       <SubType>ASPXCodeBehind</SubType>
     </Compile>
     <Compile Include="Admin_Service\Ad_Winner.aspx.designer.cs">
       <DependentUpon>Ad_Winner.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Admin_Service\Ad_WinnerWeek_Edit.aspx.cs">
+      <DependentUpon>Ad_WinnerWeek_Edit.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Admin_Service\Ad_WinnerWeek_Edit.aspx.designer.cs">
+      <DependentUpon>Ad_WinnerWeek_Edit.aspx</DependentUpon>
     </Compile>
     <Compile Include="Admin_Service\Ad_Winner_Edit.aspx.cs">
       <DependentUpon>Ad_Winner_Edit.aspx</DependentUpon>
